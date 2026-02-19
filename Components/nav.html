@@ -3,9 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+            background-color: #0D3B66;
+            height: 200vh;
+            
+        }
+        nav{
+            height: 80px;
+            width: 100%;
+            background-color:white;
+            display: flex;
+            flex-direction: row;
+            font-family: sans-serif;
+            position: fixed;
+            z-index: 1000;
+            color:#0D3B66 ;
+        }
+        .logo{
+            height: 70px;
+            width: 70px;
+            border-radius: 35px;
+           
+            margin: 5px;
+        }
+        .search{
+            width: 200px;
+            height: 80px;
+            margin: 30px;
+            
+        }
+        .ser{
+            height: 30px;
+            width: 200px;
+            border-radius:5px;
+            padding: 10px;
+            font-size: 15px;
+            border: 0.5px solid gray;
+
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+            margin: 30px;
+            list-style: none;
+            font-size: x-large;
+        }
+        li:hover{
+            cursor: pointer;
+            color: #F26A21;
+        }
+        
+        .login{
+            height: 40px;
+            width: 180px;
+            margin: 20px;
+            background-color: #F26A21;
+            border: none;
+            border-radius: 10px;
+            color: #0D3B66;
+            font-size: 20px;
+        }
+        .login:hover{
+            cursor: pointer;
+            background-color: #0D3B66;
+            color: #F26A21;
+        }
+        .cart,.pro{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            font-size: 25px;
+            color: #F26A21;
+           
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pro:hover{
+            cursor: pointer;
+            color: #0D3B66;
+            
+        }
+        .cart:hover{
+            cursor: pointer;
+            color: #0D3B66;
+            
+        }
+        
+
+        
+    </style>
 </head>
 <body>
-    <nav></nav>
+    <nav>
+      
+          
+           
+                <img src="/assets/logo.png" alt="" class="logo">
+
+
+           
+              <div class="search">
+                <input type="search" placeholder="Search" class="ser">
+
+            </div>
+            <div class="home">
+                <ul>
+                   <li>Home</li>
+                   <li>About</li>
+                   <li>Story</li>
+                   <li>Academic</li>
+                   <li>Contact</li>
+                </ul>
+
+            </div>
+            <div class="reg">
+                <button class="login">Login</button>
+                
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+
+            </div>
+            <div class="pro">
+                <i class="fa-solid fa-clipboard-list"></i>
+
+            </div>
+        
+    </nav>
 </body>
 </html>
