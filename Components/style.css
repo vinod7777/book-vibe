@@ -98,11 +98,6 @@
         .hero{
             width: 100%;
             height: 100vh;
-             /* background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-
-        
-            /* background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20241013/pngtree-magical-open-book-with-an-astounding-story-telling-background-fantasy-concept-image_16377085.jpg'); */
             border: 1px solid black;
             background-repeat:no-repeat;
             background-size: cover;
@@ -145,13 +140,14 @@
             font-size: 25px;
             margin-top: 30px;
         }
-.tabs{
-    width: 70%;
+        .tabs{
+  width: 70%;
     display:flex;
     background:#f1f1f1;
     border-radius:40px;
     padding:6px;
     margin-bottom:40px;
+    margin-top: 20px;
 }
 
 .tab-btn{
@@ -175,14 +171,15 @@
 .tab-content.active{ display:block; }
 
 .sec32{
+    width: 100%;
     display:flex;
     flex-wrap:wrap;
     gap:24px;
 }
 
-.sec33{
-    flex:0 0 calc(33.333% - 16px);
-    background:rgb(232,230,236);
+.sec33{ 
+    width: 23%;
+    background:rgb(243, 239, 252);
     border-radius:20px;
     padding-bottom:16px;
     display:flex;
@@ -313,6 +310,9 @@
             color: white;
             border: 2px solid white;
         }
+        .recomme{
+            padding: 80px;
+        }
         
 footer{
     background:black;
@@ -329,7 +329,7 @@ footer{
 .contact h2{
     color: #ff4500;
     margin-bottom: 10px;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .contact-con{
