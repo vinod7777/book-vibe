@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Large Book List</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+body{
+    background:#f1f3f6;
+    padding:40px;
+    font-size:22px;
+}
+
+.products{
+    width: 90%;
+    padding: 40px 20px;
+    margin:auto;
+}
+
+.card{
+    background:#fff;
+    height: 400px;
+    display:flex;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    align-items:center;
+}
+
+.card img{
+    width:380px;
+    height:380px;
+    object-fit:contain;
+    margin-right:35px;
+}
+.details h3,
+.content h3{
+    font-size:48px;
+    margin-bottom:12px;
+    color:#0D3B66;
+}
+
+.type{
+    font-size:30px;
+    color:#555;
+    margin-bottom:8px;
+}
+
+.price{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.desc{
+    font-size:30px;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.actions{
+    display:flex;
+    gap:40px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.actions span{
+    cursor:pointer;
+}
+
+.actions span:hover{
+    color:#2874f0;
+}
+
+/* HEADER FONT SIZE INCREASED */
+.wishlist-header{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+button{
+    font-size:26px;
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    background:#2874f0;
+    color:#fff;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0D3B66;
+}
+
+p{
+    font-size:28px;
+}
+</style>
+</head>
+
+<body>
+<div class="wishlist-header">
+    <h1>Your Wishlist</h1>
+</div>
+
+<div class="products" id="products"></div>
+
+<script>
+const books = [
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
+    type:"Fiction",
+    price:"₹499",
+    title:"Story Book",
+    desc:"Interesting fictional story."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290724312-6U491MRO5INP2KQGJST6/Gemma+Cover+Thumbnail+with+Title+Opt.jpeg?format=750w",
+    type:"Non-Fiction",
+    price:"₹399",
+    title:"Learning Book",
+    desc:"Educational and informative."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290827921-T0C5ICGNFQAUJYWQ0Y9U/Idontwantahaircutcover+thumbnail.jpg?format=1500w",
+    type:"Academic",
+    price:"₹699",
+    title:"Academic Textbook",
+    desc:"Useful for exams and preparation."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290857334-2DZ36G7BNC4RTLG6Y6T1/Firefly+Cover+4+Opt.jpeg?format=1500w",
+    type:"Fiction",
+    price:"₹499",
+    title:"Story Book",
+    desc:"Interesting fictional story."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290877922-16RPMO3N15XSME9KKI5N/frontCover.jpg?format=1500w",
+    type:"Non-Fiction",
+    price:"₹399",
+    title:"Learning Book",
+    desc:"Educational and informative."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290980406-TKVJHNBIDVKQUS58IVIP/Cricket+Cover+Small+Opt.jpeg?format=750w",
+    type:"Academic",
+    price:"₹699",
+    title:"Academic Textbook",
+    desc:"Useful for exams and preparation."
+},
+{
+    image:"https://m.media-amazon.com/images/I/61hqyA56z1L._AC_UF1000,1000_QL80_.jpg",
+    type:"Fiction",
+    price:"₹499",
+    title:"Story Book",
+    desc:"Interesting fictional story."
+},
+{
+    image:"https://snworksceo.imgix.net/upb/b34ffa23-bb9f-4fb0-8c58-477a90add498.sized-1000x1000.jpg?w=1000",
+    type:"Non-Fiction",
+    price:"₹399",
+    title:"Learning Book",
+    desc:"Educational and informative."
+},
+{
+    image:"https://s2982.pcdn.co/wp-content/uploads/2018/05/25-great-books-for-college-bound-students.png",
+    type:"Academic",
+    price:"₹699",
+    title:"Academic Textbook",
+    desc:"Useful for exams and preparation."
+}
+];
+
+let cards = document.getElementById("products");
+
+for (let i = 0; i < books.length; i++) {
+    cards.innerHTML = cards.innerHTML + `
+        <div class="card">
+            <img class="book" src="${books[i].image}">
+            <div class="content">
+                <h3>${books[i].title}</h3>
+                <div style="display:flex; justify-content:space-between;">
+                    <p class="price">Price: ${books[i].price}</p>
+                    <p class="type">Type: ${books[i].type}</p>
+                </div>
+                <p class="desc">${books[i].desc}</p>
+                <button>View Details</button>
+            </div>
+        </div>
+    `;
+}
+</script>
+
+</body>
+</html>
