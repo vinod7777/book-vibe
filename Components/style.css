@@ -6,7 +6,8 @@
         body{
             background-color: #0D3B66;
             height: 200vh;
-            
+            overflow-x: hidden;
+            scroll-behavior:smooth;
         }
         nav{
             height: 80px;
@@ -94,11 +95,6 @@
         .hero{
             width: 100%;
             height: 100vh;
-             /* background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-
-        
-            /* background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20241013/pngtree-magical-open-book-with-an-astounding-story-telling-background-fantasy-concept-image_16377085.jpg'); */
             border: 1px solid black;
             background-repeat:no-repeat;
             background-size: cover;
@@ -141,13 +137,8 @@
             font-size: 25px;
             margin-top: 30px;
         }
-.boxsec{
-    margin-top: 40px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-.tabs{
-    width: 70%;
+        .tabs{
+  width: 70%;
     display:flex;
     background:#f1f1f1;
     border-radius:40px;
@@ -248,7 +239,7 @@
  .cardout{
             width: 100%;
             height: 100vh;
-            background-color: #F26A21;
+            background-color: #0D3B66;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
@@ -318,9 +309,9 @@
         }
         
 footer{
-    background: #0D3B66;
+    background:black;
     color: white;
-    padding: 50px 8%;
+    padding: 0 8% 20px 8%;
 }
 
 
@@ -331,8 +322,8 @@ footer{
 
 .contact h2{
     color: #ff4500;
-    margin-bottom: 30px;
-    font-size: 48px;
+    margin-bottom: 10px;
+    font-size: 50px;
 }
 
 .contact-con{
@@ -372,9 +363,9 @@ footer{
 }
 
 .webteam h3{
-    color: #ff4500;
+    color:white;
     margin-bottom: 25px;
-    font-size: 32px;
+    font-size: 35px;
 }
 
 .developers{
@@ -394,6 +385,8 @@ footer{
     color: #ff4500;
     margin-bottom: 5px;
     font-size: 18px;
+    font-family: sans-serif;
+    font-style: italic;
 }
 
 .card p{
