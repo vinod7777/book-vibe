@@ -170,7 +170,13 @@
                    border-bottom: 0.5px solid #ccc;
                    margin-bottom: 30px;
                 }
-                
+                .nav-link li a{
+                    text-decoration: none;
+                    color: #0D3B66;
+                }
+                .nav-link li a:hover{
+                    color: #F26A21;
+                }
             
     </style>
 </head>
@@ -187,11 +193,11 @@
         </div>
         <div>
             <ul class="nav-link">
-                <li>home</li>
-                <li>about</li>
-                <li>story</li>
-                <li>acedamic</li>
-                <li>contact</li>
+                <li><a href="../Components/index.php">home</a></li>
+                <li><a href="../Components/about.html">about</a></li>
+                <li><a href="../Components/story.html">story</a></li>
+                <li><a href="../Components/academic.html">acedamic</a></li>
+                <li><a href="../Components/contact.html">contact</a></li>
             </ul>
         </div>
         <div class="login">
@@ -268,30 +274,30 @@
         const books = [
         {
             name: "Artificial Intelligence",
-            price:1099,
+            price:899,
             type: "Programming",
-            image: "../assets/acadedmic images/ai.jpg",
+            image: "../assets/academicimages/ai.jpg",
             stock: true
         },
         {
             name: "C++ Programming",
             price: 1059,
             type: "Programming",
-            image: "../assets/acadedmic images/c++.jpg",
+            image: "../assets/academicimages/c++.jpg",
             stock: true
         },
         {
-            name: "Data Structures and Algorithms",
+            name: "Data Structures",
             price: 1109,
             type: "Programming",
-            image: "../assets/acadedmic images/dsa.jpg",
+            image: "../assets/academicimages/dsa.jpg",
             stock: false
         },
         {
             name: "Java Programming",
             price: 999,
             type: "Programming",
-            image: "../assets/acadedmic images/java.jpg",
+            image: "../assets/academicimages/java.jpg",
             stock: true
         }
 ]
