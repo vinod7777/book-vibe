@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
     <style>
         *{
             margin: 0;
@@ -13,11 +8,6 @@
         .hero{
             width: 100%;
             height: 100vh;
-             /* background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-
-        
-            /* background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20241013/pngtree-magical-open-book-with-an-astounding-story-telling-background-fantasy-concept-image_16377085.jpg'); */
             border: 1px solid black;
             background-repeat:no-repeat;
             background-size: cover;
@@ -27,16 +17,15 @@
         .purna{
             width: 40%;
             height:600px;
-            margin-top: 100px;
             margin-left: 100px;
-            border: 1px solid black;
             justify-items: center;
             border-radius: 100px;
+            text-align: center;
 
         }
         .button{
             width:auto;
-            padding: 30px 50px;
+            padding: 10px 30px;
             background-color: black;
                 color: white;
                 border: none;
@@ -44,13 +33,12 @@
                 cursor: pointer;
                 font-size: 26px;
                 border-radius: 30px;
-                margin-left: 200px;
                 margin-top:50px;
                 font-weight: bold;
 
         }
         .h2{
-            margin-top: 100px;
+            margin-top: 200px;
             color:rgb(223, 14, 14);
             font-size: 55px;
             font-style: italic;
@@ -68,7 +56,7 @@
             <h2 class="h2">Welcome to Book Vibe</h2>
             <h3 class="h3">Every page you turn opens a new universe.</h3>
             <h3 class="h3">Discover stories that inspire, ideas that transform,<br> and knowledge that empowers your journey.</h3>
-            <h3 class="h3">Let your imagination rise beyond limits and<br> begin your next chapter today.</h3>
+            <h3 class="h3">Let your imagination rise beyond limits<br>and begin your next chapter today.</h3>
         <button class="button">Get Started</button>
         </div>
         
@@ -78,10 +66,10 @@
     <script>
 
 let array=[
-                "/assets/heroimage/ammay.jpeg",
-                "/assets/heroimage/work.png.jpeg",
-                "/assets/heroimage/boy.png.jpeg",
-                "/assets/heroimage/slide.png"
+                "../assets/heroimage/ammay.jpeg",
+                "../assets/heroimage/work.png.jpeg",
+                "../assets/heroimage/boy.png.jpeg",
+                "../assets/heroimage/slide.png"
             ]
             let c=0
           let a=  document.getElementsByClassName("hero")
@@ -102,5 +90,3 @@ let array=[
         </script>
 
     
-</body>
-</html>

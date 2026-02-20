@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
     <style>
         *{
             margin: 0;
@@ -14,9 +6,11 @@
         }
         .cardout{
             width: 100%;
-            height: 100vh;
-            background-color: #F26A21;
+           
+            background-color:#0D3B66;
             display: grid;
+            padding-top:50px;
+            padding-bottom:50px ;
             grid-template-columns: repeat(2, 1fr);
         }
         .cardouth1{
@@ -29,6 +23,10 @@
         }
         
         .cardimgs{
+            background-color:rgb(184, 224, 226);
+            margin-right: 30px;
+            border-radius: 10px ;
+            padding: 20px;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -57,8 +55,7 @@
             background-color: white;
             color: #F26A21;
             font-size: 18px;
-            font-weight: bold;
-            border-radius: 15px;
+            border-radius: 10px;
             cursor: pointer;
             margin-top: 30px;
         }
@@ -67,21 +64,37 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
+
         }
         .cardin21 button{
             width: 150px;
             height: 40px;
-            background-color: white;
-            color: #F26A21;
+            background-color: #F26A21;
             font-weight: bold;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 10px;
+            color: wheat;
+            
+
         }
+        
+        .cardin21 .cardin21img:hover{
+            transform: scale(1.02); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            
+        }
+        
         .cardin1 button:hover, .cardin21 button:hover{
-            background-color: #F26A21;
+            background-color:#0D3B66;
+            transition: all 0.3s ease;
             color: white;
-            border: 2px solid white;
+        }
+        .cardin1 button:hover{
+            background-color:#F26A21;
+
         }
     </style>
 </head>
@@ -94,24 +107,21 @@
             </div>
             <div class="cardimgs cardin2">
                 <div class="cardin21">
-                    <img src="/assets/recommendedimgs/storybook-1.webp" alt="Recommended Book 1">
+                    <img src="../assets/recommendedimgs/storybook-1.webp" alt="Recommended Book 1" class="cardin21img">
                     <button>View Details</button>
                 </div>
                 <div class="cardin21">
-                    <img src="/assets/recommendedimgs/storybook-2.webp" alt="Recommended Book 2">
+                    <img src="../assets/recommendedimgs/storybook-2.webp" alt="Recommended Book 2" class="cardin21img">
                     <button>View Details</button>   
                 </div>
                 <div class="cardin21">
-                    <img src="/assets/recommendedimgs/storybook-3.webp" alt="Recommended Book 3">
+                    <img src="../assets/recommendedimgs/storybook-3.webp" alt="Recommended Book 3" class="cardin21img">
                     <button>View Details</button>
                 </div>
                 <div class="cardin21">
-                    <img src="/assets/recommendedimgs/storybook-4.webp" alt="Recommended Book 4">
+                    <img src="../assets/recommendedimgs/storybook-4.webp" alt="Recommended Book 4" class="cardin21img">
                     <button>View Details</button>
                 </div>
             </div>
         </div>
     </section>
-
-</body>
-</html>
