@@ -24,13 +24,14 @@
             height: 70px;
             width: 70px;
             border-radius: 35px;
-           
+         
             margin: 5px;
         }
         .search{
             width: 200px;
             height: 80px;
             margin: 30px;
+            margin-left: 100px;
             
         }
         .ser{
@@ -45,10 +46,11 @@
         ul{
             display: flex;
             flex-direction: row;
-            gap: 80px;
+            gap: 60px;
             margin: 30px;
             list-style: none;
-            font-size: x-large;
+            font-size: large;
+            margin-left: 100px;
         }
         li:hover{
             cursor: pointer;
@@ -64,6 +66,7 @@
             border-radius: 10px;
             color: #0D3B66;
             font-size: 20px;
+            
         }
         .login:hover{
             cursor: pointer;
