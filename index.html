@@ -84,7 +84,8 @@ let array=[
             
       
         </script>
-        <h1>Category</h1>
+<section class="boxsec">
+<h1>Category</h1>
 
 <div class="tabs">
     <button class="tab-btn active" data-tab="all">ALL</button>
@@ -107,7 +108,7 @@ let array=[
 <div id="academic" class="tab-content">
     <div class="sec32" id="academic-container"></div>
 </div>
-
+</section>
 <script>
 
 document.querySelectorAll(".tab-btn").forEach(btn=>{
@@ -192,7 +193,7 @@ Cards("fiction-container", books.filter(b=>b.type==="Fiction"));
 Cards("nonfiction-container", books.filter(b=>b.type==="Non-Fiction"));
 Cards("academic-container", books.filter(b=>b.type==="Academic"));
 </script>
-    <section>
+<section class="recomme">
         <div class="cardout">
             <div class="cardin1">
                 <h1 class="cardouth1">TOP RATED BOOKS IN OUR STORE</h1>
@@ -217,7 +218,7 @@ Cards("academic-container", books.filter(b=>b.type==="Academic"));
                 </div>
             </div>
         </div>
-    </section>
+</section>
     
     <footer>
 
