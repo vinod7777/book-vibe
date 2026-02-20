@@ -12,9 +12,11 @@ body{
     padding:40px;
     background:#f7f7f7;
 }
-
+.secbody{
+    margin-top: 10px;
+}
 .tabs{
-  width: 70%;
+    width: 70%;
     display:flex;
     background:#f1f1f1;
     border-radius:40px;
@@ -43,14 +45,15 @@ body{
 .tab-content.active{ display:block; }
 
 .sec32{
+    width: 100%;
     display:flex;
     flex-wrap:wrap;
     gap:24px;
 }
 
-.sec33{
-    flex:0 0 calc(33.333% - 16px);
-    background:rgb(232,230,236);
+.sec33{ 
+    width: 23%;
+    background:rgb(243, 239, 252);
     border-radius:20px;
     padding-bottom:16px;
     display:flex;
@@ -113,7 +116,7 @@ body{
 </style>
 </head>
 <body>
-
+<section class="secbody">
 <h1>Category</h1>
 
 <div class="tabs">
@@ -137,7 +140,7 @@ body{
 <div id="academic" class="tab-content">
     <div class="sec32" id="academic-container"></div>
 </div>
-
+</section>
 <script>
 
 document.querySelectorAll(".tab-btn").forEach(btn=>{
