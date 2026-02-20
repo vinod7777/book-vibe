@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <?php include "Components/nav.html"?>
-    <section class="hero">
+    <?php include "Components/navbar.html"?>
+     <section class="hero">
         <div class="purna">
             <h2 class="h2">Welcome to Book Vibe</h2>
             <h3 class="h3">Every page you turn opens a new universe.</h3>
