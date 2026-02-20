@@ -104,6 +104,13 @@
             color: #0D3B66;
             
         }
+        .home a{
+            text-decoration: none;
+            color: #0D3B66;
+        }
+        .home a:hover{
+            color: #F26A21;
+        }
   </style>
 
     <nav>
@@ -117,21 +124,23 @@
 
            
               <div class="search">
-                <input type="search" placeholder="Search" class="ser">
+                <input type="search" placeholder="Search books..." class="ser" id="navSearch" onkeypress="navigateToSearch(event)">
 
             </div>
             <div class="home">
                 <ul>
                    <li>Home</li>
-                   <li>About</li>
-                   <li>Story</li>
-                   <li>Academic</li>
-                   <li>Contact</li>
+                   <li><a href="../Components/about.html"></a>About</li>
+                   <li><a href="../Components/story.html">Story</a></li>
+                   <li><a href="../Components/academic.html">Academic</a></li>
+                   <li><a href="../Components/contact.html"></a>Contact</li>
                 </ul>
 
             </div>
             <div class="reg">
+                <a href="login.html">
                 <button class="login">Login</button>
+                </a>
                 
             </div>
             <div class="cart">
@@ -146,3 +155,45 @@
             </div>
         
     </nav>
+    <script>
+        const books = [
+    {
+        name: "The Great Gatsby",
+        price: 499,
+        type: "Fiction",
+        image: "../assets/recommendedimgs/storybook-1.webp",
+        stock: true
+    },
+    {
+        name: "To Kill a Mockingbird",
+        price: 399,
+        type: "Fiction",
+        image: "../assets/recommendedimgs/storybook-2.webp",
+        stock: true
+    },
+    {
+        name: "1984",
+        price: 299,
+        type: "Dystopian",
+        image: "../assets/recommendedimgs/storybook-3.webp",
+        stock: false
+    },
+    {
+        name: "Pride and Prejudice",
+        price: 349,
+        type: "Romance",
+        image: "../assets/recommendedimgs/storybook-4.webp",
+        stock: true
+    }
+];
+    </script>
+    <script>
+        function navigateToSearch(event) {
+            if (event.key === "Enter") {
+                const query = document.getElementById("navSearch").value.trim();
+                if (query) {
+                    window.location.href = "searchbook.html?q=" + encodeURIComponent(query);
+                }
+            }
+        }
+    </script>

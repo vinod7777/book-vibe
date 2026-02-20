@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOOK-VIBE Cart</title>
+<script src="https://kit.fontawesome.com/ebdd1363cb.js" crossorigin="anonymous"></script>
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background:rgb(14, 6, 61);
+    padding:100px;
+}
+.padding{
+        padding:20px;
+
+}
+
+.title{
+    font-size:48px;
+    color:#0bd3bf;
+    margin-bottom:40px;
+}
+
+.cart{
+    display:flex;
+    gap:180px;
+}
+
+.cart-text{
+    background:#eeecee;
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    gap:25px;
+    position:relative;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.del-icon{
+    position:absolute;
+    top:20px;
+    right:20px;
+    color:#ff4d4d;
+    font-size:48px;
+    cursor:pointer;
+}
+
+.product-img{
+    width:250px;
+    border-radius:12px;
+}
+
+.details{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.details h2{
+    font-size:22px;
+    margin-top: 100px;
+    margin-bottom:6px;
+    margin-left: 100px;
+}
+
+.category{
+    color:#777;
+    margin-bottom:8px;
+    margin-left: 100px;
+}
+
+.desc{
+    color:#666;
+    font-size:14px;
+    margin-bottom:20px;
+    margin-left: 100px;
+}
+
+.quantity{
+    width: 150px;
+    height: 50px;
+    background:#eee;
+    display:flex;
+    align-items:center;
+    border-radius:30px;
+    gap:40px;
+    margin-left: 100px;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.quantity button{
+    border:none;
+    background:none;
+    font-size:38px;
+    cursor:pointer;
+}
+.quantity span{
+    font-size:18px;
+    font-weight:600;
+}
+
+.price{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+    min-width:120px;
+}
+
+.price h2{
+    font-size:26px;
+}
+
+.price p{
+    color:gray;
+    font-size:14px;
+}
+
+.book-details{
+    width: 350px;
+    background:#f5f2f5;
+    border-radius:20px;
+    padding:50px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid black;
+
+}
+
+.book-details h2{
+    margin-bottom:20px;
+}
+
+.yajnesh{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    color:#555;
+}
+
+.free{
+    color:green;
+    font-weight:600;
+}
+
+.total{
+    font-weight:700;
+    font-size:18px;
+    color:#000;
+}
+
+
+
+.continue{
+    width:100%;
+    padding:15px;
+    margin-top:50px;
+    border:none;
+    border-radius:30px;
+    background:#e0dde0;
+    cursor:pointer;
+    transition: 0.5s all ease;
+    font-size: 20px;
+}
+
+.continue:hover{
+    background-color:lightgreen;
+}
+</style>
+</head>
+
+<body>
+    
+<section class="padding">
+    <h1 class="title">BOOK-VIBE Cart</h1>
+
+    <div class="cart">
+
+    <div class="cart-text">
+
+        <div class="del-icon">
+            <i class="fa-solid fa-trash-can"></i>
+
+        </div>
+
+        <img src="https://m.media-amazon.com/images/I/81VCru3JlLL._AC_UF1000,1000_QL80_.jpg" class="product-img">
+
+        <div class="details">
+            <div>
+                <h2>Mystery Tales</h2>
+                <p class="category">Mystery</p>
+                <p class="desc">Gripping mystery and suspense.</p>
+            </div>
+
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="price">
+            <h2>₹599</h2>
+            <p>₹599 each</p>
+        </div>
+
+    </div>
+
+    <div class="book-details">
+        <h2>Order Summary</h2>
+
+        <div class="yajnesh">
+            <span>Subtotal (1 items)</span>
+            <span>₹599</span>
+        </div>
+
+        <div class="yajnesh">
+            <span>Shipping</span>
+            <span class="free">Free</span>
+        </div>
+
+        <hr>
+
+        <div class="yajnesh total">
+            <span>Total</span>
+            <span>₹599</span>
+        </div>
+
+        <button class="continue">Continue Shopping</button>
+    </div>
+
+</div>
+</section>
+
+</body>
+</html>

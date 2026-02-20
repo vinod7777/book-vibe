@@ -170,8 +170,13 @@
                    border-bottom: 0.5px solid #ccc;
                    margin-bottom: 30px;
                 }
-                
-            
+                .nav-link li a{
+                    text-decoration: none;
+                    color: #0D3B66;
+                }
+                .nav-link li a:hover{
+                    color: #F26A21;
+                }
     </style>
 </head>
 <body>
@@ -180,18 +185,18 @@
             <img src="../assets/logo.png" alt="" height="70" width="70">
         </div>
         <div class="search">
-            <form action="">
-                <input type="search" placeholder="Search">
-           
+            <form action="required" method="get" id>
+                <input type="search" placeholder="Search" id="storySearch" onkeypress="navigateToSearch(event)" class="ser">
+              
             </form>
         </div>
         <div>
             <ul class="nav-link">
-                <li>home</li>
-                <li>about</li>
-                <li>story</li>
-                <li>acedamic</li>
-                <li>contact</li>
+                <li><a href="../Components/index.php">home</a></li>
+                <li><a href="../Components/about.html">about</a></li>
+                <li><a href="../Components/story.html">story</a></li>
+                <li><a href="../Components/academic.html">acedamic</a></li>
+                <li><a href="../Components/contact.html">contact</a></li>
             </ul>
         </div>
         <div class="login">
@@ -294,10 +299,10 @@
             image: "../assets/recommendedimgs/storybook-4.webp",
             stock: true
         }
-]
-let cards = document.getElementById("cards")
+         ];
+        let cards = document.getElementById("cards")
 
-books.forEach(book=>{
+        books.forEach(book=>{
         cards.innerHTML += `
         <div class="card">
                
@@ -313,10 +318,21 @@ books.forEach(book=>{
 
                     </div>
                 
+        </div>
         `
 
-}
+    }
 )
+
+        function navigateToSearch(event) {
+            if (event.key === "Enter") {
+                const query = document.getElementById("storySearch").value.trim();
+                if (query) {
+                    window.location.href = "storysearch.html?q=" + encodeURIComponent(query);
+                }
+            }
+        }
+            
 
     </script>
 </body>
