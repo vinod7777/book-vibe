@@ -141,13 +141,19 @@
             font-size: 25px;
             margin-top: 30px;
         }
-        .tabs{
-  width: 70%;
+.boxsec{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.tabs{
+    width: 70%;
     display:flex;
     background:#f1f1f1;
     border-radius:40px;
     padding:6px;
     margin-bottom:40px;
+    margin-top: 20px;
 }
 
 .tab-btn{
@@ -171,14 +177,15 @@
 .tab-content.active{ display:block; }
 
 .sec32{
+    width: 100%;
     display:flex;
     flex-wrap:wrap;
     gap:24px;
 }
 
-.sec33{
-    flex:0 0 calc(33.333% - 16px);
-    background:rgb(232,230,236);
+.sec33{ 
+    width: 23%;
+    background:rgb(243, 239, 252);
     border-radius:20px;
     padding-bottom:16px;
     display:flex;
