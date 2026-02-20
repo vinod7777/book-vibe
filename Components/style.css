@@ -312,9 +312,9 @@
         }
         
 footer{
-    background: #0D3B66;
+    background:black;
     color: white;
-    padding: 50px 8%;
+    padding: 0 8% 20px 8%;
 }
 
 
@@ -325,8 +325,8 @@ footer{
 
 .contact h2{
     color: #ff4500;
-    margin-bottom: 30px;
-    font-size: 48px;
+    margin-bottom: 10px;
+    font-size: 100px;
 }
 
 .contact-con{
@@ -366,9 +366,9 @@ footer{
 }
 
 .webteam h3{
-    color: #ff4500;
+    color:white;
     margin-bottom: 25px;
-    font-size: 32px;
+    font-size: 35px;
 }
 
 .developers{
@@ -388,6 +388,8 @@ footer{
     color: #ff4500;
     margin-bottom: 5px;
     font-size: 18px;
+    font-family: sans-serif;
+    font-style: italic;
 }
 
 .card p{
