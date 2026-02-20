@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reusable Category Tabs</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:40px;
-    background:#f7f7f7;
-}
+
 .secbody{
     margin-top: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px ;
 }
 .tabs{
     width: 70%;
@@ -114,7 +106,7 @@ body{
     .tabs{ flex-wrap:wrap; }
 }
 </style>
-</head>
+
 <body>
 <section class="secbody">
 <h1>Category</h1>
@@ -226,5 +218,4 @@ Cards("nonfiction-container", books.filter(b=>b.type==="Non-Fiction"));
 Cards("academic-container", books.filter(b=>b.type==="Academic"));
 </script>
 
-</body>
-</html>
+
