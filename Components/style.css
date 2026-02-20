@@ -142,8 +142,8 @@
             font-size: 25px;
             margin-top: 30px;
         }
-        .tabs{
-  width: 70%;
+.tabs{
+    width: 70%;
     display:flex;
     background:#f1f1f1;
     border-radius:40px;
