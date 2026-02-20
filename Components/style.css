@@ -3,12 +3,7 @@
             padding: 0;
             
         }
-        body{
-            background-color: #0D3B66;
-            height: 200vh;
-            overflow-x: hidden;
-            scroll-behavior:smooth;
-        }
+   
         nav{
             height: 80px;
             width: 100%;
@@ -24,13 +19,14 @@
             height: 70px;
             width: 70px;
             border-radius: 35px;
-           
+         
             margin: 5px;
         }
         .search{
             width: 200px;
             height: 80px;
             margin: 30px;
+            margin-left: 100px;
             
         }
         .ser{
@@ -45,10 +41,11 @@
         ul{
             display: flex;
             flex-direction: row;
-            gap: 80px;
+            gap: 60px;
             margin: 30px;
             list-style: none;
-            font-size: x-large;
+            font-size: large;
+            margin-left: 100px;
         }
         li:hover{
             cursor: pointer;
@@ -64,6 +61,7 @@
             border-radius: 10px;
             color: #0D3B66;
             font-size: 20px;
+            
         }
         .login:hover{
             cursor: pointer;
@@ -306,6 +304,9 @@
             background-color: #F26A21;
             color: white;
             border: 2px solid white;
+        }
+        .recomme{
+            padding: 80px;
         }
         
 footer{

@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reusable Category Tabs</title>
 
 <style>
 body{
@@ -12,7 +6,9 @@ body{
     padding:40px;
     background:#f7f7f7;
 }
-
+.secbody{
+    margin-top: 10px;
+}
 .tabs{
     width: 70%;
     display:flex;
@@ -54,9 +50,12 @@ body{
     background:rgb(243, 239, 252);
     border-radius:20px;
     padding-bottom:16px;
+    padding-left:12px;
+    padding-right:12px; ;
     display:flex;
     flex-direction:column;
 }
+
 
 .sec34{
     width:95%;
@@ -112,7 +111,7 @@ body{
     .tabs{ flex-wrap:wrap; }
 }
 </style>
-</head>
+
 <body>
 
 <h1>Category</h1>
@@ -224,5 +223,4 @@ Cards("nonfiction-container", books.filter(b=>b.type==="Non-Fiction"));
 Cards("academic-container", books.filter(b=>b.type==="Academic"));
 </script>
 
-</body>
-</html>
+
