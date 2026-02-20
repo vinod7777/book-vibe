@@ -186,8 +186,8 @@
         </div>
         <div class="search">
             <form action="required" method="get" id>
-                <input type="search" placeholder="Search" id="navSearch" onkeypress="navigateToSearch(event)">
-            
+                <input type="search" placeholder="Search" id="navSearch" onkeypress="navigateToSearch(event)" class="ser">
+              
             </form>
         </div>
         <div>
@@ -318,13 +318,12 @@
 
                     </div>
                 
+        </div>
         `
 
     }
 )
 
-    </script>
-    <script>
         function navigateToSearch(event) {
             if (event.key === "Enter") {
                 const query = document.getElementById("navSearch").value.trim();
@@ -333,6 +332,8 @@
                 }
             }
         }
+            
+
     </script>
 </body>
 </html>

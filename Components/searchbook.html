@@ -6,10 +6,7 @@
     <title>Search Books</title>
     <style>
         body{
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            overflow-x: hidden;
         }
         .search-container{
             width: 100%;
@@ -93,13 +90,11 @@
         let resultsDiv = document.getElementById("results");
         let searchInput = document.getElementById("searchInput");
 
-        // Get URL parameters
         function getQueryParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(param);
         }
 
-        // Perform search
         function performSearch(searchQuery = null) {
             const query = (searchQuery || searchInput.value).toLowerCase();
             if (!query.trim()) {
@@ -110,7 +105,6 @@
             displayResults(filteredBooks, query);
         }
 
-        // Display results
         function displayResults(filteredBooks, query) {
             resultsDiv.innerHTML = "";
             if (filteredBooks.length === 0) {
@@ -131,14 +125,12 @@
             });
         }
 
-        // Allow Enter key to search
         searchInput.addEventListener("keypress", function(event) {
             if (event.key === "Enter") {
                 performSearch();
             }
         });
 
-        // On page load, check for URL parameter and perform auto search
         window.addEventListener("load", function() {
             const initialQuery = getQueryParam("q");
             if (initialQuery) {
