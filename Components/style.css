@@ -6,6 +6,7 @@
         body{
             background-color: #0D3B66;
             height: 200vh;
+            overflow-x: hidden;
             
         }
         nav{
