@@ -11,6 +11,7 @@
             padding: 0;
              box-sizing:border-box;
              font-family: "Segoe UI", sans-serif;
+             padding-top: 80px;
              
         }
        
@@ -142,6 +143,7 @@
     </style>
 </head>
 <body>
+    <?php include "nav.php"; ?>
     <div class="abtimg">
         <p class="text1">| About <br>book vibe</p>
         <p class="text2">Welcome to BookVibe, your premier destination for exceptiona<br>l stories and comprehensive academic content. We are an innovative e-commerce<br> platform dedicated to bringing the best of<br> literature and education directly to your fingertips.</p>
@@ -191,7 +193,7 @@
     </div>
 </div>
 
-
+<?php include "footer.php"; ?>
 </body>
 </html>
     

@@ -12,66 +12,10 @@
             padding: 0;
             box-sizing: border-box;
             font-family:sans-serif;
+            padding-top: 80px;
+        
         }
-            .nav{
-                height: 80px;
-                background-color: rgb(255, 255, 255);
-                display: flex ;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0px 40px;
-                border-bottom: 0.5px solid #ccc;
-            }
-            .nav-link{
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                list-style: none;
-            }
-            .nav-link li{
-                text-transform: capitalize;
-                font-size: 18px;
-                letter-spacing: 1px;
-                transition: all 0.3s ease;
-                font-weight: bold;
-                cursor: pointer;
-
-            }
-            .nav-link li:hover{
-               color: #1080e9;
-
-            }
-            .login{
-                background-color: orange;
-                padding: 10px 40px;
-                border-radius: 10px;
-                cursor: pointer;
-            }
-            .login a{
-                text-decoration: none;
-                color: white;
-
-            }
-            .nav-icon i{
-                
-                font-size: 24px;
-                margin: 10px;
-                transition: all 0.3s ease;
-            }
-            .nav-icon i:hover{
-                color: #0D3B66;
-            }
-            .search form input{
-                padding: 10px;
-                border-radius: 15px;
-                border: 0.5px solid #ccc;
-                width: 300px;
-            }
-            .story{
-                text-align: center;
-                margin-top: 10px;
-               
-            }
+            
             .story h2{
                 font-size: 50px;
                 color: #0D3B66;
@@ -132,44 +76,6 @@
                     background-color: #0D3B66;
                     cursor: pointer;
                 }
-                .footer{
-                    background-color: #0D3B66;
-                    color: white;
-                    margin-top: 40px;
-                    padding: 40px 20px;
-                }
-           
-                .footer .first ul{
-                    list-style: none;
-                }
-                .second ul{
-                    list-style: none;
-                   
-                }
-                .second ul li{
-                    margin: 10px 0;
-                    text-transform: capitalize;
-                    font-size: 13px;
-                    transition: all 0.3s ease;
-                    cursor: pointer;
-                }
-                .third ul{
-                    list-style: none;
-                    display: flex;
-                    gap: 20px;
-                }
-                strong{
-                    margin-bottom:20px ;
-                }
-                .border{
-                    display: flex;
-                    gap: 550px;
-                    align-items: center;
-                    margin-top: 20px;
-                    margin: 0px 50px;
-                   border-bottom: 0.5px solid #ccc;
-                   margin-bottom: 30px;
-                }
                 .nav-link li a{
                     text-decoration: none;
                     color: #0D3B66;
@@ -180,36 +86,7 @@
     </style>
 </head>
 <body>
-    <nav class="nav">
-        <div>
-            <img src="../assets/logo.png" alt="" height="70" width="70">
-        </div>
-        <div class="search">
-            <form action="required" method="get" id>
-                <input type="search" placeholder="Search" id="storySearch" onkeypress="navigateToSearch(event)" class="ser">
-              
-            </form>
-        </div>
-        <div>
-            <ul class="nav-link">
-                <li><a href="../Components/index.php">home</a></li>
-                <li><a href="../Components/about.php">about</a></li>
-                <li><a href="../Components/story.php">story</a></li>
-                <li><a href="../Components/academic.php">acedamic</a></li>
-                <li><a href="../Components/contact.php">contact</a></li>
-            </ul>
-        </div>
-        <div class="login">
-            <a href="#">login</a>
-        </div>
-        <div class="nav-icon">
-             <i class="fa-solid fa-cart-arrow-down"></i>
-            <i class="fa-solid fa-clipboard-list"></i>
-
-        </div>
-      
-    </nav>
-
+   <?php include "nav.php"; ?>
 
     <section class="story">
         <h2>Story books</h2>
@@ -233,44 +110,10 @@
         </div>
         
     </section>
-    <footer class="footer">
-
-      <div  class="border">
-          <div class="first">
-            <ul>
-                <li><img src="../assets/logo.png" alt="" height="70" width="70"></li>
-                <li>webname</li>
-            </ul>
-        </div>
-        <div class="second">
-            <strong style="margin-bottom: 20px;">link</strong>
-            <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>story</li>
-                <li>acadamic</li>
-                <li>contact</li>
-            </ul>
-        </div>
-        <div class="third">
-            <strong>social links</strong>
-            <ul style="margin-top: 20px;">
-                <li><i class="fa-solid fa-envelope"></i></li>
-                <li><i class="fa-brands fa-x-twitter"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-facebook"></i></li>
-            </ul>
-        </div>
-      </div>
-      <div>
-        <p style="text-align: center;">&copy; 2024 BookVibe. All rights reserved.</p>
-      </div>
-
-
-    </footer>
+    <?php include "footer.php"; ?>
 
     <script>
-        const books = [
+        const storyBooks = [
         {
             name: "The Great Gatsby",
             price: 499,
@@ -302,7 +145,7 @@
          ];
         let cards = document.getElementById("cards")
 
-        books.forEach(book=>{
+        storyBooks.forEach(book=>{
         cards.innerHTML += `
         <div class="card">
                
@@ -324,19 +167,5 @@
     }
 )
 </script>
-    <script>
-        function navigateToSearch(event) {
-            if (event.key === "Enter") {
-                const query = document.getElementById("navSearch").value.trim();
-                if (query) {
-                    window.location.href = "searchbook.php?q=" + encodeURIComponent(query);
-                }
-            }
-        }
-        
-    </script>
-            
-
-    </script>
 </body>
 </html>

@@ -12,6 +12,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
          
+            padding-top: 80px;
             
             display: flex;
             justify-content: center;
@@ -33,28 +34,30 @@
             width: 400px;
             border: 1px solid #F26A21;
             padding: 20px;
+            position: relative;
+            overflow: hidden;
          
         }
         .card1 img{
             height: 100%;
             width: 100%;
-        }
-         .card1 img:hover{
-            transform: scale(1.05);
+            object-fit: cover;
             transition: transform 0.3s ease;
         }
-         .card1 img:active{
-            transform: scale(0.95);
-            transition: transform 0.1s ease;
+         .card1:hover img{
+            transform: scale(1.05);
         }
-         .card1 img:focus{
+         .card1:active img{
+            transform: scale(0.95);
+        }
+         .card1:focus-within img{
             outline: 2px solid #F26A21;
         }
-         .card1 img:disabled{
+         .card1 img.disabled{
             opacity: 0.5;
             cursor: not-allowed;
         }
-         .card1 img:before{
+         .card1::before{
             content: "";
             position: absolute;
             top: 0;
@@ -64,11 +67,12 @@
             background-color: rgba(0, 0, 0, 0.5);
             opacity: 0;
             transition: opacity 0.3s ease;
+            z-index: 1;
         }
-         .card1 img:hover::before{
+         .card1:hover::before{
             opacity: 1;
         }
-         .card1 img::after{
+         .card1::after{
             content: "Great Gatsby";
             position: absolute;
             bottom: 10px;
@@ -77,8 +81,9 @@
             font-size: 18px;
             opacity: 0;
             transition: opacity 0.3s ease;
+            z-index: 2;
         }
-         .card1 img:hover::after{
+         .card1:hover::after{
             opacity: 1;
         }
         .card2{
@@ -168,6 +173,7 @@
         </style>
 </head>
 <body>
+    <?php include "nav.php"; ?>
     <div class="main">
     <div class="card1">
         <img src="../assets/recommendedimgs/storybook-1.webp" alt="Great Gatsby Cover">
@@ -203,5 +209,6 @@
         </div>
     </div>
     </div>
+    <?php include "footer.php"; ?>
 </body>
 </html>

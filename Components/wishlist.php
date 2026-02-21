@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Large Book List</title>
+<script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
 
 <style>
 *{
@@ -12,8 +13,9 @@
     font-family:sans-serif;
 }
 body{
-    background:rgb(241, 243, 246);
+    background:#f1f3f6;
     padding:40px;
+    padding-top: 120px;
     font-size:22px;
 }
 
@@ -24,13 +26,13 @@ body{
 }
 
 .card{
-    background:white;
+    background:#fff;
     height: 400px;
     display:flex;
     padding:30px;
     margin-bottom:25px;
     border-radius:8px;
-    border:1px solid white;
+    border:1px solid #ddd;
     align-items:center;
 }
 
@@ -77,7 +79,7 @@ body{
 }
 
 .actions span:hover{
-    color:rgb(161, 77, 239);
+    color:#2874f0;
 }
 .wishlist-header{
     text-align:center;
@@ -91,7 +93,7 @@ button{
     border:none;
     border-radius:6px;
     background:#2874f0;
-    color:white;
+    color:#fff;
     cursor:pointer;
 }
 
@@ -106,13 +108,14 @@ p{
 </head>
 
 <body>
+<?php include "nav.php"; ?>
 <div class="wishlist-header">
     <h1>My Wishlist</h1>
 </div>
 <div class="products" id="products"></div>
 
 <script>
-let books = [
+const books = [
 {
     image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
     type:"Fiction",
@@ -197,6 +200,7 @@ for (let i = 0; i < books.length; i++) {
     `;
 }
 </script>
+<?php include "footer.php"; ?>
 
 </body>
 </html>

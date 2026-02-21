@@ -12,6 +12,7 @@
             background-repeat:no-repeat;
             background-size: cover;
             transition:all 1s ease;
+            margin-top: 80px;
             
         }
         .purna{
@@ -62,7 +63,7 @@
             <h3 class="h3">Every page you turn opens a new universe.</h3>
             <h3 class="h3">Discover stories that inspire, ideas that transform,<br> and knowledge that empowers your journey.</h3>
             <h3 class="h3">Let your imagination rise beyond limits<br>and begin your next chapter today.</h3>
-        <a href="register.html"><button class="button">Get Started</button></a>
+        <a href="register.php"><button class="button">Get Started</button></a>
         </div>
         
         

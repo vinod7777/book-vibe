@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
-<title>BookVibe Footer</title>
-
 <style>
-
-
 footer{
-    height:320px;
+    height: auto;
     color: white;
     padding: 0 8% 20px 8%;
         background-color:black;
@@ -112,9 +102,6 @@ footer{
     margin-top: 50px;
 }
 </style>
-</head>
-
-<body>
 
 <footer id="footid">
 
@@ -198,6 +185,3 @@ footer{
     </div>
 
 </footer>
-
-</body>
-</html>
