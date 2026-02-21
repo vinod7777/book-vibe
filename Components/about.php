@@ -187,7 +187,7 @@
     <p class="text3"> best online <br>books & story seller<br> website across the world! </p>
     </div>
     <div class="abtdiv2">
-        <img src="/assets/heroimage/work.png.jpeg" width="500px"height="200px">
+        <img src="../assets/heroimage/work.png.jpeg" width="500px"height="200px">
     </div>
 </div>
 
