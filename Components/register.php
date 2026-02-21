@@ -12,7 +12,6 @@
             font-family: Arial, sans-serif;
             background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20241001/pngtree-open-book-with-magical-glowing-light-fantasy-and-imagination-image_16293843.jpg");
             color: #F26A21;
-            padding-top: 80px;
             background-repeat: no-repeat;
             background-size: cover;
             
