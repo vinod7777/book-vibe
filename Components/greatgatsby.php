@@ -168,6 +168,7 @@
         </style>
 </head>
 <body>
+    <?php include "nav.php"; ?>
     <div class="main">
     <div class="card1">
         <img src="../assets/recommendedimgs/storybook-1.webp" alt="Great Gatsby Cover">
@@ -203,5 +204,6 @@
         </div>
     </div>
     </div>
+    <?php include "footer.php"; ?>
 </body>
 </html>
