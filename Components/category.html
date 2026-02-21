@@ -1,14 +1,19 @@
-
-<style>
-.Categoryh1{
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
 .secbody{
     margin-top: 10px;
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
+}
+.Categoryh1{
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 .tabs{
     width: 70%;
@@ -124,31 +129,33 @@
 }
 
 </style>
+</head>
+<body>
 
 <section class="secbody">
-<div class="Categoryh1"><h1>Category</h1></div>
+    <h1 class="Categoryh1">Category</h1>
 
-<div class="tabs">
-    <button class="tab-btn active" data-tab="all">ALL</button>
-    <button class="tab-btn" data-tab="fiction">Fiction</button>
-    <button class="tab-btn" data-tab="nonfiction">Non-Fiction</button>
-    <button class="tab-btn" data-tab="academic">Academic</button>
-</div>
-<div id="all" class="tab-content active">
-    <div class="sec32" id="all-container"></div>
-</div>
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="all">ALL</button>
+        <button class="tab-btn" data-tab="fiction">Fiction</button>
+        <button class="tab-btn" data-tab="nonfiction">Non-Fiction</button>
+        <button class="tab-btn" data-tab="academic">Academic</button>
+    </div>
+    <div id="all" class="tab-content active">
+        <div class="sec32" id="all-container"></div>
+    </div>
 
-<div id="fiction" class="tab-content">
-    <div class="sec32" id="fiction-container"></div>
-</div>
+    <div id="fiction" class="tab-content">
+        <div class="sec32" id="fiction-container"></div>
+    </div>
 
-<div id="nonfiction" class="tab-content">
-    <div class="sec32" id="nonfiction-container"></div>
-</div>
+    <div id="nonfiction" class="tab-content">
+        <div class="sec32" id="nonfiction-container"></div>
+    </div>
 
-<div id="academic" class="tab-content">
-    <div class="sec32" id="academic-container"></div>
-</div>
+    <div id="academic" class="tab-content">
+        <div class="sec32" id="academic-container"></div>
+    </div>
 </section>
 <script>
 
@@ -259,3 +266,6 @@ Cards("academic-container", books.filter(b=>b.type==="Academic"));
 </script>
 
 
+
+</body>
+</html>
