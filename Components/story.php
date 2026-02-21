@@ -7,82 +7,83 @@
      <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family:sans-serif;
-            padding-top: 80px;
-        
         }
-            
-            .story h2{
-                font-size: 50px;
-                color: #0D3B66;
-                text-transform: uppercase;
-                margin-bottom: 20px;
-            }
-            .cards{
-                margin: auto;
-                margin-left: 45px;
-                display: grid;
-                gap: 10px;
-                grid-template-columns: repeat(4, 1fr);
-            }
-            .cards .card{
-                width: 320px;
-                height: 450px;
-                background-color: #e1e1e1;
-                border-radius: 10px;
-                transition: all 0.3s ease;
-            }
-             .cards .card:hover{
-                transform: scale(1.02);  
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-             }
-             .book{
-                margin: 30px 30px 10px 30px;
-
-             }
-
-             .content{
-                padding: 0px 20px;
-                text-align: left;
-             }
-             .content h3{
-                text-align: center;
-                font-size: 20px;
-                color: #0D3B66;
-                margin-bottom: 10px;
-                text-transform: uppercase;
-             }
-                .content p{
-                    font-size: 16px;
-                    text-transform: uppercase;
-                    margin:0px 20px ;
-                    margin-bottom: 10px;
-                }
-                .content button{
-                    border: none;
-                    border-radius: 10px;
-                    padding: 10px 40px ;
-                    background-color: #F26A21;
-                    color: white;
-                    margin: 0px 60px;
-                    transition: all 0.3s ease;
-                    
-                }
-                .content button:hover{
-                    background-color: #0D3B66;
-                    cursor: pointer;
-                }
-                .nav-link li a{
-                    text-decoration: none;
-                    color: #0D3B66;
-                }
-                .nav-link li a:hover{
-                    color: #F26A21;
-                }
+        body {
+            padding-top: 80px;
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .story {
+            padding: 40px 5%;
+            text-align: center;
+        }
+        .story h2 {
+            font-size: 40px;
+            color: #0D3B66;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .book {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .content h3 {
+            font-size: 20px;
+            color: #0D3B66;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .content button {
+            margin-top: auto;
+            width: 100%;
+            padding: 12px;
+            background-color: #F26A21;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .content button:hover {
+            background-color: #0D3B66;
+        }
     </style>
 </head>
 <body>

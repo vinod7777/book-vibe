@@ -1,58 +1,66 @@
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .hero{
+        .hero {
             width: 100%;
-            height: 100vh;
-            border: 1px solid black;
-            background-repeat:no-repeat;
-            background-size: cover;
-            transition:all 1s ease;
+            height: calc(100vh - 80px);
             margin-top: 80px;
-            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10%;
+            position: relative;
         }
-        .purna{
-            width: 40%;
-            height:600px;
-            margin-left: 100px;
-            justify-items: center;
-            border-radius: 100px;
-            text-align: center;
-
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
         }
-        .button{
-            width:auto;
-            padding: 10px 30px;
-            background-color: #ff4500;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 26px;
-                border-radius: 30px;
-                margin-top:50px;
-                font-weight: bold;
-                transition: all 0.3s ease;
-
+        .purna {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            color: white;
+            text-align: left;
         }
-        .button:hover{
-            background-color:#0D3B66;
-            transform:scale(1.1);
+        .h2 {
+            color: #F26A21;
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        .h2{
-            margin-top: 200px;
-            color:rgb(223, 14, 14);
-            font-size: 55px;
-            font-style: italic;
+        .h3 {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            font-weight: 400;
         }
-        .h3{
-            color:white;
-            font-size: 25px;
-            margin-top: 30px;
+        .button {
+            padding: 15px 40px;
+            background-color: #F26A21;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0D3B66;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
     </style>
 </head>
