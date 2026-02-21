@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BOOK-VIBE Cart</title>
-<script src="https://kit.fontawesome.com/ebdd1363cb.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
 
 
 <style>
@@ -19,60 +19,111 @@ body{
     background:white;
 }
      
-            .nav{
-                height: 80px;
-                background-color: rgb(255, 255, 255);
-                display: flex ;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0px 40px;
-                border-bottom: 0.5px solid #ccc;
-            }
-            .nav-link{
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                list-style: none;
-            }
-            .nav-link li{
-                text-transform: capitalize;
-                font-size: 18px;
-                letter-spacing: 1px;
-                transition: all 0.3s ease;
-                font-weight: bold;
-                cursor: pointer;
+             nav{
+            height: 80px;
+            width: 100%;
+            background-color:white;
+            display: flex;
+            flex-direction: row;
+            font-family: sans-serif;
+            position: fixed;
+            z-index: 1000;
+            color:#0D3B66 ;
+        }
+        
+            
+        .search{
+            width: 300px;
+            height: 50px;
+            margin: 30px;
+            display: flex;
+            align-items: center;
+       
+            
+        }
+        .ser{
+            height: 50px;
+            width: 300px;
+            border-radius:10px;
+            padding: 10px;
+            font-size: 15px;
+            border: 0.5px solid gray;
+          margin-bottom: 20px;
 
-            }
-            .nav-link li:hover{
-               color: #1080e9;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            margin: 30px;
+            list-style: none;
+            font-size: large;
+            font-weight: bold;
+            
+        }
+        li:hover{
+            cursor: pointer;
+            color: #F26A21;
+        }
+        
+        .login{
+            height: 40px;
+            width: 180px;
+            margin: 20px;
+            background-color: #F26A21;
+            border: none;
+            border-radius: 10px;
+            color:white;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            
+        }
+        .login:hover{
+            cursor: pointer;
+            background-color: #0D3B66;
+            color:white;
+        }
+        .cart,.pro{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            font-size: 25px;
+            color: #F26A21;
+           
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        a i{
+            text-decoration: none;
+            color: #F26A21;
 
-            }
-            .login{
-                background-color: orange;
-                padding: 10px 40px;
-                border-radius: 10px;
-                cursor: pointer;
-            }
-            .login a{
-                text-decoration: none;
-                color: white;
+        }
+         a i:hover{
+            cursor: pointer;
+            color: #0D3B66;
 
-            }
-            .nav-icon i{
-                
-                font-size: 24px;
-                margin: 10px;
-                transition: all 0.3s ease;
-            }
-            .nav-icon i:hover{
-                color: #0D3B66;
-            }
-            .search form input{
-                padding: 10px;
-                border-radius: 15px;
-                border: 0.5px solid #ccc;
-                width: 300px;
-            }
+         }
+        .pro:hover{
+            cursor: pointer;
+            color: #0D3B66;
+            
+        }
+        .cart:hover{
+            cursor: pointer;
+            color: #0D3B66;
+            
+        }
+        .home a{
+            text-decoration: none;
+            color: #0D3B66;
+        }
+        .home a:hover{
+            color: #F26A21;
+        }
 .padding{
         padding:20px;
 
@@ -82,9 +133,10 @@ body{
     color: #0D3B66;
     font-size:48px;
     margin-bottom:40px;
-    text-align: center;}
+    text-align: center;
+}
 
-.cart{
+.cartt{
     display:flex;
     gap:100px;
     margin-left: 80px;
@@ -242,156 +294,98 @@ body{
 .continue:hover{
     background-color: #0D3B66;
 }
- footer{
-    height:320px;
-    color: white;
-    padding: 0 8% 20px 8%;
-        background-color:black;
-        font-family: sans-serif;
-
-}
-
-
-.contact{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.contact h2{
-    color: #ff4500;
-    font-size: 28px;
-    padding:10px;
-}
-
-.contact-con{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:5px;
-}
-
-
-.logo img{
-    width: 70px;
-    height: auto;
-}
-
-
-.text{
-    text-align: center;
-    min-width: 180px;
-}
-
-.text i{
-    margin-bottom:10px;
-    font-size: 12px;
-    color: #ff4500;
-}
-
-.text p{
-    font-size: 12px;
-}
-
-
-.webteam{
-    text-align: center;
-}
-
-.webteam h3{
-    color:white;
-    font-size: 15px;
-    margin-bottom:20px;
-}
-
-.developers{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.card{
-
-    min-width: 150px;
-    text-align: center;
-}
-
-.card h4{
-    color: #ff4500;
-    margin-bottom: 5px;
-    font-size: 10px;
-    font-family: sans-serif;
-    font-style: italic;
-}
-
-.card p{
-    margin-top: 10px;
-    font-size: 10px;
-}
-
-
-.bottom{
-    margin-top: 10px;
-    text-align: center;
-    font-size: 15px;
-    color: #ddd;
-}
-.bottom i{
-    color: #ff4500;
-    margin-right: 5px;
-}
-.hr{
-    border: 1px solid #a09f9e;
-    margin-bottom: 10px;
-    margin-top: 50px;
-}
-
- .nav-link li a
- {
-    text-decoration: none;
-    color: #0D3B66;
-}
-.nav-link li a:hover
-{
-      color: #F26A21;
-}
+ .footer{
+                    background-color: #0D3B66;
+                    color: white;
+                    margin-top: 40px;
+                    padding: 40px 20px;
+                }
+           
+                .footer .first ul{
+                    list-style: none;
+                }
+                .second ul{
+                    list-style: none;
+                   
+                }
+                .second ul li{
+                    margin: 10px 0;
+                    text-transform: capitalize;
+                    font-size: 13px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+                .third ul{
+                    list-style: none;
+                    display: flex;
+                    gap: 20px;
+                }
+                strong{
+                    margin-bottom:20px ;
+                }
+                .border{
+                    display: flex;
+                    gap: 550px;
+                    align-items: center;
+                    margin-top: 20px;
+                    margin: 0px 50px;
+                   border-bottom: 0.5px solid #ccc;
+                   margin-bottom: 30px;
+                }
+                .nav-link li a{
+                    text-decoration: none;
+                    color: #0D3B66;
+                }
+                .nav-link li a:hover{
+                    color: #F26A21;
+                }
 </style>
 </head>
 
 <body>
-     <nav class="nav">
+    <nav>
         <div>
             <img src="../assets/logo.png" alt="" height="70" width="70">
         </div>
-        <div class="search">
-            <form action="required" method="get" id>
-                <input type="search" placeholder="Search" id="storySearch" onkeypress="navigateToSearch(event)" class="ser">
-              
-            </form>
-        </div>
-        <div>
-            <ul class="nav-link">
-                <li><a href="../Components/index.php">home</a></li>
-                <li><a href="../Components/about.html">about</a></li>
-                <li><a href="../Components/story.html">story</a></li>
-                <li><a href="../Components/academic.html">acedamic</a></li>
-                <li><a href="../Components/contact.html">contact</a></li>
-            </ul>
-        </div>
-        <div class="login">
-            <a href="#">login</a>
-        </div>
-        <div class="nav-icon">
-             <i class="fa-solid fa-cart-arrow-down"></i>
-            <i class="fa-solid fa-clipboard-list"></i>
 
-        </div>
+           
+              <div class="search">
+                <input type="search" placeholder="Search books..." class="ser" id="navSearch" onkeypress="navigateToSearch(event)">
+
+            </div>
+            <div class="home">
+                <ul>
+                   <li><a href="../Components/index.php">Home</a></li>
+                   <li><a href="../Components/about.html">About</a></li>
+                   <li><a href="../Components/story.html">Story</a></li>
+                   <li><a href="../Components/academic.html">Academic</a></li>
+                   <li><a href="#footid">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="reg">
+                <a href="login.html">
+                <button class="login">Login</button>
+                </a>
+                
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                <i class="fa-solid fa-cart-arrow-down"></i></a>
+
+            </div>
+            <div class="pro">
+                <a href="wishlist.html">
+                <i class="fa-solid fa-clipboard-list"></i></a>
+
+            </div>
       
     </nav>
     
 <section class="padding">
     <h1 class="title">BOOK-VIBE Cart</h1>
 
-    <div class="cart">
+    <div class="cartt">
 
     <div class="cart-text">
 
@@ -529,7 +523,8 @@ body{
         2026 BookVibe. All rights reserved.
     </div>
 
-</footer>
+
+    </footer>
 
 
 </body>
