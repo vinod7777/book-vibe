@@ -323,15 +323,18 @@
 
     }
 )
-
+</script>
+    <script>
         function navigateToSearch(event) {
             if (event.key === "Enter") {
-                const query = document.getElementById("storySearch").value.trim();
+                const query = document.getElementById("navSearch").value.trim();
                 if (query) {
-                    window.location.href = "storysearch.html?q=" + encodeURIComponent(query);
+                    window.location.href = "searchbook.html?q=" + encodeURIComponent(query);
                 }
             }
         }
+        
+    </script>
             
 
     </script>
