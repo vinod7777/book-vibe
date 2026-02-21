@@ -103,13 +103,13 @@
         <div class="cardout">
             <div class="cardin1">
                 <h1 class="cardouth1">TOP RATED BOOKS IN OUR STORE</h1>
-                <a href="cart.html"><button>Explore</button></a>
+                <a href="cart.php"><button>Explore</button></a>
             </div>
             <div class="cardimgs cardin2">
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-1.webp" alt="Recommended Book 1" class="cardin21img">
                     
-                    <a href="greatgatsby.html"><button>View Details</button></a>
+                    <a href="greatgatsby.php"><button>View Details</button></a>
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-2.webp" alt="Recommended Book 2" class="cardin21img">
