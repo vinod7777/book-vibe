@@ -127,7 +127,7 @@
                    <li><a href="../Components/about.html">About</a></li>
                    <li><a href="../Components/story.html">Story</a></li>
                    <li><a href="../Components/academic.html">Academic</a></li>
-                   <li><a href="#footid">Contact</a></li>
+                   <li><a href="../Components/contact.html">Contact</a></li>
                 </ul>
 
             </div>
