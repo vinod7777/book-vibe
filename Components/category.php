@@ -129,7 +129,7 @@
 </style>
 
 <section class="secbody">
-    <div><h1>Category</h1></div>
+    <div class="Categoryh1"><h1>Category</h1></div>
 
     <div class="tabs">
         <button class="tab-btn active" data-tab="all">ALL</button>
@@ -181,7 +181,7 @@ function createCard(data){
     </div>`;
 }
 
-const books = [
+const categoryBooks = [
 {
     image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
     type:"Fiction",
@@ -254,9 +254,9 @@ function Cards(containerId, items){
 }
 
 
-Cards("all-container", books);
-Cards("fiction-container", books.filter(b=>b.type==="Fiction"));
-Cards("nonfiction-container", books.filter(b=>b.type==="Non-Fiction"));
-Cards("academic-container", books.filter(b=>b.type==="Academic"));
+Cards("all-container", categoryBooks);
+Cards("fiction-container", categoryBooks.filter(b=>b.type==="Fiction"));
+Cards("nonfiction-container", categoryBooks.filter(b=>b.type==="Non-Fiction"));
+Cards("academic-container", categoryBooks.filter(b=>b.type==="Academic"));
 
 </script>
