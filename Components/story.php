@@ -127,8 +127,37 @@
     </style>
 </head>
 <body>
-   
-    <?php include "nav.php"; ?>
+    <nav class="nav">
+        <div>
+            <img src="../assets/logo.png" alt="" height="70" width="70">
+        </div>
+        <div class="search">
+            <form action="required" method="get" id>
+                <input type="search" placeholder="Search" id="storySearch" onkeypress="navigateToSearch(event)" class="ser">
+              
+            </form>
+        </div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="../Components/index.php">home</a></li>
+                <li><a href="../Components/about.html">about</a></li>
+                <li><a href="../Components/story.html">story</a></li>
+                <li><a href="../Components/academic.html">acedamic</a></li>
+                <li><a href="../Components/contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="#">login</a>
+        </div>
+        <div class="nav-icon">
+             <i class="fa-solid fa-cart-arrow-down"></i>
+            <i class="fa-solid fa-clipboard-list"></i>
+
+        </div>
+      
+    </nav>
+
+
     <section class="story">
         <h2>Story books</h2>
         <div class="cards" id="cards">
@@ -247,7 +276,7 @@
             if (event.key === "Enter") {
                 const query = document.getElementById("navSearch").value.trim();
                 if (query) {
-                    window.location.href = "searchbook.html?q=" + encodeURIComponent(query);
+                    window.location.href = "searchbook.php?q=" + encodeURIComponent(query);
                 }
             }
         }

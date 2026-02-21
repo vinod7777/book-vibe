@@ -124,31 +124,31 @@
             <div class="home">
                 <ul>
                    <li><a href="../Components/index.php">Home</a></li>
-                   <li><a href="../Components/about.html">About</a></li>
-                   <li><a href="../Components/story.html">Story</a></li>
-                   <li><a href="../Components/academic.html">Academic</a></li>
-                   <li><a href="../Components/contact.html">Contact</a></li>
+                   <li><a href="../Components/about.php">About</a></li>
+                   <li><a href="../Components/story.php">Story</a></li>
+                   <li><a href="../Components/academic.php">Academic</a></li>
+                   <li><a href="../Components/contact.php">Contact</a></li>
                 </ul>
 
             </div>
             <div class="reg">
-                <a href="login.html">
+                <a href="login.php">
                 <button class="login">Login</button>
                 </a>
                 
             </div>
             <div class="cart">
-                <a href="cart.html">
+                <a href="cart.php">
                 <i class="fa-solid fa-cart-arrow-down"></i></a>
 
             </div>
             <div class="pro">
-                <a href="wishlist.html">
+                <a href="wishlist.php">
                 <i class="fa-solid fa-clipboard-list"></i></a>
 
         </div>
         <div class="pro">
-            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="wishlist.php"><i class="fa-regular fa-heart"></i></a>
         </div>
         
     </nav>
@@ -189,7 +189,7 @@
             if (event.key === "Enter") {
                 const query = document.getElementById("navSearch").value.trim();
                 if (query) {
-                    window.location.href = "searchbook.html?q=" + encodeURIComponent(query);
+                    window.location.href = "searchbook.php?q=" + encodeURIComponent(query);
                 }
             }
         }

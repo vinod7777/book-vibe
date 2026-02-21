@@ -261,10 +261,10 @@
         <div>
             <ul class="nav-link">
                 <li><a href="../Components/index.php">home</a></li>
-                <li><a href="../Components/about.html">about</a></li>
-                <li><a href="../Components/story.html">story</a></li>
-                <li><a href="../Components/academic.html">acedamic</a></li>
-                <li><a href="../Components/contact.html">contact</a></li>
+                <li><a href="../Components/about.php">about</a></li>
+                <li><a href="../Components/story.php">story</a></li>
+                <li><a href="../Components/academic.php">acedamic</a></li>
+                <li><a href="../Components/contact.php">contact</a></li>
             </ul>
         </div>
         <div class="login">

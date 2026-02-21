@@ -43,11 +43,12 @@
     width: 100%;
     display:flex;
     flex-wrap:wrap;
+    align-items:center;
     gap:24px;
 }
 
 .sec33{ 
-    width: 20%;
+    width: 30%;
     background:rgb(243, 239, 252);
     border-radius:20px;
     padding-bottom:16px;
