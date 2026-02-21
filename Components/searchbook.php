@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Books</title>
+    <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
     <style>
         body{
             overflow-x: hidden;
@@ -79,6 +80,7 @@
     </style>
 </head>
 <body>
+    <?php include "nav.php"; ?>
     <div class="search-container">
         <input type="search" class="ser" id="searchInput" placeholder="Search books...">
         <button class="search-btn" onclick="performSearch()">Search</button>
@@ -139,5 +141,6 @@
             }
         });
     </script>
+    <?php include "footer.php"; ?>
 </body>
 </html>

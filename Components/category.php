@@ -43,7 +43,7 @@
     width: 100%;
     display:flex;
     flex-wrap:wrap;
-    align-items:center;
+    justify-content:space-between;
     gap:24px;
 }
 
@@ -57,6 +57,7 @@
     margin-bottom: 20px;
     display:flex;
     flex-direction:column;
+    gap:12px;
     transition: 
     transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1);

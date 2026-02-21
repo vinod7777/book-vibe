@@ -149,6 +149,7 @@
     </style>
 </head>
 <body>
+    <?php include "nav.php"; ?>
     <div class="main">
         <div class="img-container">
             <img src="../assets/logo.png" alt="">
@@ -172,6 +173,7 @@
                 </form>
         </div>
     </div>
+    <?php include "footer.php"; ?>
 </body>
 <script>
 function toggle() {
