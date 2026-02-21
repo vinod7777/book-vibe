@@ -13,8 +13,8 @@ footer{
     height:320px;
     color: white;
     padding: 0 8% 20px 8%;
-        background-color:black;
-        font-family: sans-serif;
+    background-color:#0D3B66;
+    font-family: sans-serif;
 
 }
 
