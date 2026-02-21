@@ -20,11 +20,11 @@
 </head>
 <body>
     
-     <?php include "nav.html"; ?>
-     <?php include "hero.html"; ?>
-    <?php   include "category.html"?>
-     <?php include "recommended.html"?>
-     <?php include "footer.html"; ?>
+     <?php include "nav.php"; ?>
+     <?php include "hero.php"; ?>
+    <?php   include "category.php"?>
+     <?php include "recommended.php"?>
+     <?php include "footer.php"; ?>
     
   
     
