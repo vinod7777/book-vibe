@@ -12,7 +12,7 @@
     font-family:sans-serif;
 }
 body{
-    background:#f1f3f6;
+    background:rgb(241, 243, 246);
     padding:40px;
     font-size:22px;
 }
@@ -24,13 +24,13 @@ body{
 }
 
 .card{
-    background:#fff;
+    background:white;
     height: 400px;
     display:flex;
     padding:30px;
     margin-bottom:25px;
     border-radius:8px;
-    border:1px solid #ddd;
+    border:1px solid white;
     align-items:center;
 }
 
@@ -77,7 +77,7 @@ body{
 }
 
 .actions span:hover{
-    color:#2874f0;
+    color:rgb(161, 77, 239);
 }
 .wishlist-header{
     text-align:center;
@@ -91,7 +91,7 @@ button{
     border:none;
     border-radius:6px;
     background:#2874f0;
-    color:#fff;
+    color:white;
     cursor:pointer;
 }
 
@@ -112,7 +112,7 @@ p{
 <div class="products" id="products"></div>
 
 <script>
-const books = [
+let books = [
 {
     image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
     type:"Fiction",
