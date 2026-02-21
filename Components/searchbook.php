@@ -8,6 +8,7 @@
     <style>
         body{
             overflow-x: hidden;
+            padding-top: 80px;
         }
         .search-container{
             width: 100%;

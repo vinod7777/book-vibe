@@ -12,6 +12,7 @@
             font-family: Arial, sans-serif;
             background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20241001/pngtree-open-book-with-magical-glowing-light-fantasy-and-imagination-image_16293843.jpg");
             color: #F26A21;
+            padding-top: 80px;
             background-repeat: no-repeat;
             background-size: cover;
             
@@ -34,8 +35,9 @@
                 margin-right: 50px;
                 height: 500px;
                 width: 400px;
-                background-color:#0D3B66;
-                opacity: 80%;
+                background-color: rgba(13, 59, 102, 0.9);
+                border-radius: 10px 0 0 10px;
+                backdrop-filter: blur(5px);
           
             }
              .img-container img{
@@ -53,8 +55,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color:#0D3B66;
-            opacity: 80%;
+            background-color: rgba(13, 59, 102, 0.9);
+            border-radius: 0 10px 10px 0;
+            backdrop-filter: blur(5px);
           
         }
         h1{

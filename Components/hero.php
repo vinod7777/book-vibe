@@ -12,6 +12,7 @@
             background-repeat:no-repeat;
             background-size: cover;
             transition:all 1s ease;
+            margin-top: 80px;
             
         }
         .purna{

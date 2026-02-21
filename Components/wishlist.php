@@ -15,6 +15,7 @@
 body{
     background:#f1f3f6;
     padding:40px;
+    padding-top: 120px;
     font-size:22px;
 }
 

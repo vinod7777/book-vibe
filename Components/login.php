@@ -14,6 +14,7 @@
             background-image: url("https://png.pngtree.com/background/20250116/original/pngtree-an-open-book-with-glowing-light-in-pages-blur-background-picture-image_15699576.jpg");
           
             color: #F26A21;
+            padding-top: 80px;
             background-repeat: no-repeat;
             background-size: cover;
             
@@ -34,8 +35,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color:#0D3B66;
-            opacity: 80%;
+            background-color: rgba(13, 59, 102, 0.9);
+            border-radius: 0 10px 10px 0;
+            backdrop-filter: blur(5px);
         }
         h1{
             font-size: 40px;
@@ -80,13 +82,13 @@
                 .image-container{
                 height: 500px;
                 width: 500px;
-                background-color: white;
+                background-color: rgba(255, 255, 255, 0.95);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 border: 1px solid #F26A21;
-                opacity: 80%;
+                border-radius: 10px 0 0 10px;
                
             }
             .image-container img{

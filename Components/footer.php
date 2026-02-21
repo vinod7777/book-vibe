@@ -1,6 +1,6 @@
 <style>
 footer{
-    height:320px;
+    height: auto;
     color: white;
     padding: 0 8% 20px 8%;
         background-color:black;

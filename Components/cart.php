@@ -17,6 +17,7 @@
 
 body{
     background:white;
+    padding-top: 100px;
 }
 .padding{
         padding:20px;
@@ -32,7 +33,9 @@ body{
 .cart{
     display:flex;
     gap:100px;
-    margin-left: 80px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .cart-text{
@@ -79,22 +82,19 @@ body{
 
 .details h2{
     font-size:22px;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom:6px;
-    margin-left: 100px;
 }
 
 .category{
     color:#777;
     margin-bottom:8px;
-    margin-left: 100px;
 }
 
 .desc{
     color:#666;
     font-size:14px;
     margin-bottom:20px;
-    margin-left: 100px;
 }
 
 .quantity{
@@ -105,7 +105,6 @@ body{
     align-items:center;
     border-radius:30px;
     gap:40px;
-    margin-left: 100px;
     justify-content: center;
     border: 2px solid red;
 }

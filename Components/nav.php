@@ -10,6 +10,7 @@
             position: fixed;
             z-index: 1000;
             color:#0D3B66 ;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
             
