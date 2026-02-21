@@ -22,7 +22,6 @@
      <?php include "hero.html"; ?>
      <?php include "category.html"; ?>
      <?php include "recommended.html"?>
-     
     <?php include "footer.html"; ?>
 
   
