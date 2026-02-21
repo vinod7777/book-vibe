@@ -11,7 +11,8 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url("https://png.pngtree.com/background/20250116/original/pngtree-an-open-book-with-glowing-light-in-pages-blur-background-picture-image_15699576.jpg");
+            /* background-image: url("https://png.pngtree.com/background/20250116/original/pngtree-an-open-book-with-glowing-light-in-pages-blur-background-picture-image_15699576.jpg"); */
+            background-image: url("https://img.freepik.com/free-photo/black-friday-sales-sign-neon-light_23-2151833076.jpg?semt=ais_user_personalization&w=740&q=80");
           
             color: #F26A21;
             background-repeat: no-repeat;
