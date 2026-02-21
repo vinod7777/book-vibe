@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
+
+    <title>Buy Now</title>
+       
+  <style>
+            nav{
+            height: 80px;
+            width: 100%;
+            background-color:white;
+            display: flex;
+            flex-direction: row;
+            font-family: sans-serif;
+            position: fixed;
+            z-index: 1000;
+            color:#0D3B66 ;
+        }
+        
+            
+        .search{
+            width: 300px;
+            height: 50px;
+            margin: 30px;
+            display: flex;
+            align-items: center;
+       
+            
+        }
+        .ser{
+            height: 50px;
+            width: 300px;
+            border-radius:10px;
+            padding: 10px;
+            font-size: 15px;
+            border: 0.5px solid gray;
+          margin-bottom: 20px;
+
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            margin: 30px;
+            list-style: none;
+            font-size: large;
+            font-weight: bold;
+            
+        }
+        li:hover{
+            cursor: pointer;
+            color: #F26A21;
+        }
+        
+        .login{
+            height: 40px;
+            width: 180px;
+            margin: 20px;
+            background-color: #F26A21;
+            border: none;
+            border-radius: 10px;
+            color:white;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            
+        }
+        .login:hover{
+            cursor: pointer;
+            background-color: #0D3B66;
+            color:white;
+        }
+        .cart,.pro{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            font-size: 25px;
+            color: #F26A21;
+           
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        a i{
+            text-decoration: none;
+            color: #F26A21;
+
+        }
+         a i:hover{
+            cursor: pointer;
+            color: #0D3B66;
+
+         }
+        .pro:hover{
+            cursor: pointer;
+            color: #0D3B66;
+            
+        }
+        .cart:hover{
+            cursor: pointer;
+            color: #0D3B66;
+            
+        }
+        .home a{
+            text-decoration: none;
+            color: #0D3B66;
+        }
+        .home a:hover{
+            color: #F26A21;
+        }
+  </style>
+    
+</head>
+<body>
+ 
+    <nav>
+      
+          
+            <div>
+            <img src="../assets/logo.png" alt="" height="70" width="70">
+        </div>
+
+           
+              <div class="search">
+                <input type="search" placeholder="Search books..." class="ser" id="navSearch" onkeypress="navigateToSearch(event)">
+
+            </div>
+            <div class="home">
+                <ul>
+                   <li>Home</li>
+                   <li><a href="../Components/about.html">About</a></li>
+                   <li><a href="../Components/story.html">Story</a></li>
+                   <li><a href="../Components/academic.html">Academic</a></li>
+                   <li><a href="#footid">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="reg">
+                <a href="login.html">
+                <button class="login">Login</button>
+                </a>
+                
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                <i class="fa-solid fa-cart-arrow-down"></i></a>
+
+            </div>
+            <div class="pro">
+                <a href="wishlist.html">
+                <i class="fa-solid fa-clipboard-list"></i></a>
+
+            </div>
+        
+    </nav>
+    <script>
+        const books = [
+    {
+        name: "The Great Gatsby",
+        price: 499,
+        type: "Fiction",
+        image: "../assets/recommendedimgs/storybook-1.webp",
+        stock: true
+    },
+    {
+        name: "To Kill a Mockingbird",
+        price: 399,
+        type: "Fiction",
+        image: "../assets/recommendedimgs/storybook-2.webp",
+        stock: true
+    },
+    {
+        name: "1984",
+        price: 299,
+        type: "Dystopian",
+        image: "../assets/recommendedimgs/storybook-3.webp",
+        stock: false
+    },
+    {
+        name: "Pride and Prejudice",
+        price: 349,
+        type: "Romance",
+        image: "../assets/recommendedimgs/storybook-4.webp",
+        stock: true
+    }
+];
+    </script>
+    <script>
+        function navigateToSearch(event) {
+            if (event.key === "Enter") {
+                const query = document.getElementById("navSearch").value.trim();
+                if (query) {
+                    window.location.href = "searchbook.html?q=" + encodeURIComponent(query);
+                }
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
