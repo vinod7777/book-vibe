@@ -7,164 +7,111 @@
 
     <title>Document</title>
     <style>
-        body{
+        * {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-         
-            
+            box-sizing: border-box;
+        }
+        body {
+            padding-top: 80px;
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main {
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            }   
-        .main{
-            height: 100vh;
-            width: 100%;
-           border: 1px solid #F26A21;
-           
-       
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-            }
-        .card1{
-            height: 500px;
-            width: 400px;
-            border: 1px solid #F26A21;
-            padding: 20px;
-         
+            padding: 40px;
         }
-        .card1 img{
-            height: 100%;
+        .product-container {
+            display: flex;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 1000px;
             width: 100%;
         }
-         .card1 img:hover{
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
+        .image-section {
+            flex: 1;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
         }
-         .card1 img:active{
-            transform: scale(0.95);
-            transition: transform 0.1s ease;
+        .image-section img {
+            max-width: 100%;
+            max-height: 500px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 10px;
         }
-         .card1 img:focus{
-            outline: 2px solid #F26A21;
+        .details-section {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-         .card1 img:disabled{
-            opacity: 0.5;
-            cursor: not-allowed;
+        .details-section h1 {
+            font-size: 42px;
+            color: #0D3B66;
+            margin-bottom: 15px;
         }
-         .card1 img:before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+        .details-section p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
         }
-         .card1 img:hover::before{
-            opacity: 1;
+        .price-tag {
+            font-size: 32px;
+            color: #F26A21;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
-         .card1 img::after{
-            content: "Great Gatsby";
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            color: white;
+        .original-price {
+            color: #999;
+            text-decoration: line-through;
             font-size: 18px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            margin-left: 10px;
         }
-         .card1 img:hover::after{
-            opacity: 1;
+        .rating {
+            color: #F26A21;
+            margin-bottom: 30px;
+            font-size: 18px;
         }
-        .card2{
-            height: 500px;
-            width: 600px;  
-            background-color:#0D3B66; 
+        .action-buttons {
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            padding: 20px;
-           
+            gap: 20px;
         }
-        .great{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-            width: 100%;
-        }
-        .great h1{
-            font-size: 36px;
-            color: white;
-        }   
-            .great p{
-                font-size: 15px;
-                color:#F26A21;
-                text-align: center;
-                width: 80%;
-            }
-        .bottom{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            width: 80%;
-            height: 80px;
-            padding: 20px;
-            
-
-        }
-        .btn button{
-            width: 200px;
-            height: 50px;
+        .button {
+            flex: 1;
+            padding: 15px;
             background-color: #F26A21;
             color: white;
             font-size: 18px;
-            border-radius: 10px;
+            border-radius: 8px;
             cursor: pointer;
-           border: none;
+            border: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
         }
-        .btn button:hover{
+        .button:hover {
+            background-color: #0D3B66;
+        }
+        .button-outline {
+            background-color: transparent;
+            border: 2px solid #0D3B66;
+            color: #0D3B66;
+        }
+        .button-outline:hover {
             background-color: #0D3B66;
             color: white;
-            border: 1px solid #F26A21;
-            transition: background-color 0.3s ease;
         }
-        .price{
-            height: 200px;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #F26A21;
-            padding: 10px;
-        }
-        .price h2{
-           color: #F26A21;
-        }
-         .price p{
-          color: white;
-         
-        }
-            .price div{
-                display: flex;
-                flex-direction: row;
-                gap: 10px;
-                margin-top: 10px;
-            }
-            .price div i{
-                color: #F26A21;
-                font-size: 20px;
-            }
-            
-    
-       
         </style>
 </head>
 <body>

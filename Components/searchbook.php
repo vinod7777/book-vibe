@@ -6,8 +6,16 @@
     <title>Search Books</title>
     <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body{
             overflow-x: hidden;
+            padding-top: 80px;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
         }
         .search-container{
             width: 100%;
@@ -15,33 +23,39 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
             gap: 10px;
         }
         .ser{
-            width: 300px;
+            width: 100%;
+            max-width: 500px;
             height: 50px;
-            border-radius:10px;
-            padding: 10px;
-            font-size: 15px;
-            border: 0.5px solid gray;
+            border-radius: 25px;
+            padding: 0 25px;
+            font-size: 16px;
+            border: none;
+            outline: none;
         }
         .search-btn {
             height: 50px;
-            padding: 10px 20px;
+            padding: 0 30px;
             background-color: #F26A21;
             color: white;
             border: none;
-            border-radius: 10px;
+            border-radius: 25px;
             cursor: pointer;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 16px;
+            transition: background 0.3s ease;
         }
         .search-btn:hover {
-            background-color: #d9570d;
+            background-color: #fff;
+            color: #F26A21;
         }
         #results {
-            padding: 20px;
+            padding: 40px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;

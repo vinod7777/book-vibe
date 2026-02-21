@@ -1,189 +1,137 @@
 
   <style>
-            nav{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
             height: 80px;
             width: 100%;
-            background-color:white;
-            display: flex;
-            flex-direction: row;
-            font-family: sans-serif;
-            position: fixed;
-            z-index: 1000;
-            color:#0D3B66 ;
-        }
-        
-            
-        .search{
-            width: 300px;
-            height: 50px;
-            margin: 30px;
+            background-color: white;
             display: flex;
             align-items: center;
-       
-            
+            justify-content: space-between;
+            font-family: 'Segoe UI', sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            color: #0D3B66;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 0 5%;
         }
-        .ser{
-            height: 50px;
-            width: 300px;
-            border-radius:10px;
-            padding: 10px;
-            font-size: 15px;
-            border: 0.5px solid gray;
-          margin-bottom: 20px;
-          margin-left: 20px;
 
+        .logo img {
+            height: 60px;
+            width: auto;
         }
-        ul{
+
+        .search {
+            flex: 1;
             display: flex;
-            flex-direction: row;
-            gap: 60px;
-            margin: 30px;
+            justify-content: center;
+        }
+
+        .ser {
+            height: 45px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 25px;
+            padding: 0 20px;
+            font-size: 15px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+        .ser:focus {
+            outline: none;
+            border-color: #F26A21;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(242, 106, 33, 0.1);
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
             list-style: none;
-            font-size: large;
-            font-weight: bold;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .home a {
+            text-decoration: none;
+            color: #0D3B66;
+            transition: color 0.3s ease; 
             
         }
-        li:hover{
-            cursor: pointer;
+
+        .home a:hover {
             color: #F26A21;
         }
-        
-        .login{
-            height: 40px;
-            width: 180px;
-            margin: 20px;
-            margin-left: 50px;
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .login {
+            padding: 10px 25px;
             background-color: #F26A21;
             border: none;
             border-radius: 10px;
-            color:white;
-            font-size: 20px;
-            font-weight: bold;
-            transition: all 0.5s ease;
-            
-        }
-        .login:hover{
+            margin-left:50px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login:hover {
             background-color: #0D3B66;
-            color:white;
         }
-        .cart,.pro{
-            width: 50px;
-            height: 50px;
-            border-radius: 25px;
-            font-size: 25px;
-            color: #F26A21;
-           
-    margin: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-        a i{
-            text-decoration: none;
-            color: #F26A21;
 
-        }
-         a i:hover{
-            cursor: pointer;
-            color: #0D3B66;
-
-         }
-        .pro:hover{
-            cursor: pointer;
-            color: #0D3B66;
-            
-        }
-        .cart:hover{
-            cursor: pointer;
-            color: #0D3B66;
-            
-        }
-        .home a{
-            text-decoration: none;
-            color: #0D3B66;
-        }
-        .home a:hover{
+        .icon-link {
+            font-size: 20px;
             color: #F26A21;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .icon-link:hover {
+            color: #0D3B66;
         }
   </style>
 
     <nav>
-      
-          
-            <div>
-            <img src="../assets/logo.png" alt="" height="70" width="70" style="margin-left: 20px;">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="BookVibe Logo">
         </div>
 
-           
-              <div class="search">
-                <input type="search" placeholder="Search books..." class="ser" id="navSearch" onkeypress="navigateToSearch(event)">
-
-            </div>
-            <div class="home">
-                <ul>
-                   <li><a href="../Components/index.php">Home</a></li>
-                   <li><a href="../Components/about.php">About</a></li>
-                   <li><a href="../Components/story.php">Story</a></li>
-                   <li><a href="../Components/academic.php">Academic</a></li>
-                   <li><a href="../Components/contact.php">Contact</a></li>
-                </ul>
-
-            </div>
-            <div class="reg">
-                <a href="login.php">
-                <button class="login">Login</button>
-                </a>
-                
-            </div>
-            <div class="cart">
-                <a href="cart.php">
-                <i class="fa-solid fa-cart-arrow-down"></i></a>
-
-            </div>
-            <div class="pro">
-                <a href="wishlist.php">
-                <i class="fa-solid fa-clipboard-list"></i></a>
-
+        <div class="search">
+            <input type="search" placeholder="Search books..." class="ser" id="navSearch" onkeypress="navigateToSearch(event)">
         </div>
-        <div class="pro">
-            <a href="wishlist.php"><i class="fa-regular fa-heart"></i></a>
+
+        <div class="home">
+            <ul>
+                <li><a href="../Components/index.php">Home</a></li>
+                <li><a href="../Components/about.php">About</a></li>
+                <li><a href="../Components/story.php">Story</a></li>
+                <li><a href="../Components/academic.php">Academic</a></li>
+                <li><a href="../Components/contact.php">Contact</a></li>
+            </ul>
         </div>
-        
+
+        <div class="nav-actions">
+            <a href="login.php"><button class="login" >Login</button></a>
+            <a href="cart.php" class="icon-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            <a href="wishlist.php" class="icon-link"><i class="fa-solid fa-clipboard-list"></i></a>
+        </div>
     </nav>
-    <script>
-        const books = [
-    {
-        name: "The Great Gatsby",
-        price: 499,
-        type: "Fiction",
-        image: "../assets/recommendedimgs/storybook-1.webp",
-        stock: true
-    },
-    {
-        name: "To Kill a Mockingbird",
-        price: 399,
-        type: "Fiction",
-        image: "../assets/recommendedimgs/storybook-2.webp",
-        stock: true
-    },
-    {
-        name: "1984",
-        price: 299,
-        type: "Dystopian",
-        image: "../assets/recommendedimgs/storybook-3.webp",
-        stock: false
-    },
-    {
-        name: "Pride and Prejudice",
-        price: 349,
-        type: "Romance",
-        image: "../assets/recommendedimgs/storybook-4.webp",
-        stock: true
-    }
-];
-    </script>
     <script>
         function navigateToSearch(event) {
             if (event.key === "Enter") {

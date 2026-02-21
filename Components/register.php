@@ -6,146 +6,113 @@
       <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-        body{
+        * {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
             background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20241001/pngtree-open-book-with-magical-glowing-light-fantasy-and-imagination-image_16293843.jpg");
-            color: #F26A21;
             background-repeat: no-repeat;
             background-size: cover;
-            
-        }   
-         .main{
-            height: 700px;
-            width: 100%;
-          
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-            }
-            .img-container{
-                color: #F26A21;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin-right: 50px;
-                height: 500px;
-                width: 400px;
-                background-color:#0D3B66;
-                opacity: 80%;
-          
-            }
-             .img-container img{
-                height: 200px;
-                width: 200px;
-            }
-             .img-container p{
-                font-size: 30px;
-                
-            }
-        .register-container{
-            height: 500px;
-            width: 400px;
+            background-position: center;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color:#0D3B66;
-            opacity: 80%;
-          
+            padding-top: 80px;
+            font-family: 'Segoe UI', sans-serif;
         }
-        h1{
-            font-size: 40px;
-            margin-bottom: 20px;
-            color: #F26A21;
+        .main {
+            display: flex;
+            width: 900px;
+            height: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
         }
-        form{
+        .img-container {
+            flex: 1;
+            background: rgba(13, 59, 102, 0.9);
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
+            padding: 40px;
+            text-align: center;
+            color: white;
         }
-        input[type="text"], input[type="password"], input[type="email"], input[type="number"]{
-            width: 300px;
-            height: 30px;
+        .img-container img {
+            width: 120px;
             margin-bottom: 20px;
-            padding: 10px;
-            border-radius: 10px;
-            border: none;
-            font-size: 18px;
         }
-        input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus{
-            outline: none;
-            border: 0.5px solid #F26A21;
+        .well {
+            font-size: 28px;
+            font-weight: bold;
+            color: #F26A21;
+            margin-bottom: 15px;
         }
-         .container {
+        .book {
+            font-style: italic;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .register-container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.95);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .register-container h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #F26A21;
+        }
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .container {
             position: relative;
+            width: 100%;
         }
-         .container input { 
-            width: 300px;
-            height: 30px;
-            margin-bottom: 20px;
-            padding: 10px;
-            border-radius: 10px;
-            border: none;
-            font-size: 18px;
-         }
-            .container {
-                position: relative;
-                width: 350px;
-            }
-
-            .container input {
-                width: 300px;
-              margin-left: 15px;
-               
-            }
-
-            .eye {
-                position: absolute;
-                right: 30px;
-                top: 15px;
-                cursor: pointer;
-            }
-            .btn{
-            height: 40px;
-            width: 250px;
-            margin: 20px;
-            border-radius: 10px;
+        .eye {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #666;
+        }
+        .btn {
+            width: 100%;
+            padding: 15px;
             background-color: #F26A21;
-            color: #0D3B66;
+            color: white;
             border: none;
-            transition: all 0.5s ease;
-
-            }
-            .btn:hover{
-                cursor: pointer;
-                background-color: #0D3B66;
-                color: #F26A21;
-                border: 0.5px solid #F26A21;
-
-            }
-            .well{
-                font-size: 50px;
-                margin-bottom: 20px;
-                color: #F26A21;
-            }
-           p span{
+            border-radius: 8px;
             font-size: 18px;
-            color:white;
-            font-family: serif;
-          
-              
-            }
-            p{
-                color: #F26A21;
-                padding: 10px;
-            }
-         
-          
-
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0D3B66;
+        }
     </style>
 </head>
 <body>
