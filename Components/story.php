@@ -13,60 +13,7 @@
             box-sizing: border-box;
             font-family:sans-serif;
         }
-            .nav{
-                height: 80px;
-                background-color: rgb(255, 255, 255);
-                display: flex ;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0px 40px;
-                border-bottom: 0.5px solid #ccc;
-            }
-            .nav-link{
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                list-style: none;
-            }
-            .nav-link li{
-                text-transform: capitalize;
-                font-size: 18px;
-                letter-spacing: 1px;
-                transition: all 0.3s ease;
-                font-weight: bold;
-                cursor: pointer;
-
-            }
-            .nav-link li:hover{
-               color: #1080e9;
-
-            }
-            .login{
-                background-color: orange;
-                padding: 10px 40px;
-                border-radius: 10px;
-                cursor: pointer;
-            }
-            .login a{
-                text-decoration: none;
-                color: white;
-
-            }
-            .nav-icon i{
-                
-                font-size: 24px;
-                margin: 10px;
-                transition: all 0.3s ease;
-            }
-            .nav-icon i:hover{
-                color: #0D3B66;
-            }
-            .search form input{
-                padding: 10px;
-                border-radius: 15px;
-                border: 0.5px solid #ccc;
-                width: 300px;
-            }
+     
             .story{
                 text-align: center;
                 margin-top: 10px;
@@ -180,37 +127,8 @@
     </style>
 </head>
 <body>
-    <nav class="nav">
-        <div>
-            <img src="../assets/logo.png" alt="" height="70" width="70">
-        </div>
-        <div class="search">
-            <form action="required" method="get" id>
-                <input type="search" placeholder="Search" id="storySearch" onkeypress="navigateToSearch(event)" class="ser">
-              
-            </form>
-        </div>
-        <div>
-            <ul class="nav-link">
-                <li><a href="../Components/index.php">home</a></li>
-                <li><a href="../Components/about.html">about</a></li>
-                <li><a href="../Components/story.html">story</a></li>
-                <li><a href="../Components/academic.html">acedamic</a></li>
-                <li><a href="../Components/contact.html">contact</a></li>
-            </ul>
-        </div>
-        <div class="login">
-            <a href="#">login</a>
-        </div>
-        <div class="nav-icon">
-             <i class="fa-solid fa-cart-arrow-down"></i>
-            <i class="fa-solid fa-clipboard-list"></i>
-
-        </div>
-      
-    </nav>
-
-
+   
+    <?php include "nav.php"; ?>
     <section class="story">
         <h2>Story books</h2>
         <div class="cards" id="cards">
