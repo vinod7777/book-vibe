@@ -30,6 +30,7 @@
             font-size: 15px;
             border: 0.5px solid gray;
           margin-bottom: 20px;
+          margin-left: 20px;
 
         }
         ul{
@@ -51,6 +52,7 @@
             height: 40px;
             width: 180px;
             margin: 20px;
+            margin-left: 50px;
             background-color: #F26A21;
             border: none;
             border-radius: 10px;
@@ -72,7 +74,7 @@
             font-size: 25px;
             color: #F26A21;
            
-            margin: 15px;
+    margin: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -111,7 +113,7 @@
       
           
             <div>
-            <img src="../assets/logo.png" alt="" height="70" width="70">
+            <img src="../assets/logo.png" alt="" height="70" width="70" style="margin-left: 20px;">
         </div>
 
            
@@ -121,7 +123,7 @@
             </div>
             <div class="home">
                 <ul>
-                   <li>Home</li>
+                   <li><a href="../Components/index.php">Home</a></li>
                    <li><a href="../Components/about.html">About</a></li>
                    <li><a href="../Components/story.html">Story</a></li>
                    <li><a href="../Components/academic.html">Academic</a></li>
@@ -144,7 +146,10 @@
                 <a href="wishlist.html">
                 <i class="fa-solid fa-clipboard-list"></i></a>
 
-            </div>
+        </div>
+        <div class="pro">
+            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+        </div>
         
     </nav>
     <script>
