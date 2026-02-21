@@ -47,7 +47,7 @@
 }
 
 .sec33{ 
-    width: 23%;
+    width: 20%;
     background:rgb(243, 239, 252);
     border-radius:20px;
     padding-bottom:16px;
@@ -94,11 +94,14 @@
     border-radius:20px;
 }
 
-.sec36{ font-weight:bold; }
+.sec36{ font-weight:bold;
+}
 
-.sec37{ margin:10px 12px 0; }
+.sec37{ margin:10px 12px 0; 
+}
 
-.sec38{ margin:10px 12px; font-size:14px; }
+.sec38{ margin:10px 12px; font-size:14px;
+ }
 
 .sec40-btn{
     width:200px;
@@ -126,7 +129,7 @@
 </style>
 
 <section class="secbody">
-    <h1 class="Categoryh1">Category</h1>
+    <div><h1>Category</h1></div>
 
     <div class="tabs">
         <button class="tab-btn active" data-tab="all">ALL</button>
@@ -257,5 +260,3 @@ Cards("nonfiction-container", books.filter(b=>b.type==="Non-Fiction"));
 Cards("academic-container", books.filter(b=>b.type==="Academic"));
 
 </script>
-
-

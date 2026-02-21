@@ -332,7 +332,13 @@ body{
                    border-bottom: 0.5px solid #ccc;
                    margin-bottom: 30px;
                 }
-                
+                .nav-link li a{
+                    text-decoration: none;
+                    color: #0D3B66;
+                }
+                .nav-link li a:hover{
+                    color: #F26A21;
+                }
 </style>
 </head>
 
@@ -436,83 +442,90 @@ body{
 
 </div>
 </section>
-<footer class="footer">
+<footer id="footid">
 
-      <div  class="border">
-          <div class="first">
-            <ul>
-                <li><img src="../assets/logo.png" alt="" height="70" width="70"></li>
-                <li>webname</li>
-            </ul>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-con">
+
+            <div class="logo">
+                <img src="../assets/logo.png" alt="BookVibe Logo">
+            </div>
+
+            <div class="text">
+                <i class="fa-solid fa-envelope"></i>
+                <p>bookvibe17@gmail.com</p>
+            </div>
+
+            <div class="text">
+                <i class="fa-brands fa-x-twitter"></i>
+                <p>@book_vibe17</p>
+            </div>
+
+            <div class="text">
+                <i class="fa-brands fa-instagram"></i>
+                <p>@Book_vibe17</p>
+            </div>
+
+            <div class="text">
+                <i class="fa-brands fa-facebook"></i>
+                <p>/BookVibe</p>
+            </div>
+
         </div>
-        <div class="second">
-            <strong style="margin-bottom: 20px;">link</strong>
-            <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>story</li>
-                <li>acadamic</li>
-                <li>contact</li>
-            </ul>
+    </div>
+
+    <div class="webteam">
+        <h3>Designed & Developed By</h3>
+
+        <div class="developers">
+
+            <div class="card">
+                <h4>Vinod Kumar</h4>
+                <p>Full Stack Developer</p>
+            </div>
+
+            <div class="card">
+                <h4>Yagneswararao puvvala</h4>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="card">
+                <h4>Purnachandrarao ponduru</h4>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="card">
+                <h4>Lokesh Konna</h4>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="card">
+                <h4>Laxminarayana majji</h4>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="card">
+                <h4>Ajaykumar Kurmapu</h4>
+                <p>Web Developer</p>
+            </div>
+
         </div>
-        <div class="third">
-            <strong>social links</strong>
-            <ul style="margin-top: 20px;">
-                <li><i class="fa-solid fa-envelope"></i></li>
-                <li><i class="fa-brands fa-x-twitter"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-facebook"></i></li>
-            </ul>
-        </div>
-      </div>
-      <div>
-        <p style="text-align: center;">&copy; 2024 BookVibe. All rights reserved.</p>
-      </div>
+    </div>
+
+
+    <div class="bottom">
+                <hr class="hr">
+
+        <i class="fa-regular fa-copyright"></i>
+        2026 BookVibe. All rights reserved.
+    </div>
 
 
     </footer>
-    <script>
-        const books = [
-    {
-        name: "The Great Gatsby",
-        price: 499,
-        type: "Fiction",
-        image: "../assets/recommendedimgs/storybook-1.webp",
-        stock: true
-    },
-    {
-        name: "To Kill a Mockingbird",
-        price: 399,
-        type: "Fiction",
-        image: "../assets/recommendedimgs/storybook-2.webp",
-        stock: true
-    },
-    {
-        name: "1984",
-        price: 299,
-        type: "Dystopian",
-        image: "../assets/recommendedimgs/storybook-3.webp",
-        stock: false
-    },
-    {
-        name: "Pride and Prejudice",
-        price: 349,
-        type: "Romance",
-        image: "../assets/recommendedimgs/storybook-4.webp",
-        stock: true
-    }
-];
-    </script>
-    <script>
-        function navigateToSearch(event) {
-            if (event.key === "Enter") {
-                const query = document.getElementById("navSearch").value.trim();
-                if (query) {
-                    window.location.href = "searchbook.html?q=" + encodeURIComponent(query);
-                }
-            }
-        }
-    </script>
+
 
 </body>
 </html>
