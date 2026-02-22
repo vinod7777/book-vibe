@@ -76,6 +76,9 @@
         .view-btn:hover {
             background-color: #F26A21;
         }
+        
+       
+
     </style>
 </head>
 <body>
@@ -88,7 +91,7 @@
             <div class="cardimgs cardin2">
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-1.webp" alt="Recommended Book 1" class="cardin21img">
-                    <a href="greatgatsby.html"><button class="view-btn">View Details</button></a>
+                    <button class="view-btn">View Details</button>
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-2.webp" alt="Recommended Book 2" class="cardin21img">
