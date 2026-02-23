@@ -17,6 +17,23 @@
             color: white;
             text-align: left;
         }
+        .cardin1 button {
+            margin-top: 30px;
+            padding: 15px 40px;
+            background-color: #F26A21;
+            color: white;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border:none;
+        }
+        .cardin1 button:hover {
+            background-color: white;
+            color: #F26A21;
+            
+        }
         .cardouth1 {
             font-size: 48px;
             font-weight: 800;
@@ -86,17 +103,13 @@
         <div class="cardout">
             <div class="cardin1">
                 <h1 class="cardouth1">TOP RATED BOOKS IN OUR STORE</h1>
-                <a href="cart.html"><button>Explore</button></a>
+                <a href="cart.php"><button>Explore</button></a>
             </div>
             <div class="cardimgs cardin2">
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-1.webp" alt="Recommended Book 1" class="cardin21img">
-<<<<<<< HEAD
-                    
-                    <a href="greatgatsby.html"><button>View Details</button></a>
-=======
+
                     <button class="view-btn">View Details</button>
->>>>>>> aedee4dfade25caa9efce949561c3b52c68be8e9
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-2.webp" alt="Recommended Book 2" class="cardin21img">
