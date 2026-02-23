@@ -16,8 +16,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 100vh;
-            
+            height: 150vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding-top: 80px;

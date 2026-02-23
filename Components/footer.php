@@ -7,6 +7,7 @@
     footer {
         background-color: #0a1620;
         color: #fff;
+        width: 100%;
         padding: 60px 5% 20px;
         font-family: 'Segoe UI', sans-serif;
     }

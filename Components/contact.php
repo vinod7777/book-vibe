@@ -11,11 +11,39 @@
             padding: 0;
             box-sizing: border-box;
         }
-    </style>
+        /* body {
+           
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            font-family: 'Segoe UI', sans-serif;
+         
+        } */
+        .main{
+            display: flex;
+          
+            height: 260px;
+            margin-top: 80px;}
+        </style>
 </head>
 <body>
+<div class="main">
+        <div class="image-container">
+         
+       
+        </div>
+
+</div>
+   
     <?php include "nav.php"; ?>
 
     <?php include "footer.php"; ?>
+    
 </body>
 </html>
