@@ -1,100 +1,80 @@
 
     <style>
-        *{
+        * {
             margin: 0;
-            border: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .cardout{
-            width: 100%;
-           
-            background-color:#0D3B66;
+        .cardout {
+            background-color: #0D3B66;
+            padding: 80px 5%;
             display: grid;
-            padding-top:50px;
-            padding-bottom:50px ;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+            align-items: center;
         }
-        .cardouth1{
-            font-size: 80px;
-            font-family: "Bungee", sans-serif;
+        .cardin1 {
             color: white;
-            text-align: center;
-            
-
+            text-align: left;
         }
-        
-        .cardimgs{
-            background-color:rgb(184, 224, 226);
-            margin-right: 30px;
-            border-radius: 10px ;
-            padding: 20px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
+        .cardouth1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', sans-serif;
         }
-        .cardimgs img{
-            width: 250px;
-            height: 300px;
-            border-radius: 10px;
-        }
-        .cardin1{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .cardin2{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        .cardin1 button{
-            width: 150px;
-            height: 50px;
-            background-color: white;
-            color: #F26A21;
-            font-size: 18px;
-            border-radius: 10px;
-            cursor: pointer;
-            margin-top: 30px;
-        }
-        .cardin21{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-
-        }
-        .cardin21 button{
-            width: 150px;
-            height: 40px;
+        .explore-btn {
+            padding: 15px 40px;
             background-color: #F26A21;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-            color: wheat;
-            
-
-        }
-        
-        .cardin21 .cardin21img:hover{
-            transform: scale(1.02); 
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            
-        }
-        
-        .cardin1 button:hover, .cardin21 button:hover{
-            background-color:#0D3B66;
-            transition: all 0.3s ease;
             color: white;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
-        .cardin1 button:hover{
-            background-color:#F26A21;
-
+        .explore-btn:hover {
+            background-color: white;
+            color: #0D3B66;
+        }
+        .cardimgs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .cardin21 {
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .cardin21:hover {
+            transform: translateY(-10px);
+        }
+        .cardin21img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .view-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0D3B66;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .view-btn:hover {
+            background-color: #F26A21;
         }
     </style>
 </head>
@@ -103,25 +83,25 @@
         <div class="cardout">
             <div class="cardin1">
                 <h1 class="cardouth1">TOP RATED BOOKS IN OUR STORE</h1>
-                <a href="cart.php"><button>Explore</button></a>
+                <a href="cart.html"><button>Explore</button></a>
             </div>
             <div class="cardimgs cardin2">
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-1.webp" alt="Recommended Book 1" class="cardin21img">
                     
-                    <a href="greatgatsby.php"><button>View Details</button></a>
+                    <a href="greatgatsby.html"><button>View Details</button></a>
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-2.webp" alt="Recommended Book 2" class="cardin21img">
-                    <button>View Details</button>   
+                    <button class="view-btn">View Details</button>   
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-3.webp" alt="Recommended Book 3" class="cardin21img">
-                    <button>View Details</button>
+                    <button class="view-btn">View Details</button>
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-4.webp" alt="Recommended Book 4" class="cardin21img">
-                    <button>View Details</button>
+                    <button class="view-btn">View Details</button>
                 </div>
             </div>
         </div>
