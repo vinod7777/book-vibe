@@ -13,7 +13,7 @@
             box-sizing: border-box;
         }
         body {
-            background-image: url("https://img.freepik.com/free-photo/black-friday-sales-sign-neon-light_23-2151833076.jpg?semt=ais_user_personalization&w=740&q=80");
+            background-image: url("https://img.freepik.com/free-photo/minimal-digital-futuristic-technology-background_53876-102622.jpg?semt=ais_hybrid&w=740&q=80");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -59,6 +59,11 @@
             color: #0D3B66;
             font-size: 16px;
             line-height: 1.6;
+        }
+        .quote{
+            
+           
+            color: #0D3B66;
         }
         .login-container {
             flex: 1;
@@ -116,20 +121,47 @@
         }
         .login-btn:hover {
             background-color: #0D3B66;
+            border: 2px solid #F26A21;
         }
+        span {
+            text-align: center;
+            color: white;
+        }
+        .reg-btn{
+            width: 100%;
+            padding: 15px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .reg-btn:hover {
+          border: 2px solid #F26A21;
+            color:#F26A21;
+
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
     </style>
 </head>
 <body>
     <?php include "nav.php"; ?>
     <div class="main">
         <div class="image-container">
-            <img src="/assets/logo.png" alt="">
+            <img src="../assets/logo.png" alt="">
             <p class="well">Welcome to Book Vibe
             </p>
             <p class="quetation">
-                <span>
+                <span class="quote">
                 “A reader lives a thousand lives before he dies . . . ...</span>
-                <span>“You can never get a cup of tea large enough or a book long enough to suit me.” ...</span>
+                <span class="quote">“You can never get a cup of tea large enough or a book long enough to suit me.” ...</span>
             </p>
         </div>
     <div class="login-container">
@@ -143,6 +175,8 @@
 </div>
 
             <a href="../Components/index.php"><button type="submit" class="login-btn" onclick="log()">Login</button></a>
+            <span class="or">or</span>
+            <button class="reg-btn"><a href="register.php">Sign Up</a></button>
         </form>
         </div>
 

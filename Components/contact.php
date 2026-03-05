@@ -27,14 +27,33 @@
         } */
         .main{
             display: flex;
+            width: 100%;
+            
           
             height: 260px;
             margin-top: 80px;}
+        .image-container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            width: 100%;
+            background-color: #F26A21;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .image-container img {
+            width: 100%;
+            height: 300px;
+          ;
+        }
+
         </style>
 </head>
 <body>
 <div class="main">
         <div class="image-container">
+            <img src="https://www.shutterstock.com/image-photo/customer-service-call-center-contact-600nw-2493101023.jpg" alt="">
          
        
         </div>

@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
         body {
-            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20241001/pngtree-open-book-with-magical-glowing-light-fantasy-and-imagination-image_16293843.jpg");
+            background-image: url("https://e1.pxfuel.com/desktop-wallpaper/398/435/desktop-wallpaper-login-page-login.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -138,7 +138,7 @@
     <span class="eye" onclick="toggle()"><i class="fa-regular fa-eye"></i></span>
 </div>
                     <input type="number" name="phone" placeholder="Phone Number" required>
-                   <a href="hero.html"> <button type="submit" class="btn">Register</button>
+                   <a href="../index.php"> <button type="submit" class="btn">Register</button></a>
                 </form>
         </div>
     </div>

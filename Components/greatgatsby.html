@@ -38,7 +38,7 @@
         }
         .image-section {
             flex: 1;
-            background: #f9f9f9;
+            background: #e71313;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -52,6 +52,7 @@
         }
         .details-section {
             flex: 1;
+            background-color: #0D3B66;
             padding: 50px;
             display: flex;
             flex-direction: column;
@@ -98,7 +99,7 @@
             cursor: pointer;
             border: none;
             font-weight: bold;
-            transition: background 0.3s ease;
+            transition: 0.3s ease;
         }
         .button:hover {
             background-color: #0D3B66;
@@ -115,12 +116,12 @@
         </style>
 </head>
 <body>
-    <?php include "nav.php"; ?>
+    
     <div class="main">
-    <div class="card1">
+    <div class="image-section">
         <img src="../assets/recommendedimgs/storybook-1.webp" alt="Great Gatsby Cover">
     </div>
-    <div class="card2">
+    <div class="details-section">
         <div class="great">
         <h1>Great Gatsby</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
@@ -140,7 +141,7 @@
         </div>
         <div class="bottom">
         <div class="btn">
-       <a href="cart.html"><button class="button">Add to Cart</button></a>
+       <a href="cart.php"><button class="button">Add to Cart</button></a>
           </div>
         <div class="btn">
           <a href="buy.html"><button class="button">Buy Now</button></a>
@@ -151,6 +152,6 @@
         </div>
     </div>
     </div>
-    <?php include "footer.php"; ?>
+   
 </body>
 </html>
