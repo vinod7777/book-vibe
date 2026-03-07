@@ -127,7 +127,7 @@
             background-color: #0D3B66;
             color: white;
         }
-        .bottom{
+        .bottomm{
             height: 200px;
             width: 300px;
          
@@ -139,7 +139,7 @@
         </style>
 </head>
 <body>
-    
+    <?php include "nav.php"; ?>
     <div class="main">
     <div class="image-section">
         <img src="../assets/recommendedimgs/storybook-1.webp" alt="Great Gatsby Cover">
@@ -151,7 +151,7 @@
         </div>
         <div class="price">
         <h2 style="color:#F26A21; font-size: 24px;">Price: 250.00</h2>
-        <p>Original Price:<del> 300.00</del></p>
+        <p>Original Price: <del>300.00</del></p>
 
         <div>
             <i class="fa-regular fa-star"></i>
@@ -162,7 +162,7 @@
         </div>
 
         </div>
-        <div class="bottom">
+        <div class="bottomm">
         <div class="btn">
        <a href="../Components/cart.php"><button class="button">Add to Cart</button></a>
           </div>
@@ -175,6 +175,7 @@
         </div>
     </div>
     </div>
+    <?php include "footer.php"; ?>
    
 </body>
 </html>
