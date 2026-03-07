@@ -162,29 +162,7 @@
         margin-bottom: 10px;
     }
 
-    .empty{
-        display:none;
-        text-align:center;
-        padding:100px 0px;
-    }
-    .empty i{
-        font-size:120px;
-        color:#F26A21;
-    }
-    .shop-btn{
-        padding:15px 30px;
-        background: #F26A21;
-    color:white;
-        border:none;
-    border-radius:10px;
-    font-size:20px;
-    cursor:pointer;
-        margin-top:30px;
-
-    }
-    .shop-btn:hover{
-        background-color: #0D3B66;
-    }
+    
 </style>
 </head>
 
@@ -292,13 +270,7 @@ function updatePrice() {
     document.getElementById("subtotal").innerText = "₹" + totalPrice;
     document.getElementById("total").innerText = "₹" + totalPrice;
 }
-document.querySelector(".del-icon").addEventListener("click", function() {
-    document.querySelector(".cart").style.display = "none";
-    document.getElementById("empty-cart").style.display = "block";
-});
-function goHome() {
-    window.location.href = "../Components/index.php";
-}
+
 </script>
 </body>
 </html>
