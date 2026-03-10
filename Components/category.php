@@ -10,6 +10,9 @@
         padding: 60px 5%;
         background-color: #f9f9f9;
     }
+    body{
+        font-family: sans-serif;
+    }
     .Categoryh1 h1 {
         text-align: center;
         font-size: 36px;
@@ -107,37 +110,24 @@
     }
     .sec40-btn1 {
         width: 100%;
-        margin: 0 20px 20px;
-        padding: 12px;
+        height: 40px;
         background: #F26A21;
         color: white;
         border: none;
         border-radius: 8px;
         cursor:pointer;
     }
-    .sec40-btn2 {
-        width: 80%;
-        margin: 0 20px 20px;
-        padding: 12px;
-        background: #F26A21;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-
-    }
+    
     .sec40-btn1:hover {
         background: #0D3B66;
     }
-    .sec40-btn2:hover {
-        background: #0D3B66;
-    }
+    
     .sec39 {
         display: flex;
-        
         gap:10px;
-        
+        justify-content: space-between;
+        align-items: center;
+
        
     }
     .sec39 i {
@@ -200,8 +190,8 @@ function createCard(data){
             <p class="sec38">${data.desc}</p>
         </div>
         <div class="sec39">
-            <div><button class="sec40-btn1">Buy now</button></div>
-            <div><button class="sec40-btn2">Add to Cart</button></div>
+            <button class="sec40-btn1">Buy now</button>
+            <button class="sec40-btn1">Add to Cart</button>
             <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
         </div>
     </div>`;

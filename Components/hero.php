@@ -18,6 +18,7 @@
             justify-content: flex-start;
             padding-left: 10%;
             position: relative;
+            font-family:none;   
         }
         .hero::before {
             content: '';
@@ -32,11 +33,13 @@
             max-width: 600px;
             color: white;
             text-align: left;
+         
         }
         .h2 {
             color: #F26A21;
             font-size: 60px;
             font-weight: 800;
+    
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
@@ -45,6 +48,8 @@
             line-height: 1.5;
             margin-bottom: 30px;
             font-weight: 400;
+        
+             text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
         .button {
             padding: 15px 40px;

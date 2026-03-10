@@ -15,7 +15,7 @@
         body {
             padding-top: 80px;
             background-color: #f4f4f4;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
         }
         .story {
             padding: 40px 5%;

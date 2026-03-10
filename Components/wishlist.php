@@ -14,7 +14,7 @@
     body {
         background: #f4f4f4;
         padding-top: 100px;
-        font-family: 'Segoe UI', sans-serif;
+        font-family:  sans-serif;
     }
     .wishlist-header {
         text-align: center;

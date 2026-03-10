@@ -12,7 +12,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
             position: fixed;
             top: 0;
             left: 0;
