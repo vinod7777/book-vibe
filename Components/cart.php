@@ -88,6 +88,7 @@
         margin-bottom: 15px;
     }
         .quantity {
+            border: 3px solid #ff4d4d;
             display: flex;
             align-items: center;
             gap: 15px;
@@ -100,7 +101,7 @@
     .quantity button {
         border: none;
         background: none;
-        font-size: 20px;
+        font-size: 25px;
         cursor: pointer;
         color: #0D3B66;
     }
@@ -119,7 +120,7 @@
         flex: 1;
         background: white;
         border-radius: 15px;
-    padding: 30px;
+    padding: 18px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         position: sticky;
         top: 100px;
@@ -194,6 +195,17 @@ justify-content:space-between;
 font-size:20px;
 
 }
+.divider{
+    margin-top:15px ;
+}
+.each-rate{
+    padding-bottom:30px;
+     padding-top:10px;
+}
+.ppcr{
+    padding-top:10px;
+}
+
 </style>
 </head>
 
@@ -229,8 +241,8 @@ font-size:20px;
         </div>
 
         <div class="price-section">
-            <h2 id="value">₹899</h2>
-            <p>₹899 each</p>
+            <h2 id="value" >₹899</h2>
+            <p class="each-rate">₹899 each</p>
         </div>
 
     </div>
@@ -243,12 +255,12 @@ font-size:20px;
             <span id="subtotal">₹899</span>
         </div>
 
-        <div class="yajnesh">
+        <div class="yajnesh ppcr">
             <span>Shipping</span>
             <span class="free">Free</span>
         </div>
 
-        <hr>
+        <hr class="divider">
 
         <div class="yajnesh total">
             <span>Total</span>
