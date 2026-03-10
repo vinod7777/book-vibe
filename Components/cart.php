@@ -184,7 +184,7 @@ body{
 }
 
 .continue:hover{
-    background-color: #0D3B66;
+    background-color: #1a446cff;
 }
 </style>
 </head>
@@ -253,7 +253,6 @@ body{
 </div>
 </section>
 <?php include "footer.php"; ?>
-
 
 </body>
 </html>
