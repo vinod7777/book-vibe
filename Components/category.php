@@ -1,3 +1,4 @@
+<script src="https://kit.fontawesome.com/ebdd1363cb.js" crossorigin="anonymous"></script>
 
 <style>
     * {
@@ -104,21 +105,48 @@
         margin-bottom: 20px;
         flex-grow: 1;
     }
-    .sec40-btn {
-        width: calc(100% - 40px);
+    .sec40-btn1 {
+        width: 100%;
         margin: 0 20px 20px;
         padding: 12px;
         background: #F26A21;
         color: white;
         border: none;
         border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
+        cursor:pointer;
+    }
+    .sec40-btn2 {
+        width: 80%;
+        margin: 0 20px 20px;
+        padding: 12px;
+        background: #F26A21;
+        color: white;
+        border: none;
+        border-radius: 8px;
         cursor: pointer;
         transition: background 0.3s ease;
+
     }
-    .sec40-btn:hover {
+    .sec40-btn1:hover {
         background: #0D3B66;
+    }
+    .sec40-btn2:hover {
+        background: #0D3B66;
+    }
+    .sec39 {
+        display: flex;
+        
+        gap:10px;
+        
+       
+    }
+    .sec39 i {
+        font-size: 20px;
+        color: #F26A21;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        padding-top:10px;
+        padding-right:30px;
     }
 </style>
 
@@ -171,7 +199,11 @@ function createCard(data){
             <div class="sec37">${data.title}</div>
             <p class="sec38">${data.desc}</p>
         </div>
-        <div><button class="sec40-btn">Add To the Cart</button></div>
+        <div class="sec39">
+            <div><button class="sec40-btn1">Buy now</button></div>
+            <div><button class="sec40-btn2">Add to Cart</button></div>
+            <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
+        </div>
     </div>`;
 }
 
@@ -253,4 +285,14 @@ Cards("fiction-container", categoryBooks.filter(b=>b.type==="Fiction"));
 Cards("nonfiction-container", categoryBooks.filter(b=>b.type==="Non-Fiction"));
 Cards("academic-container", categoryBooks.filter(b=>b.type==="Academic"));
 
+function toggleHeart(element){
+    const icon = element.querySelector("i");
+    if(icon.classList.contains("fa-regular")){
+        icon.classList.remove("fa-regular");
+        icon.classList.add("fa-solid");
+    } else {
+        icon.classList.remove("fa-solid");
+        icon.classList.add("fa-regular");
+    }
+}
 </script>
