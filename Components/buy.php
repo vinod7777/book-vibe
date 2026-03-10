@@ -62,13 +62,13 @@
     <h2>Select Payment Method</h2>
 
     <div class="methods">
-        <button onclick="payment()">Card</button>
+        <button>Card</button>
         <button>UPI</button>
         <button>cash on delivery</button>
     </div>
     <img src="../assets/qr.png" alt="" height="100" width="100">
-
-    <div class="btns">
+<div id="full">
+    <div class="btns" id="btns1">
 
         <input type="text" placeholder="Card Number">
         <input type="text" placeholder="Cardholder">
@@ -80,9 +80,7 @@
         <button class="pay">pay now</button>
 
     </div>
-    
-    </div>
-
+</div>
 </div>
     
 </body>
