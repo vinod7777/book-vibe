@@ -267,7 +267,7 @@ font-size:20px;
             <span id="total">₹899</span>
         </div>
 
-        <button class="continue">Buy Now!</button>
+        <button class="continue" onclick="window.location.href='buy.php'">Buy Now!</button>
     </div>
 
 </div>
@@ -276,7 +276,7 @@ font-size:20px;
     <div class="empty" id="empty-cart">
         <i class="fa-solid fa-cart-shopping"></i>
         <h2>Cart is empty!</h2>
-        <button class="shop-btn" onclick="goHome()">Shop Now</button>
+        <button class="shop-btn" onclick="window.location.href='index.php'">Shop Now</button>
     </div>
 </section>
 <?php include "footer.php"; ?>
@@ -320,11 +320,7 @@ document.querySelector(".cart").style.display="none";
 document.getElementById("empty-cart").style.display="block";
 
 });
-function goHome(){
 
-window.location.href="index.php";
-
-}
     </script>
 </body>
 </html>
