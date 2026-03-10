@@ -16,7 +16,7 @@
     body {
         background: #f4f4f4;
         padding-top: 100px;
-        font-family: 'Segoe UI', sans-serif;
+        font-family: sans-serif;
     }
 
     .padding {
@@ -162,7 +162,32 @@
         margin-bottom: 10px;
     }
 
-    
+    .empty{
+display:none;
+text-align:center;
+padding:100px 0;
+}
+
+.empty i{
+font-size:120px;
+color:#ccc;
+margin-bottom:20px;
+}
+
+.shop-btn{
+padding:15px 30px;
+background:#F26A21;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
+
+.shop-btn:hover{
+background:#0D3B66;
+}
 </style>
 </head>
 
@@ -176,7 +201,7 @@
 
     <div class="cart-text">
 
-        <div class="del-icon">
+        <div class="del-icon" id="deleteCart">
             <i class="fa-solid fa-trash-can"></i>
 
         </div>
@@ -270,7 +295,18 @@ function updatePrice() {
     document.getElementById("subtotal").innerText = "₹" + totalPrice;
     document.getElementById("total").innerText = "₹" + totalPrice;
 }
+document.getElementById("deleteCart").addEventListener("click",function(){
 
+document.querySelector(".cart").style.display="none";
+
+document.getElementById("empty-cart").style.display="block";
+
+});
+function goHome(){
+
+window.location.href="index.php";
+
+}
 </script>
 </body>
 </html>
