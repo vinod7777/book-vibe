@@ -277,7 +277,7 @@ Cards("nonfiction-container", categoryBooks.filter(b=>b.type==="Non-Fiction"));
 Cards("academic-container", categoryBooks.filter(b=>b.type==="Academic"));
 
 function toggleHeart(element){
-    const icon = element.querySelector("i");
+    let icon = element.querySelector("i");
     if(icon.classList.contains("fa-regular")){
         icon.classList.remove("fa-regular");
         icon.classList.add("fa-solid");
