@@ -8,6 +8,7 @@
      
 
     .payment-container{
+        
         width:450px;
         margin: 100px auto;
         background:rgb(122, 148, 218);
@@ -15,6 +16,7 @@
         border-radius:10px;
         border: 2px;
         text-align: center;
+        
          
     }
 
@@ -22,6 +24,7 @@
         margin:5px;
         padding:8px 12px;
         border-radius: 2px;
+        margin-top:10px;
         
     }
     .btns{
@@ -48,15 +51,22 @@
         width:100%;
         margin-top:15px;
         padding:10px;
-        background:orange;
+        background:#F26A21;
         color:white;
         border:none;
         border-radius:6px;
+    }
+    .payment-container h1{
+       color: #0D3B66
+    }
+    .buyimg{
+        margin-top:15px;
     }
             
     </style>
 </head>
 <body>
+     <?php include "nav.php"; ?>
     <div class="payment-container">
 
     <h2>Select Payment Method</h2>
@@ -66,7 +76,9 @@
         <button>UPI</button>
         <button>cash on delivery</button>
     </div>
+    <div class="buyimg">
     <img src="../assets/qr.png" alt="" height="100" width="100">
+</div>
 <div id="full">
     <div class="btns" id="btns1">
 
@@ -82,6 +94,7 @@
     </div>
 </div>
 </div>
+<?php include "footer.php"; ?>
     
 </body>
 </html>
