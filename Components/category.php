@@ -11,9 +11,6 @@
         padding: 60px 5%;
         background-color: #f9f9f9;
     }
-    body{
-        font-family: sans-serif;
-    }
     .Categoryh1 h1 {
         text-align: center;
         font-size: 36px;
@@ -111,24 +108,37 @@
     }
     .sec40-btn1 {
         width: 100%;
-        height: 40px;
+        margin: 0 20px 20px;
+        padding: 12px;
         background: #F26A21;
         color: white;
         border: none;
         border-radius: 8px;
         cursor:pointer;
     }
-    
+    .sec40-btn2 {
+        width: 80%;
+        margin: 0 20px 20px;
+        padding: 12px;
+        background: #F26A21;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+    }
     .sec40-btn1:hover {
         background: #0D3B66;
     }
-    
+    .sec40-btn2:hover {
+        background: #0D3B66;
+    }
     .sec39 {
         display: flex;
+        
         gap:10px;
-        justify-content: space-between;
-        align-items: center;
-
+        
        
     }
     .sec39 i {
@@ -191,14 +201,14 @@ function createCard(data){
             <p class="sec38">${data.desc}</p>
         </div>
         <div class="sec39">
-            <button class="sec40-btn1">Buy now</button>
-            <button class="sec40-btn1">Add to Cart</button>
+            <div><button class="sec40-btn1">Buy now</button></div>
+            <div><button class="sec40-btn2">Add to Cart</button></div>
             <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
         </div>
     </div>`;
 }
 
-let categoryBooks = [
+const categoryBooks = [
 {
     image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
     type:"Fiction",
@@ -266,7 +276,7 @@ let categoryBooks = [
 
 
 function Cards(containerId, items){
-    let container = document.getElementById(containerId);
+    const container = document.getElementById(containerId);
     container.innerHTML = items.map(item => createCard(item)).join("");
 }
 
@@ -277,7 +287,7 @@ Cards("nonfiction-container", categoryBooks.filter(b=>b.type==="Non-Fiction"));
 Cards("academic-container", categoryBooks.filter(b=>b.type==="Academic"));
 
 function toggleHeart(element){
-    let icon = element.querySelector("i");
+    const icon = element.querySelector("i");
     if(icon.classList.contains("fa-regular")){
         icon.classList.remove("fa-regular");
         icon.classList.add("fa-solid");
