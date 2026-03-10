@@ -39,7 +39,7 @@
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 30px;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
         }
         .explore-btn {
             padding: 15px 40px;

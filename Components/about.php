@@ -13,7 +13,7 @@
         }
         body {
             padding-top: 80px;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
             background-color: #f4f4f4;
         }
         .abtimg {

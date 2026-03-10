@@ -24,7 +24,7 @@
             align-items: center;
             justify-content: center;
             padding-top: 80px;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
         }
         .main {
             margin:100px;
