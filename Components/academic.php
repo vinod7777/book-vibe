@@ -142,7 +142,28 @@
             type: "Programming",
             image: "../assets/academicimages/java.jpg",
             stock: true
-        }
+        },
+        {
+    image:"https://m.media-amazon.com/images/I/61hqyA56z1L._AC_UF1000,1000_QL80_.jpg",
+    type:"Fiction",
+    price:"₹499",
+    title:"Story Book",
+    desc:"Interesting fictional story."
+},
+{
+    image:"https://snworksceo.imgix.net/upb/b34ffa23-bb9f-4fb0-8c58-477a90add498.sized-1000x1000.jpg?w=1000",
+    type:"Non-Fiction",
+    price:"₹399",
+    title:"Learning Book",
+    desc:"Educational and informative."
+},
+{
+    image:"https://s2982.pcdn.co/wp-content/uploads/2018/05/25-great-books-for-college-bound-students.png",
+    type:"Academic",
+    price:"₹699",
+    title:"Academic Textbook",
+    desc:"Useful for exams and preparation."
+}
 ]
 let cards = document.getElementById("cards")
 

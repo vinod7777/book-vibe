@@ -175,7 +175,50 @@
             type: "Romance",
             image: "../assets/recommendedimgs/storybook-4.webp",
             stock: true
-        }
+        },
+        {
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
+    type:"Fiction",
+    price:"₹499",
+    title:"Story Book",
+    desc:"Interesting fictional story."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290724312-6U491MRO5INP2KQGJST6/Gemma+Cover+Thumbnail+with+Title+Opt.jpeg?format=750w",
+    type:"Non-Fiction",
+    price:"₹399",
+    title:"Learning Book",
+    desc:"Educational and informative."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290827921-T0C5ICGNFQAUJYWQ0Y9U/Idontwantahaircutcover+thumbnail.jpg?format=1500w",
+    type:"Academic",
+    price:"₹699",
+    title:"Academic Textbook",
+    desc:"Useful for exams and preparation."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290857334-2DZ36G7BNC4RTLG6Y6T1/Firefly+Cover+4+Opt.jpeg?format=1500w",
+    type:"Fiction",
+    price:"₹499",
+    title:"Story Book",
+    desc:"Interesting fictional story."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290877922-16RPMO3N15XSME9KKI5N/frontCover.jpg?format=1500w",
+    type:"Non-Fiction",
+    price:"₹399",
+    title:"Learning Book",
+    desc:"Educational and informative."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290980406-TKVJHNBIDVKQUS58IVIP/Cricket+Cover+Small+Opt.jpeg?format=750w",
+    type:"Academic",
+    price:"₹699",
+    title:"Academic Textbook",
+    desc:"Useful for exams and preparation."
+},
+
          ];
         let cards = document.getElementById("cards")
 

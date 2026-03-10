@@ -109,7 +109,7 @@
         <div class="cardout">
             <div class="cardin1">
                 <h1 class="cardouth1">TOP RATED BOOKS IN OUR STORE</h1>
-                <a href="cart.php"><button>Explore</button></a>
+                <a href="story.php"><button>Explore</button></a>
             </div>
             <div class="cardimgs cardin2">
                 <div class="cardin21">

@@ -113,7 +113,41 @@
 
 <script>
 const books = [
-
+        {
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
+    type:"Fiction",
+    price:"₹499",
+    title:"Story Book",
+    desc:"Interesting fictional story."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290724312-6U491MRO5INP2KQGJST6/Gemma+Cover+Thumbnail+with+Title+Opt.jpeg?format=750w",
+    type:"Non-Fiction",
+    price:"₹399",
+    title:"Learning Book",
+    desc:"Educational and informative."
+},
+{
+    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290827921-T0C5ICGNFQAUJYWQ0Y9U/Idontwantahaircutcover+thumbnail.jpg?format=1500w",
+    type:"Academic",
+    price:"₹699",
+    title:"Academic Textbook",
+    desc:"Useful for exams and preparation."
+},
+{
+            name: "Data Structures",
+            price: 1109,
+            type: "Programming",
+            image: "../assets/academicimages/dsa.jpg",
+            stock: false
+        },
+        {
+            name: "Java Programming",
+            price: 999,
+            type: "Programming",
+            image: "../assets/academicimages/java.jpg",
+            stock: true
+        }
 ];
 
 let cards = document.getElementById("products");
@@ -129,7 +163,7 @@ for (let i = 0; i < books.length; i++) {
                     <p class="type">Type: ${books[i].type}</p>
                 </div>
                 <p class="desc">${books[i].desc}</p>
-                <button>View Details</button>
+                <button onclick="window.location.href='greatgatsby.php?id=${i}'">View Details</button>
             </div>
         </div>
     `;
