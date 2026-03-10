@@ -15,16 +15,17 @@
             margin:0;
             padding:0;
             box-sizing:border-box;
+            
         }
     </style>
 </head>
 <body>
     
-     <?php include "nav.php"; ?>
-     <?php include "hero.php"; ?>
-    <?php   include "category.php"?>
-     <?php include "recommended.php"?>
-     <?php include "footer.php"; ?>
+    <?php include "nav.php"; ?>
+    <?php include "hero.php"; ?>
+    <?php include "category.php"?>
+    <?php include "recommended.php"?>
+    <?php include "footer.php"; ?>
     
   
     

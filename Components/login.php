@@ -13,18 +13,21 @@
             box-sizing: border-box;
         }
         body {
-            background-image: url("https://img.freepik.com/free-photo/minimal-digital-futuristic-technology-background_53876-102622.jpg?semt=ais_hybrid&w=740&q=80");
+            background: #f4f4f4;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 100vh;
+            height:auto;
+
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding-top: 80px;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
         }
         .main {
+            margin:100px;
             display: flex;
             width: 900px;
             height: 550px;
@@ -181,8 +184,9 @@
         </div>
 
         </div>
-   
+   <?php include "footer.php"; ?>
 </body>
+
 <script>
 function toggle() {
     let p = document.getElementById("pass");

@@ -1,13 +1,18 @@
+<script src="https://kit.fontawesome.com/ebdd1363cb.js" crossorigin="anonymous"></script>
 
 <style>
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: sans-serif;
     }
     .secbody {
         padding: 60px 5%;
         background-color: #f9f9f9;
+    }
+    body{
+        font-family: sans-serif;
     }
     .Categoryh1 h1 {
         text-align: center;
@@ -104,21 +109,35 @@
         margin-bottom: 20px;
         flex-grow: 1;
     }
-    .sec40-btn {
-        width: calc(100% - 40px);
-        margin: 0 20px 20px;
-        padding: 12px;
+    .sec40-btn1 {
+        width: 100%;
+        height: 40px;
         background: #F26A21;
         color: white;
         border: none;
         border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background 0.3s ease;
+        cursor:pointer;
     }
-    .sec40-btn:hover {
+    
+    .sec40-btn1:hover {
         background: #0D3B66;
+    }
+    
+    .sec39 {
+        display: flex;
+        gap:10px;
+        justify-content: space-between;
+        align-items: center;
+
+       
+    }
+    .sec39 i {
+        font-size: 20px;
+        color: #F26A21;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        padding-top:10px;
+        padding-right:30px;
     }
 </style>
 
@@ -171,11 +190,15 @@ function createCard(data){
             <div class="sec37">${data.title}</div>
             <p class="sec38">${data.desc}</p>
         </div>
-        <div><button class="sec40-btn">Add To the Cart</button></div>
+        <div class="sec39">
+            <button class="sec40-btn1">Buy now</button>
+            <button class="sec40-btn1">Add to Cart</button>
+            <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
+        </div>
     </div>`;
 }
 
-const categoryBooks = [
+let categoryBooks = [
 {
     image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
     type:"Fiction",
@@ -243,7 +266,7 @@ const categoryBooks = [
 
 
 function Cards(containerId, items){
-    const container = document.getElementById(containerId);
+    let container = document.getElementById(containerId);
     container.innerHTML = items.map(item => createCard(item)).join("");
 }
 
@@ -253,4 +276,14 @@ Cards("fiction-container", categoryBooks.filter(b=>b.type==="Fiction"));
 Cards("nonfiction-container", categoryBooks.filter(b=>b.type==="Non-Fiction"));
 Cards("academic-container", categoryBooks.filter(b=>b.type==="Academic"));
 
+function toggleHeart(element){
+    const icon = element.querySelector("i");
+    if(icon.classList.contains("fa-regular")){
+        icon.classList.remove("fa-regular");
+        icon.classList.add("fa-solid");
+    } else {
+        icon.classList.remove("fa-solid");
+        icon.classList.add("fa-regular");
+    }
+}
 </script>

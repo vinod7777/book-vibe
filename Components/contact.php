@@ -11,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        /* body {
+        body {
            
             background-repeat: no-repeat;
             background-size: cover;
@@ -22,9 +22,9 @@
             align-items: center;
             justify-content: center;
             
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
          
-        } */
+        }
         .main{
             display: flex;
             width: 100%;

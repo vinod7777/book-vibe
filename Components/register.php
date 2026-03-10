@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
         body {
-            background-image: url("https://e1.pxfuel.com/desktop-wallpaper/398/435/desktop-wallpaper-login-page-login.jpg");
+            background: #f4f4f4;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -23,12 +23,14 @@
             align-items: center;
             justify-content: center;
             padding-top: 80px;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
         }
         .main {
             display: flex;
             width: 900px;
             height: 600px;
+            margin:20px;
+             background: rgba(255, 255, 255, 0.1);
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border-radius: 20px;

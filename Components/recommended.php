@@ -39,7 +39,7 @@
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 30px;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
         }
         .explore-btn {
             padding: 15px 40px;
@@ -83,15 +83,21 @@
             width: 100%;
             padding: 10px;
             background-color: #0D3B66;
-            color: white;
+            color:white;
             border: none;
             border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
             transition: background 0.3s ease;
+            
         }
         .view-btn:hover {
             background-color: #F26A21;
+        }
+        .view-btn a {
+            color: white;
+            text-decoration: none;
+            list-style: none;
         }
         
        
@@ -109,19 +115,19 @@
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-1.webp" alt="Recommended Book 1" class="cardin21img">
 
-                    <button class="view-btn">View Details</button>
+                    <button class="view-btn" onclick="window.location.href='greatgatsby.php'">View Details</button>
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-2.webp" alt="Recommended Book 2" class="cardin21img">
-                    <button class="view-btn">View Details</button>   
+                    <button class="view-btn" onclick="window.location.href='greatgatsby.php'">View Details</button>   
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-3.webp" alt="Recommended Book 3" class="cardin21img">
-                    <button class="view-btn">View Details</button>
+                    <button class="view-btn" onclick="window.location.href='greatgatsby.php'">View Details</button>
                 </div>
                 <div class="cardin21">
                     <img src="../assets/recommendedimgs/storybook-4.webp" alt="Recommended Book 4" class="cardin21img">
-                    <button class="view-btn">View Details</button>
+                    <button class="view-btn" onclick="window.location.href='greatgatsby.php'">View Details</button>
                 </div>
             </div>
         </div>

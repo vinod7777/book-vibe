@@ -6,8 +6,15 @@
     <title>viewdetails</title>
 </head>
 <body>
-    <?php include "nav.php"; ?>
-
+    
+    <div>
+        <div>
+            <img src="assets/recommendedimgs/storybook-2.webp" alt="">
+        </div>
+        <div>
+            
+        </div>
+    </div>
     
 </body>
 </html>

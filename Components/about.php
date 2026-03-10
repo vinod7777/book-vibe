@@ -13,7 +13,7 @@
         }
         body {
             padding-top: 80px;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
             background-color: #f4f4f4;
         }
         .abtimg {
@@ -22,6 +22,110 @@
             background-image: url("../assets/heroimage/slide.png");
             background-size: cover;
             background-position: center;
+<<<<<<< HEAD
+            background-repeat: no-repeat;
+            top:0;
+            left:0;
+            z-index:10; 
+        }
+
+        .cards-section{
+        margin:60px auto;
+        display:flex;
+        gap:60px;
+        justify-content:center;
+        padding:20px;
+           
+        }
+
+
+    .card{
+        width: 300px;
+        flex:1;
+        padding:35px;
+        border-radius:20px;
+        transition:0.3s ease;
+        box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+
+ .card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+
+.iconabt{
+    width:55px;
+    height:55px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    color:white;
+    margin-bottom:18px;
+}
+
+
+.card h2{
+    font-size:28px;
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+
+.card p{
+    font-size:17px;
+    line-height:1.6;
+    color:#334155;
+}
+
+.card-purple{
+    background:#dcd3e8;
+    border:1px solid #c7b9dd;
+}
+
+.card-purple .iconabt{
+    background:#2563eb;
+}
+
+.card-blue{
+    background:#d8e3f2;
+    border:1px solid #b6c9e6;
+}
+
+.card-blue .iconabt{
+    background:#2563eb;
+}
+
+
+@media(max-width:768px){
+    .cards-section{
+        flex-direction:column;
+    }
+}
+        .text1{
+            font-size: 80px;
+            padding: 80px 100px;
+        }
+        
+        .text2{
+            font-size: 20px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+             
+        }
+        .text3{
+             font-size: 48px;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .abtdiv1{
+            width: 100%;
+            height: 250px;
+=======
+>>>>>>> d6443e37bbdcd1e3b7a1f2e7bae4c4eff49d8e37
             display: flex;
             flex-direction: column;
             justify-content: center;
