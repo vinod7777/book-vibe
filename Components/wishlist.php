@@ -14,14 +14,14 @@
     body {
         background: #f4f4f4;
         padding-top: 100px;
-        font-family: 'Segoe UI', sans-serif;
+        font-family:  sans-serif;
     }
     .wishlist-header {
         text-align: center;
         margin-bottom: 40px;
     }
     .wishlist-header h1 {
-        color: #0D3B66;
+        color: blue;
         font-size: 36px;
         text-transform: uppercase;
     }

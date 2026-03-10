@@ -5,10 +5,14 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: sans-serif;
     }
     .secbody {
         padding: 60px 5%;
         background-color: #f9f9f9;
+    }
+    body{
+        font-family: sans-serif;
     }
     .Categoryh1 h1 {
         text-align: center;
@@ -107,37 +111,24 @@
     }
     .sec40-btn1 {
         width: 100%;
-        margin: 0 20px 20px;
-        padding: 12px;
+        height: 40px;
         background: #F26A21;
         color: white;
         border: none;
         border-radius: 8px;
         cursor:pointer;
     }
-    .sec40-btn2 {
-        width: 80%;
-        margin: 0 20px 20px;
-        padding: 12px;
-        background: #F26A21;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-
-    }
+    
     .sec40-btn1:hover {
         background: #0D3B66;
     }
-    .sec40-btn2:hover {
-        background: #0D3B66;
-    }
+    
     .sec39 {
         display: flex;
-        
         gap:10px;
-        
+        justify-content: space-between;
+        align-items: center;
+
        
     }
     .sec39 i {
@@ -200,14 +191,14 @@ function createCard(data){
             <p class="sec38">${data.desc}</p>
         </div>
         <div class="sec39">
-            <div><button class="sec40-btn1">Buy now</button></div>
-            <div><button class="sec40-btn2">Add to Cart</button></div>
+            <button class="sec40-btn1">Buy now</button>
+            <button class="sec40-btn1">Add to Cart</button>
             <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
         </div>
     </div>`;
 }
 
-const categoryBooks = [
+let categoryBooks = [
 {
     image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
     type:"Fiction",
@@ -275,7 +266,7 @@ const categoryBooks = [
 
 
 function Cards(containerId, items){
-    const container = document.getElementById(containerId);
+    let container = document.getElementById(containerId);
     container.innerHTML = items.map(item => createCard(item)).join("");
 }
 

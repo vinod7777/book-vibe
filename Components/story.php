@@ -15,7 +15,7 @@
         body {
             padding-top: 80px;
             background-color: #f4f4f4;
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  sans-serif;
         }
         .story {
             padding: 40px 5%;
@@ -84,6 +84,40 @@
         .content button:hover {
             background-color: #0D3B66;
         }
+        .sec40-btn1 {
+    
+        background: #F26A21;
+        height: 40px;
+        width: 50px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor:pointer;
+       
+    }
+    
+  
+    .sec39 {
+        height: 80px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+       
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+     
+       
+    }
+    .sec39 i {
+        font-size: 20px;
+        color: #F26A21;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      margin-top:40px;
+   
+    }
     </style>
 </head>
 <body>
@@ -102,7 +136,7 @@
                         <p>type:<span>fiction</span>
                         </div>
                         <p>out of stock</p>
-                        <button>view details</button>
+                        
 
                     </div>
                 
@@ -158,9 +192,14 @@
                         <p>type:<span>${book.type}</span>
                         </div>
                         <p>${book.stock ? "In Stock" : "Out of Stock"}</p>
-                        <button>view details</button>
-
+                        
+                        <div class="sec39">
+                            <button class="sec40-btn1"> Buy now   </button>
+                            <button class="sec40-btn1">Add to Cart</button>
+                            <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
+                        </div>
                     </div>
+                    
                 
         </div>
         `
