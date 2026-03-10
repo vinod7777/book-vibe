@@ -13,7 +13,7 @@
             box-sizing: border-box;
         }
         body {
-            background-image: url("https://img.freepik.com/free-photo/minimal-digital-futuristic-technology-background_53876-102622.jpg?semt=ais_hybrid&w=740&q=80");
+            background: #f4f4f4;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
