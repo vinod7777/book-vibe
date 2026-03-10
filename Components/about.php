@@ -22,7 +22,7 @@
             background-image: url("../assets/heroimage/slide.png");
             background-size: cover;
             background-position: center;
-<<<<<<< HEAD
+
             background-repeat: no-repeat;
             top:0;
             left:0;
@@ -124,8 +124,6 @@
         .abtdiv1{
             width: 100%;
             height: 250px;
-=======
->>>>>>> d6443e37bbdcd1e3b7a1f2e7bae4c4eff49d8e37
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -133,12 +131,8 @@
             color: white;
             position: relative;
         }
-        .abtimg::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.5);
-        }
+        
+        
         .text1 {
             font-size: 60px;
             font-weight: bold;
