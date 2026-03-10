@@ -108,9 +108,10 @@
     }
     .sec40-btn1 {
         width: 100%;
-        margin: 0 20px 20px;
-        padding: 12px;
+        height: 40px;
         background: #F26A21;
+        height: 40px;
+        width: 120px;
         color: white;
         border: none;
         border-radius: 8px;
@@ -135,10 +136,13 @@
         background: #0D3B66;
     }
     .sec39 {
+        height: 80px;
+        width: 100%;
         display: flex;
-        
         gap:10px;
-        
+        justify-content: space-between;
+        align-items: center;
+
        
     }
     .sec39 i {
@@ -146,8 +150,7 @@
         color: #F26A21;
         cursor: pointer;
         transition: color 0.3s ease;
-        padding-top:10px;
-        padding-right:30px;
+      
     }
 </style>
 
@@ -291,9 +294,17 @@ function toggleHeart(element){
     if(icon.classList.contains("fa-regular")){
         icon.classList.remove("fa-regular");
         icon.classList.add("fa-solid");
+        
     } else {
         icon.classList.remove("fa-solid");
         icon.classList.add("fa-regular");
+    }
+
+    if(icon.classList.contains("fa-solid")){
+        alert("Added to wishlist!");
+        
+    } else {
+        alert("Removed from wishlist!");
     }
 }
 </script>

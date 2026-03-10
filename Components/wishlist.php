@@ -92,6 +92,15 @@
     .card button:hover {
         background: #F26A21;
     }
+    .no-results{
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+        color: #666;
+        font-size: 18px;
+        margin-left:425px;
+        
+    }
 </style>
 </head>
 
@@ -104,69 +113,7 @@
 
 <script>
 const books = [
-{
-    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
-    type:"Fiction",
-    price:"₹499",
-    title:"Story Book",
-    desc:"Interesting fictional story."
-},
-{
-    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290724312-6U491MRO5INP2KQGJST6/Gemma+Cover+Thumbnail+with+Title+Opt.jpeg?format=750w",
-    type:"Non-Fiction",
-    price:"₹399",
-    title:"Learning Book",
-    desc:"Educational and informative."
-},
-{
-    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290827921-T0C5ICGNFQAUJYWQ0Y9U/Idontwantahaircutcover+thumbnail.jpg?format=1500w",
-    type:"Academic",
-    price:"₹699",
-    title:"Academic Textbook",
-    desc:"Useful for exams and preparation."
-},
-{
-    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290857334-2DZ36G7BNC4RTLG6Y6T1/Firefly+Cover+4+Opt.jpeg?format=1500w",
-    type:"Fiction",
-    price:"₹499",
-    title:"Story Book",
-    desc:"Interesting fictional story."
-},
-{
-    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290877922-16RPMO3N15XSME9KKI5N/frontCover.jpg?format=1500w",
-    type:"Non-Fiction",
-    price:"₹399",
-    title:"Learning Book",
-    desc:"Educational and informative."
-},
-{
-    image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290980406-TKVJHNBIDVKQUS58IVIP/Cricket+Cover+Small+Opt.jpeg?format=750w",
-    type:"Academic",
-    price:"₹699",
-    title:"Academic Textbook",
-    desc:"Useful for exams and preparation."
-},
-{
-    image:"https://m.media-amazon.com/images/I/61hqyA56z1L._AC_UF1000,1000_QL80_.jpg",
-    type:"Fiction",
-    price:"₹499",
-    title:"Story Book",
-    desc:"Interesting fictional story."
-},
-{
-    image:"https://snworksceo.imgix.net/upb/b34ffa23-bb9f-4fb0-8c58-477a90add498.sized-1000x1000.jpg?w=1000",
-    type:"Non-Fiction",
-    price:"₹399",
-    title:"Learning Book",
-    desc:"Educational and informative."
-},
-{
-    image:"https://s2982.pcdn.co/wp-content/uploads/2018/05/25-great-books-for-college-bound-students.png",
-    type:"Academic",
-    price:"₹699",
-    title:"Academic Textbook",
-    desc:"Useful for exams and preparation."
-}
+
 ];
 
 let cards = document.getElementById("products");
@@ -186,6 +133,10 @@ for (let i = 0; i < books.length; i++) {
             </div>
         </div>
     `;
+}
+
+if (books.length === 0) {
+    cards.innerHTML = `<div class="no-results"><p>Your wishlist is empty.</p></div>`;
 }
 </script>
 <?php include "footer.php"; ?>

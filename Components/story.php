@@ -103,7 +103,6 @@
 
         display: flex;
         flex-direction: row;
-       
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -115,7 +114,7 @@
         color: #F26A21;
         cursor: pointer;
         transition: color 0.3s ease;
-      margin-top:40px;
+        margin-top:40px;
    
     }
     </style>
@@ -203,9 +202,27 @@
                 
         </div>
         `
-
+        }
+    )
+    function toggleHeart(element){
+    const icon = element.querySelector("i");
+    if(icon.classList.contains("fa-regular")){
+        icon.classList.remove("fa-regular");
+        icon.classList.add("fa-solid");
+        
+    } else {
+        icon.classList.remove("fa-solid");
+        icon.classList.add("fa-regular");
     }
-)
+
+    if(icon.classList.contains("fa-solid")){
+        alert("Added to wishlist!");
+        
+    } else {
+        alert("Removed from wishlist!");
+    }
+}
+
 </script>
 </body>
 </html>
