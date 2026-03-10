@@ -21,7 +21,7 @@
         margin-bottom: 40px;
     }
     .wishlist-header h1 {
-        color: #0D3B66;
+        color: blue;
         font-size: 36px;
         text-transform: uppercase;
     }
