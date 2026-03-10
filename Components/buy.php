@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
     <title>Buy</title>
     <style>
+        body{
+            background: #f4f4f4;
+        }
      
 
     .payment-container{
-        
+        margin:10% 35%;
         width:450px;
-        margin: 100px auto;
         background:rgb(122, 148, 218);
         padding:20px;
         border-radius:10px;
@@ -37,6 +40,7 @@
         margin-top: 10px;
         border-radius: 10px;
         border: 0;
+        cursor: pointer;
 
     }
    
@@ -66,7 +70,7 @@
     </style>
 </head>
 <body>
-     <?php include "nav.php"; ?>
+    <?php include "nav.php"; ?>
     <div class="payment-container">
 
     <h2>Select Payment Method</h2>
