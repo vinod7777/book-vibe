@@ -117,33 +117,17 @@
         border-radius: 8px;
         cursor:pointer;
     }
-    .sec40-btn2 {
-        width: 80%;
-        margin: 0 20px 20px;
-        padding: 12px;
-        background: #F26A21;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-
-    }
     .sec40-btn1:hover {
         background: #0D3B66;
     }
-    .sec40-btn2:hover {
-        background: #0D3B66;
-    }
+    
     .sec39 {
         height: 80px;
         width: 100%;
         display: flex;
         gap:10px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-
-       
     }
     .sec39 i {
         font-size: 20px;
@@ -205,7 +189,7 @@ function createCard(data){
         </div>
         <div class="sec39">
             <div><button class="sec40-btn1">Buy now</button></div>
-            <div><button class="sec40-btn2">Add to Cart</button></div>
+            <div><button class="sec40-btn1">Add to Cart</button></div>
             <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
         </div>
     </div>`;
