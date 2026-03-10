@@ -5,6 +5,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: sans-serif;
     }
     .secbody {
         padding: 60px 5%;
@@ -207,7 +208,7 @@ function createCard(data){
     </div>`;
 }
 
-const categoryBooks = [
+let categoryBooks = [
 {
     image:"https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1771290659903-Z93JLQNJ9FLXM7D2TC58/GuardianCoverFullOpt+Homepage.jpeg?format=750w",
     type:"Fiction",
@@ -275,7 +276,7 @@ const categoryBooks = [
 
 
 function Cards(containerId, items){
-    const container = document.getElementById(containerId);
+    let container = document.getElementById(containerId);
     container.innerHTML = items.map(item => createCard(item)).join("");
 }
 
