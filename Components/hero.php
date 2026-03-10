@@ -37,7 +37,7 @@
         }
         .h2 {
             color: #F26A21;
-            font-size: 60px;
+            font-size: 48px;
             font-weight: 800;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
