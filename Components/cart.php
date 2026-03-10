@@ -8,126 +8,184 @@
 
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:sans-serif;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #f4f4f4;
+        padding-top: 100px;
+        font-family: sans-serif;
+    }
 
-body{
-    background:white;
-    padding-top: 100px;
-}
-.padding{
-        padding:20px;
-
-}
-
-.title{
-    color: #0D3B66;
-    font-size:48px;
-    margin-bottom:40px;
-    text-align: center;}
-
-.cart{
-    display:flex;
-    gap:100px;
-    justify-content: center;
-    max-width: 1400px;
+    .padding {
+    padding: 40px 5%;
+        max-width: 1400px;
     margin: 0 auto;
-}
-
-.cart-text{
-    background:#eeecee;
-    border-radius:20px;
-    padding:30px;
-    display:flex;
-    gap:25px;
-    position:relative;
-    box-shadow:0 5px 15px rgba(0,0,0,0.05);
-    border: 1px solid black;
-}
-
-.del-icon{
-    position:absolute;
-    top:20px;
-    right:20px;
-    color:#0D3B66;
-    font-size:48px;
-    cursor:pointer;
-    transition: all 1s ease;
-}
-.del-icon:hover{
-    color:#ff4d4d;
-}
-
-.product-img{
-    width:250px;
-    height: 300px;
-    border-radius:12px;
-    cursor: pointer;
-}
-.product-img:hover{
-    transform: scale(1.05);
-}
-
-.details{
-    margin-top: 20px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    
-}
-
-.details h2{
-    font-size:22px;
-    margin-top: 20px;
-    margin-bottom:6px;
-}
-
-.category{
-    color:#777;
-    margin-bottom:8px;
-}
-
-.desc{
-    color:#666;
-    font-size:14px;
-    margin-bottom:20px;
-}
-
-.quantity{
-    width: 150px;
-    height: 50px;
-    background:#eee;
-    display:flex;
-    align-items:center;
-    border-radius:30px;
-    gap:40px;
+    }
+    .title {
+        color: #0D3B66;
+        font-size: 36px;
+  margin-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .cart {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+    }
+    .cart-items {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      
+    }
+    .cart-text {
+        background: white;
+        border-radius: 15px;
+        padding: 54px;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+       
+    }
+    .del-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #aaa;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+    .del-icon:hover {
+        color: #ff4d4d;
+    }
+    .product-img {
+        width: 120px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
     justify-content: center;
-    border: 2px solid red;
+    }
+    .details h2 {
+        font-size: 20px;
+        color: #0D3B66;
+        margin-bottom: 5px;
+    }
+    .category {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+        .quantity {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #f0f0f0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            width: fit-content;
+            margin-top: 10px;
+    }
+    .quantity button {
+        border: none;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #0D3B66;
+    }
+            .price-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                min-width: 100px;
+            }
+    .price-section h2 {
+        font-size: 24px;
+        color: #F26A21;
+    }
+    .book-details {
+        flex: 1;
+        background: white;
+        border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        position: sticky;
+        top: 100px;
+    }
+    .book-details h2 {
+        margin-bottom: 20px;
+        color: #0D3B66;
+        
+    }
+    .summary-row {
+        display: flex;
+        justify-content: space-between;
+    margin: 15px 0;
+        color: #555;
+    }
+    .total {
+        font-weight: 700;
+        font-size: 18px;
+        color: #000;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    }
+    .continue {
+        width: 100%;
+        padding: 15px;
+    margin-top: 20px;
+    border: none;
+        border-radius: 8px;
+        background: #F26A21;
+    color: white;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .continue:hover {
+        background-color: #0D3B66;
+    }
+    .desc{
+        margin-bottom: 10px;
+    }
+
+    .empty{
+display:none;
+text-align:center;
+padding:100px 0;
 }
 
-.quantity button{
-    border:none;
-    background:none;
-    font-size:38px;
-    cursor:pointer;
-}
-.quantity span{
-    font-size:18px;
-    font-weight:600;
+.empty i{
+font-size:120px;
+color:#ccc;
+margin-bottom:20px;
 }
 
-.price{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:flex-end;
-    min-width:120px;
+.shop-btn{
+padding:15px 30px;
+background:#F26A21;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
 }
 
+<<<<<<< HEAD
 .price h2{
     font-size:26px;
 }
@@ -185,6 +243,10 @@ body{
 
 .continue:hover{
     background-color: #1a446cff;
+=======
+.shop-btn:hover{
+background:#0D3B66;
+>>>>>>> d6443e37bbdcd1e3b7a1f2e7bae4c4eff49d8e37
 }
 </style>
 </head>
@@ -199,7 +261,7 @@ body{
 
     <div class="cart-text">
 
-        <div class="del-icon">
+        <div class="del-icon" id="deleteCart">
             <i class="fa-solid fa-trash-can"></i>
 
         </div>
@@ -214,14 +276,14 @@ body{
             </div>
 
             <div class="quantity">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
+                <button id="decrease">-</button>
+                <span id="Quantity">1</span>
+                <button id="increase">+</button>
             </div>
         </div>
 
-        <div class="price">
-            <h2>₹899</h2>
+        <div class="price-section">
+            <h2 id="value">₹899</h2>
             <p>₹899 each</p>
         </div>
 
@@ -231,8 +293,8 @@ body{
         <h2>Order Summary</h2>
 
         <div class="yajnesh">
-            <span>Subtotal (1 items)</span>
-            <span>₹599</span>
+            <span>Subtotal (<span id="items">1</span> items)</span>
+            <span id="subtotal">₹599</span>
         </div>
 
         <div class="yajnesh">
@@ -244,15 +306,70 @@ body{
 
         <div class="yajnesh total">
             <span>Total</span>
-            <span>₹599</span>
+            <span id="total">₹599</span>
         </div>
 
-        <button class="continue">Continue Shopping</button>
+        <button class="continue">Buy Now!</button>
     </div>
 
 </div>
+
+
+    <div class="empty" id="empty-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h2>Cart is empty!</h2>
+        <button class="shop-btn" onclick="goHome()">Shop Now</button>
+    </div>
 </section>
 <?php include "footer.php"; ?>
 
+<<<<<<< HEAD
+=======
+<script>
+let count = 1;
+let price = 899;
+
+document.getElementById("Quantity").innerText = count;
+document.getElementById("value").innerText = "₹" + (count * price);
+
+document.getElementById("increase").addEventListener("click", increment);
+document.getElementById("decrease").addEventListener("click", decrement);
+
+function increment() {
+    count++;
+    updatePrice();
+}
+
+function decrement() {
+    if (count > 1) {
+        count--;
+    }
+    updatePrice();
+}
+
+function updatePrice() {
+    let totalPrice = count * price;
+
+    document.getElementById("Quantity").innerText = count;
+    document.getElementById("value").innerText = "₹" + totalPrice;
+
+    document.getElementById("items").innerText = count;
+    document.getElementById("subtotal").innerText = "₹" + totalPrice;
+    document.getElementById("total").innerText = "₹" + totalPrice;
+}
+document.getElementById("deleteCart").addEventListener("click",function(){
+
+document.querySelector(".cart").style.display="none";
+
+document.getElementById("empty-cart").style.display="block";
+
+});
+function goHome(){
+
+window.location.href="index.php";
+
+}
+</script>
+>>>>>>> d6443e37bbdcd1e3b7a1f2e7bae4c4eff49d8e37
 </body>
 </html>

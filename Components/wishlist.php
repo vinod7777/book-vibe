@@ -6,104 +6,92 @@
 <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:sans-serif;
-}
-body{
-    background:#f1f3f6;
-    padding:40px;
-    padding-top: 120px;
-    font-size:22px;
-}
-
-.products{
-    width: 90%;
-    padding: 40px 20px;
-    margin:auto;
-}
-
-.card{
-    background:#fff;
-    height: 400px;
-    display:flex;
-    padding:30px;
-    margin-bottom:25px;
-    border-radius:8px;
-    border:1px solid #ddd;
-    align-items:center;
-}
-
-.card img{
-    width:380px;
-    height:380px;
-    object-fit:contain;
-    margin-right:35px;
-}
-.details h3,
-.content h3{
-    font-size:48px;
-    margin-bottom:12px;
-    color:#0D3B66;
-}
-
-.type{
-    font-size:30px;
-    color:#555;
-    margin-bottom:8px;
-}
-
-.price{
-    font-size:28px;
-    font-weight:bold;
-    margin-bottom:10px;
-}
-
-.desc{
-    font-size:30px;
-    color:#666;
-    margin-bottom:20px;
-}
-
-.actions{
-    display:flex;
-    gap:40px;
-    font-size:30px;
-    font-weight:bold;
-}
-
-.actions span{
-    cursor:pointer;
-}
-
-.actions span:hover{
-    color:#2874f0;
-}
-.wishlist-header{
-    text-align:center;
-    font-size:32px;
-    margin-bottom:40px;
-}
-
-button{
-    font-size:26px;
-    padding:12px 20px;
-    border:none;
-    border-radius:6px;
-    background:#2874f0;
-    color:#fff;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#0D3B66;
-}
-
-p{
-    font-size:28px;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #f4f4f4;
+        padding-top: 100px;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .wishlist-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .wishlist-header h1 {
+        color: #0D3B66;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 0 5%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .book {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .content {
+        padding: 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .content h3 {
+        font-size: 20px;
+        color: #0D3B66;
+        margin-bottom: 10px;
+    }
+    .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #F26A21;
+    }
+    .type {
+        font-size: 14px;
+        color: #777;
+    }
+    .desc {
+        font-size: 14px;
+        color: #666;
+        margin: 10px 0 20px;
+        line-height: 1.5;
+    }
+    .card button {
+        margin-top: auto;
+        width: 100%;
+        padding: 12px;
+        background: #0D3B66;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+    .card button:hover {
+        background: #F26A21;
+    }
 </style>
 </head>
 

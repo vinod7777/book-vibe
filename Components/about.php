@@ -6,22 +6,23 @@
     <title>About</title>
     <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
-             box-sizing:border-box;
-             font-family: "Segoe UI", sans-serif;
-             padding-top: 80px;
-             
+            box-sizing: border-box;
         }
-       
-        .abtimg{
-            width:100%;
-            height: 630px;
+        body {
+            padding-top: 80px;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .abtimg {
+            width: 100%;
+            height: 500px;
             background-image: url("../assets/heroimage/slide.png");
-            justify-content: space-evenly;
             background-size: cover;
             background-position: center;
+<<<<<<< HEAD
             background-repeat: no-repeat;
             top:0;
             left:0;
@@ -123,23 +124,102 @@
         .abtdiv1{
             width: 100%;
             height: 250px;
+=======
+>>>>>>> d6443e37bbdcd1e3b7a1f2e7bae4c4eff49d8e37
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            gap:30px;
-
+            padding: 0 10%;
+            color: white;
+            position: relative;
         }
-        .abtdiv2{
-            width: 500px;
-            height: 300px;
-            border:2px;
-            border-radius: 3px;
-            
-            text-align: center;
+        .abtimg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        .text1 {
+            font-size: 60px;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+        .text2 {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+        }
+        .cards-section {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            padding: 60px 5%;
+            margin-top: -50px;
+            position: relative;
+            z-index: 2;
+        }
+        .card {
+            background: white;
             padding: 40px;
-            
-            
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            flex: 1;
+            max-width: 400px;
+            transition: transform 0.3s ease;
         }
-      
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .iconabt {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .card-purple .iconabt { background: #8b5cf6; }
+        .card-blue .iconabt { background: #3b82f6; }
+        
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #0D3B66;
+        }
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .abtdiv1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 5%;
+            gap: 50px;
+            background: white;
+        }
+        .abtdiv2 {
+            flex: 1;
+            max-width: 500px;
+        }
+        .text3 {
+            font-size: 36px;
+            color: #0D3B66;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        .abtdiv2 img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>

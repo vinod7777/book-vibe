@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewdetails</title>
+</head>
+<body>
+    
+    <div>
+        <div>
+            <img src="assets/recommendedimgs/storybook-2.webp" alt="">
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
