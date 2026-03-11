@@ -280,7 +280,7 @@ color:green;
     <div class="empty" id="empty-cart">
         <i class="fa-solid fa-cart-shopping"></i>
         <h2>Cart is empty!</h2>
-        <button class="shop-btn" onclick="window.location.href='category.php'">Shop Now</button>
+        <button class="shop-btn" onclick="window.location.href='index.php'">Shop Now</button>
     </div>
 </section>
 <?php include "footer.php"; ?>
