@@ -205,6 +205,10 @@ font-size:20px;
 .ppcr{
     padding-top:10px;
 }
+.free{
+    font-weight:700;
+color:green;
+}
 
 </style>
 </head>
