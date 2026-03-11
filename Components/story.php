@@ -117,6 +117,19 @@
         margin-top:40px;
    
     }
+        /* responsive font tweaks */
+        @media (max-width: 768px) {
+            .story h2 { font-size: 32px; }
+            .content h3 { font-size: 18px; }
+            .content p { font-size: 12px; }
+            .content button { font-size: 16px; padding: 10px; }
+        }
+        @media (max-width: 480px) {
+            .story h2 { font-size: 28px; }
+            .content h3 { font-size: 16px; }
+            .content p { font-size: 11px; }
+            .content button { font-size: 14px; padding: 8px; }
+        }
     </style>
 </head>
 <body>
@@ -264,7 +277,7 @@
     } else {
         alert("Removed from wishlist!");
     }
-}
+    }
 
 </script>
 </body>

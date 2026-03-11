@@ -32,7 +32,7 @@
         .purna {
             position: relative;
             z-index: 2;
-            max-width: 600px;
+            
             color: white;
             text-align: left;
          
@@ -69,6 +69,25 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
+
+       
+        /* @media (max-width: 768px) {
+            .h2 { font-size: 36px; }
+            .h3 { font-size: 20px; margin-bottom: 20px; }
+            .button { font-size: 18px; padding: 12px 30px; }
+            .hero { padding-left: 5%; }
+        } */
+        /* @media (max-width:480px) {
+            .h2 {
+                 font-size: 1px;
+        } */
+            /* .h3 { font-size: 28px; }
+            .button { font-size: 28px; padding: 10px 25px; }
+            .hero { padding-left: 30px; }
+            .purna { max-width: 100%;  width: 100%; height:400px;justify-content: center; display: flex; flex-direction: column; }
+            .hero { justify-content: left; } */
+        }
+       
     </style>
 </head>
 <body>

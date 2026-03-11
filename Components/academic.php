@@ -84,6 +84,53 @@
         .content button:hover {
             background-color: #0D3B66;
         }
+        .sec40-btn1 {
+    
+        background: #F26A21;
+        height: 40px;
+        width: 50px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor:pointer;
+       
+    }
+    
+  
+    .sec39 {
+        height: 80px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+     
+       
+    }
+    .sec39 i {
+        font-size: 20px;
+        color: #F26A21;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        margin-top:40px;
+   
+    }
+
+        /* responsive font tweaks */
+        @media (max-width: 768px) {
+            .story h2 { font-size: 32px; }
+            .content h3 { font-size: 18px; }
+            .content p { font-size: 12px; }
+            .content button { font-size: 16px; padding: 10px; }
+        }
+        @media (max-width: 480px) {
+            .story h2 { font-size: 28px; }
+            .content h3 { font-size: 16px; }
+            .content p { font-size: 11px; }
+            .content button { font-size: 14px; padding: 8px; }
+        }
     </style>
 </head>
 <body>
@@ -179,7 +226,11 @@ academicBooks.forEach(book=>{
                         <p>type:<span>${book.type}</span>
                         </div>
                         <p>${book.stock ? "In Stock" : "Out of Stock"}</p>
-                        <button>view details</button>
+                        <div class="sec39">
+                            <button class="sec40-btn1"> Buy now   </button>
+                            <button class="sec40-btn1">Add to Cart</button>
+                            <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
+                        </div>
 
                     </div>
         </div>
@@ -188,7 +239,24 @@ academicBooks.forEach(book=>{
 
 }
 )
+    function toggleHeart(element){
+    const icon = element.querySelector("i");
+    if(icon.classList.contains("fa-regular")){
+        icon.classList.remove("fa-regular");
+        icon.classList.add("fa-solid");
+        
+    } else {
+        icon.classList.remove("fa-solid");
+        icon.classList.add("fa-regular");
+    }
 
+    if(icon.classList.contains("fa-solid")){
+        alert("Added to wishlist!");
+        
+    } else {
+        alert("Removed from wishlist!");
+    }
+    }
     </script>
 </body>
 </html>

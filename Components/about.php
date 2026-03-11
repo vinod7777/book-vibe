@@ -217,6 +217,21 @@
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
+        @media (max-width: 768px) {
+            .text1 { font-size: 48px; padding: 60px 50px; }
+            .text2 { font-size: 16px; margin-left: 20px; }
+            .text3 { font-size: 28px; }
+            .card h2 { font-size: 20px; }
+            .card p { font-size: 14px; }
+        }
+        @media (max-width: 480px) {
+            .text1 { font-size: 36px; padding: 40px 20px; }
+            .text2 { font-size: 14px; margin-left: 10px; }
+            .text3 { font-size: 24px; }
+            .card h2 { font-size: 18px; }
+            .card p { font-size: 13px; }
+            .abtdiv1 { flex-direction: column; padding: 40px 5%; }
+        }
     </style>
 </head>
 <body>

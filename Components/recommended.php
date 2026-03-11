@@ -100,7 +100,81 @@
             list-style: none;
         }
         
-       
+        /* Tablet View (768px and below) */
+        @media (max-width: 768px) {
+            .cardout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 50px 3%;
+            }
+            
+            .cardouth1 {
+                font-size: 36px;
+            }
+            
+            .cardimgs {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .cardin21 {
+                padding: 12px;
+            }
+            
+            .cardin21img {
+                height: 180px;
+            }
+            
+            .cardin1 button {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+        }
+        
+        /* Mobile View (480px and below) */
+        @media (max-width: 480px) {
+            .cardout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 30px 3%;
+            }
+            
+            .cardin1 {
+                text-align: center;
+            }
+            
+            .cardouth1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                line-height: 1.3;
+            }
+            
+            .cardin1 button {
+                margin-top: 20px;
+                padding: 12px 25px;
+                font-size: 14px;
+                border-radius: 25px;
+            }
+            
+            .cardimgs {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .cardin21 {
+                padding: 10px;
+            }
+            
+            .cardin21img {
+                height: 250px;
+                margin-bottom: 10px;
+            }
+            
+            .view-btn {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
 
     </style>
 </head>

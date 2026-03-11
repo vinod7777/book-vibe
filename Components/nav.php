@@ -105,6 +105,37 @@
         .icon-link:hover {
             color: #0D3B66;
         }
+
+        @media (max-width: 768px) {
+            html, body, nav, .ser, ul, .login, .icon-link,
+            h1, h2, h3, h4, p, span, button {
+                font-size: 90% !important;
+            }
+            nav {
+                padding: 0 3% !important;
+            }
+            .ser {
+                font-size: 14px !important;
+            }
+            .login {
+                padding: 8px 20px !important;
+            }
+        }
+        @media (max-width: 480px) {
+            html, body, nav, .ser, ul, .login, .icon-link,
+            h1, h2, h3, h4, p, span, button {
+                font-size: 80% !important;
+            }
+            nav {
+                padding: 0 2% !important;
+            }
+            .ser {
+                font-size: 12px !important;
+            }
+            .login {
+                padding: 6px 15px !important;
+            }
+        }
   </style>
 
     <nav>
