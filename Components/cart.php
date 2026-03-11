@@ -276,7 +276,7 @@ font-size:20px;
     <div class="empty" id="empty-cart">
         <i class="fa-solid fa-cart-shopping"></i>
         <h2>Cart is empty!</h2>
-        <button class="shop-btn" onclick="window.location.href='index.php'">Shop Now</button>
+        <button class="shop-btn" onclick="window.location.href='category.php'">Shop Now</button>
     </div>
 </section>
 <?php include "footer.php"; ?>
@@ -292,8 +292,10 @@ document.getElementById("increase").addEventListener("click", increment);
 document.getElementById("decrease").addEventListener("click", decrement);
 
 function increment() {
-    count++;
+    if(count < 10) {
+        count++;
     updatePrice();
+    }
 }
 
 function decrement() {
