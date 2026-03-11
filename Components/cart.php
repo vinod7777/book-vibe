@@ -21,13 +21,13 @@
 
     .padding {
     padding: 40px 5%;
-        max-width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
     }
     .title {
         color: #0D3B66;
         font-size: 36px;
-  margin-bottom: 40px;
+        margin-bottom: 40px;
         text-align: center;
         text-transform: uppercase;
     }
@@ -106,11 +106,10 @@
         color: #0D3B66;
     }
             .price-section {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-end;
-                min-width: 100px;
+              margin-top: 10px;
+        
+                
+              
             }
     .price-section h2 {
         font-size: 24px;
@@ -184,6 +183,7 @@ border-radius:8px;
 font-size:18px;
 cursor:pointer;
 margin-top:20px;
+
 }
 
 .shop-btn:hover{
@@ -208,6 +208,74 @@ font-size:20px;
 .free{
     font-weight:700;
 color:green;
+}
+@media (min-width: 481px)  and (max-width: 1080px) {
+    body {
+        padding-top: 70px;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .cart {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .cart-text {
+        padding: 20px;
+        padding:26px;
+        width: 100%;
+    }
+    .details {
+        align-items:flex-start;
+    }
+    .price-section {
+        margin-top: 15px;
+    }
+        .book-details {
+            position:static;
+            padding: 15px;
+            width: 100%;
+            
+        }
+}
+@media (max-width: 480px) {
+    body{
+    padding-top: 70px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .cart {
+        position: static;
+        flex-direction: column;
+        gap: 30px;
+       text-align: center;
+
+    }
+    .cart-text {
+        padding:10px;
+        width: 100%;
+        display: inline;
+    }
+    .details {
+       text-align: center;
+         align-items: center;
+               font-size:14px;
+    }
+    
+            
+    .quantity {
+        margin-top: 10px;
+    }
+    .desc{
+    display:none;
+    }
+    .book-details {
+        position: static;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }   
 }
 
 </style>
