@@ -22,11 +22,7 @@
             background-image: url("../assets/heroimage/slide.png");
             background-size: cover;
             background-position: center;
-
-            background-repeat: no-repeat;
-            top:0;
-            left:0;
-            z-index:10; 
+            background-repeat: no-repeat; 
         }
 
         .cards-section{
@@ -107,13 +103,10 @@
 }
         .text1{
             font-size: 80px;
-            padding: 80px 100px;
         }
         
         .text2{
             font-size: 20px;
-            margin-left: 30px;
-            margin-bottom: 30px;
              
         }
         .text3{
@@ -134,18 +127,17 @@
         }
         
         .text1 {
-            font-size: 60px;
+            font-size: 55px;
             font-weight: bold;
             position: relative;
-            z-index: 1;
-            margin-bottom: 20px;
+            padding-bottom: 10px;
         }
         .text2 {
+            padding-bottom: 20px;
             font-size: 18px;
+            width: 420px;
             line-height: 1.6;
-            max-width: 600px;
-            position: relative;
-            z-index: 1;
+            font-weight: 550;
             
         }
         .cards-section {
@@ -211,34 +203,24 @@
             color: #0D3B66;
             font-weight: bold;
             line-height: 1.2;
+            width:450px;
         }
         .abtdiv2 img {
             width: 100%;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-        @media (max-width: 768px) {
-            .text1 { font-size: 48px; padding: 60px 50px; }
-            .text2 { font-size: 16px; margin-left: 20px; }
-            .text3 { font-size: 28px; }
-            .card h2 { font-size: 20px; }
-            .card p { font-size: 14px; }
-        }
-        @media (max-width: 480px) {
-            .text1 { font-size: 36px; padding: 40px 20px; }
-            .text2 { font-size: 14px; margin-left: 10px; }
-            .text3 { font-size: 24px; }
-            .card h2 { font-size: 18px; }
-            .card p { font-size: 13px; }
-            .abtdiv1 { flex-direction: column; padding: 40px 5%; }
-        }
     </style>
 </head>
 <body>
     <?php include "nav.php"; ?>
     <div class="abtimg">
-        <p class="text1">| About <br>book vibe</p>
-        <p class="text2">Welcome to BookVibe, your premier destination for exceptiona<br>l stories and comprehensive academic content. We are an innovative e-commerce<br> platform dedicated to bringing the best of<br> literature and education directly to your fingertips.</p>
+        <div class="abtText">
+            <p class="text1">About</p>
+            <p class="abtLText">Book Vibe</p>
+            <p class="text2">Welcome to BookVibe, your premier destination for exceptional stories and comprehensive academic content.</p>
+            <p class="text2">We are an innovative e-commerce platform dedicated to bringing the best of literature and education directly to your fingertips.</p>
+        </div>
     </div> 
 
 <section class="cards-section">
@@ -278,7 +260,7 @@
 <hr>
 <div class="abtdiv1">
     <div class="abtdiv2">
-    <p class="text3"> best online <br>books & story seller<br> website across the world! </p>
+ <p class="text3">Discover the best Story, Academic, and Competitive books all in one place.</p>
     </div>
     <div class="abtdiv2">
         <img src="../assets/heroimage/work.png.jpeg" width="500px"height="200px">

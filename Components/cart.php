@@ -205,6 +205,10 @@ font-size:20px;
 .ppcr{
     padding-top:10px;
 }
+.free{
+    font-weight:700;
+color:green;
+}
 
 </style>
 </head>
@@ -292,8 +296,10 @@ document.getElementById("increase").addEventListener("click", increment);
 document.getElementById("decrease").addEventListener("click", decrement);
 
 function increment() {
-    count++;
+    if(count < 10) {
+        count++;
     updatePrice();
+    }
 }
 
 function decrement() {
