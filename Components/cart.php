@@ -339,7 +339,7 @@ color:green;
             <span id="total">₹899</span>
         </div>
 
-        <button class="continue" onclick="window.location.href='buy.php'">Buy Now!</button>
+        <button class="continue" onclick="window.location.href='address.php'">Buy Now!</button>
     </div>
 
 </div>
