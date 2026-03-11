@@ -18,12 +18,12 @@
 
 body{
     background:white;
-    padding:40px;
 }
 
 .padding{
-    max-width:1200px;
-    margin:auto;
+    justify-content:center;
+    align-items:center;
+    margin-left:100px;
    
 }
 
@@ -38,6 +38,7 @@ body{
     display:flex;
     gap:30px;
     align-items:flex-start;
+    margin-top:100px;
   
 }
 
@@ -59,7 +60,7 @@ body{
 
 .order h2{
     margin-bottom:20px;
-    color:rgb(128, 128, 174);
+    color:#0D3B66;
 }
 
 .add1{
@@ -100,9 +101,13 @@ body{
     
     font-size: 20px;
 }
+.add6 h3{
+    color:#0D3B66;
+}
 .add6 button{
     
     font-size: 20px;
+     background:rgb(243, 106, 33);
 }
 .product-img{
     width:120px;
@@ -175,7 +180,7 @@ body{
     margin-top:20px;
     border:none;
     border-radius:8px;
-    background:rgb(119, 88, 29);
+    background:rgb(243, 106, 33);
     color:white;
     font-size:18px;
     cursor:pointer;
@@ -203,6 +208,7 @@ body{
     width: 250px;
     height: 40px;
     border-radius: 5px;
+    border:border:2px solid #0D3B66;
 }
 .main-form button{
     margin-top: 20px;
@@ -230,6 +236,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-left: 120px;
+     background:rgb(243, 106, 33);
 }
 </style>
 </head>
@@ -249,7 +256,7 @@ body{
     <div class="add1">
     <div>
     <div class="delivery-info">
-    <div class="add6"><h3>Deliver to:</h3></div>
+    <div class="add6"><h3>Deliver to</h3></div>
     <div class="add6"><button>Change</button></div>
     </div>
     <form action="" class="main-form">
