@@ -169,7 +169,9 @@
             margin-top: 0px;
              transition: transform 0.3s ease;
         }
-
+        .loginpp{
+            cursor:pointer;
+        }
         /* mobile font scaling */
         @media (max-width: 768px) {
             body { padding-top: 60px; }
@@ -214,8 +216,7 @@
     <span class="eye" onclick="toggle()"><i class="fa-regular fa-eye"></i></span>
     
 </div>
-        <a href="https://accounts.google.com/v3/signin/confirmidentifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword&dsh=S-771241039%3A1773148801156371&emr=1&followup=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword&ifkv=ASfE1-qEdVtodVmULanriPPoUPSpfn1vIrVKpIiS5k1WjXAYpkLfO6_BSix6Sf0lnz-lQXs_olKGqA&mrp=security&osid=1&passive=1209600&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
-            <p>Forgot Password?</p></a>
+            <p onclick="window.location.href='forgotpassword.php'" class="loginpp">Forgot Password?</p>
             <a href="../Components/index.php"><button type="submit" class="login-btn" onclick="log()">Login</button></a>
             </form>
             <span class="or">or</span>
