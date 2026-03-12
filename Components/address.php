@@ -239,7 +239,10 @@ body{
 }
 
 @media (max-width:600px){
- 
+ body{
+    background: #f4f4f4;
+    font-size: 20px;
+}
 .padding{
     margin-left:0;
     padding:15px;
