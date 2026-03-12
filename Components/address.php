@@ -239,7 +239,7 @@ body{
 }
 
 @media (max-width:600px){
-
+ 
 .padding{
     margin-left:0;
     padding:15px;
