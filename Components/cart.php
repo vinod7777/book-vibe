@@ -243,7 +243,7 @@ color:green;
     padding-top: 70px;
     }
     .title {
-        font-size: 22px;
+        font-size: 25px;
     }
     .cart {
         position: static;
@@ -285,7 +285,7 @@ color:green;
     <?php include "nav.php"; ?>
     
 <section class="padding">
-    <h1 class="title">BOOK-VIBE Cart</h1>
+    <h1 class="title">Book-Vibe Cart</h1>
 
     <div class="cart">
 
