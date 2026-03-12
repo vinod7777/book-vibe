@@ -122,10 +122,6 @@ let array=[
             }
                show()
            setInterval(show,3000)
-             
-                
-            
-      
         </script>
 
     
