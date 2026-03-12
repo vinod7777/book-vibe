@@ -207,7 +207,7 @@ body{
     width: 250px;
     height: 40px;
     border-radius: 5px;
-    border:border:2px solid #0D3B66;
+    border-style:none;
 }
 .main-form button{
     margin-top: 20px;
@@ -315,7 +315,8 @@ body{
 
 .submitbu button{
     margin-left:0;
-    width:100%;
+    width:400px;
+    height:90px;
 }
 
 }
@@ -426,7 +427,7 @@ body{
     <div style="color: #0D3B66; padding:10px; border-radius:5px;"><h3>Deliver to</h3></div>
     <div class="add6"><button>Change</button></div>
     </div>
-    <form action="" class="main-form">
+    <form action="" onsubmit="submitform()" class="main-form">
         <div>
         <label type="test" class="form1">Enter your name:</label><br>
         <input type="text" placeholder="your answer" class="form2">
@@ -445,7 +446,7 @@ body{
             <div><input type="text" placeholder="Main Number" class="form2"></div>
             <div><input type="text" placeholder="Alternate Number" class="form2"></div>
         </div>
-        <div class="submitbu"><button type="submit">Submit</button></div>
+            <div class="submitbu"><button type="submit">Submit</button></div>
     </form>
    
 </div>
@@ -539,6 +540,9 @@ document.getElementById("value").innerText = "₹"+total;
 document.getElementById("subtotal").innerText = "₹"+total;
 document.getElementById("total").innerText = "₹"+total;
 
+}
+function submitform(){
+    alert("Form submitted successfully!");
 }
 
 </script>
