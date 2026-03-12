@@ -285,7 +285,7 @@ color:green;
     <?php include "nav.php"; ?>
     
 <section class="padding">
-    <h1 class="title">Book-Vibe Cart</h1>
+    <h1 class="title">Book Vibe Cart</h1>
 
     <div class="cart">
 
