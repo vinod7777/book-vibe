@@ -29,7 +29,6 @@
         font-size: 36px;
         margin-bottom: 40px;
         text-align: center;
-        text-transform: uppercase;
     }
     .cart {
         display: flex;
