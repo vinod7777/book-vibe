@@ -72,7 +72,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+    
 }
 
 .add1 button{
@@ -201,6 +201,7 @@ body{
     padding: 40px 20px 10px 10px;
 }
 .form2{
+    font-size: 13px;
     padding: 20px 10px;
     margin-top: 5px;
     width: 250px;
@@ -290,6 +291,7 @@ body{
 
 .main-form{
     width:100%;
+    padding: 20px 10px;
 }
 
 .form2{
