@@ -17,7 +17,7 @@
 }
 
 body{
-    background:white;
+   background: #f4f4f4;
 }
 
 .padding{
@@ -51,7 +51,7 @@ body{
 .order{
     width: 600px;
     margin-top:20px;
-    background:rgb(247, 245, 245);
+    background:white;
     padding:20px;
     border-radius:10px;
     box-shadow:0 3px 10px rgba(0,0,0,0.05);
@@ -85,7 +85,7 @@ body{
 }
 
 .add1 button:hover{
-    background:rgb(128, 128, 174);
+    background-color: #0D3B66;
 }
 
 .add3{
@@ -96,18 +96,16 @@ body{
     border-radius:10px;
     box-shadow:0 3px 10px rgba(0,0,0,0.05);
     align-items:center;
+    margin-bottom:20px;
 }
-.add6{
-    
-    font-size: 20px;
-}
-.add6 h3{
-    color:#0D3B66;
-}
+
 .add6 button{
     
     font-size: 20px;
      background:rgb(243, 106, 33);
+}
+.add6 button:hover{
+    background-color: #0D3B66;
 }
 .product-img{
     width:120px;
@@ -187,7 +185,7 @@ body{
 }
 
 .continue:hover{
-    background:rgb(128, 128, 174);
+    background-color: #0D3B66;
 }
 
 .main-form{
@@ -238,6 +236,173 @@ body{
     margin-left: 120px;
      background:rgb(243, 106, 33);
 }
+
+@media (max-width:600px){
+
+.padding{
+    margin-left:0;
+    padding:15px;
+}
+
+.title{
+    font-size:24px;
+}
+
+.cart{
+    flex-direction:column;
+    gap:20px;
+    margin-top:20px;
+}
+
+.cart1{
+    width:100%;
+}
+
+.add1{
+    width:100%;
+    height:auto;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.order{
+    width:100%;
+}
+
+.summary-row{
+    width:100%;
+}
+
+.add3{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.product-img{
+    width:100px;
+    height:140px;
+}
+
+.price-section{
+    text-align:left;
+}
+
+.main-form{
+    width:100%;
+}
+
+.form2{
+    width:100%;
+}
+
+.delivery-info{
+    flex-direction:column;
+    gap:20px;
+}
+
+.pin-code{
+    flex-direction:column;
+    gap:10px;
+}
+
+.phone-no{
+    flex-direction:column;
+    gap:10px;
+}
+
+.submitbu button{
+    margin-left:0;
+    width:100%;
+}
+
+}
+
+@media (min-width:601px) and (max-width:1024px){
+
+.padding{
+    margin-left:20px;
+}
+
+.cart{
+    flex-direction:column;
+}
+
+.cart1{
+    width:100%;
+}
+
+.add1{
+    width:100%;
+    height:auto;
+}
+
+.order{
+    width:100%;
+}
+
+.summary-row{
+    width:100%;
+}
+
+.main-form{
+    width:100%;
+}
+
+.form2{
+    width:100%;
+}
+
+.product-img{
+    width:110px;
+    height:150px;
+}
+
+}
+
+@media (min-width:1025px) and (max-width:1400px){
+
+.cart{
+    gap:20px;
+}
+
+.add1{
+    width:550px;
+}
+
+.order{
+    width:550px;
+}
+
+.summary-row{
+    width:100%;
+}
+
+.main-form{
+    width:500px;
+}
+
+}
+
+@media (min-width:1400px){
+
+.cart{
+    justify-content:center;
+}
+
+.add1{
+    width:650px;
+}
+
+.order{
+    width:650px;
+}
+
+.main-form{
+    width:600px;
+}
+
+}
 </style>
 </head>
 
@@ -256,7 +421,7 @@ body{
     <div class="add1">
     <div>
     <div class="delivery-info">
-    <div class="add6"><h3>Deliver to</h3></div>
+    <div style="color: #0D3B66; padding:10px; border-radius:5px;"><h3>Deliver to</h3></div>
     <div class="add6"><button>Change</button></div>
     </div>
     <form action="" class="main-form">
@@ -336,7 +501,7 @@ body{
 <span id="total">₹899</span>
 </div>
 
-<a href="/buy.php"><button class="continue">Buy Now</button></a>
+<button class="continue" onclick="window.location.href='buy.php'">Buy Now</button>
 
 </div>
 
