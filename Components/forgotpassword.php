@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <script src="https://kit.fontawesome.com/b2ca557543.js" crossorigin="anonymous"></script>
+
     <style>
         * {
             margin: 0;
@@ -51,6 +53,8 @@
             height: 40px;
             border-radius: 10px;
             border:none;
+            font-size:14px;
+            padding-left:5px;
         }
         .in1{
             display: flex;
