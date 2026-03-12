@@ -210,6 +210,20 @@
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
+        .abtLText {
+            font-size: 58px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .abtText{
+
+            position: absolute;
+            top: 50%;
+            left: 3%;
+            transform: translateY(-50%);
+            color:black;
+        }
+        
     </style>
 </head>
 <body>
