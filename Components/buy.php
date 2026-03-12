@@ -24,7 +24,8 @@ font-family:sans-serif;
 }
 
 body{
-background:white;
+     font-family:  sans-serif;
+    background-color: #f4f4f4;
 }
 .h1cls{
        color: #0D3B66;
@@ -32,6 +33,7 @@ background:white;
 }
 
 .buymain{
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -43,22 +45,23 @@ background:white;
 
 .sec1{
     margin-top:80px;
-width: 500px;
-height: 500px;
+width: 480px;
+height: 550px;
 background:white;
 padding:30px;
 border-radius:10px;
 box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
+
 .sec5{
-    margin-top:80px;
 width: 400px;
 height: 300px;
 background:white;
 padding:30px;
 border-radius:10px;
 box-shadow:0 5px 20px rgba(0,0,0,0.1);
+ margin-top:100px;
 }
 
 h1{
@@ -82,6 +85,7 @@ color:#0D3B66;
 border-radius:20px;
 cursor:pointer;
 font-weight:bold;
+margin-top:10px;
 }
 
 .sec3.active{
@@ -117,7 +121,7 @@ background:rgb(243, 106, 33);
 color:white;
 border:none;
 border-radius:6px;
-margin-top:10px;
+margin-top:30px;
 cursor:pointer;
 }
 
@@ -137,7 +141,7 @@ width:200px;
 .cod{
 text-align:center;
 font-size:18px;
-color:rgb(183, 96, 96);
+
 line-height:1.6;
 }
 .buydiv1{
@@ -214,10 +218,10 @@ line-height:1.6;
 <div id="upi" class="sec4">
 
 <div class="qr">
- <img src=..\assets\Book-vibe.png alt="" height="150" width="150"> 
+ <img src=..\assets\Book-vibe.png alt="" height="200" width="170"> 
 </div>
 
-<p style="text-align:center;margin-top:15px;">
+<p style="text-align:center;margin-top:20px;">
 Scan this QR code using any UPI app <i class="fa-brands fa-apple-pay"></i> <i class="fa-brands fa-amazon-pay"></i>  <i class="fa-brands fa-google-pay"></i>
 </p>
 

@@ -21,7 +21,7 @@
         margin-bottom: 40px;
     }
     .wishlist-header h1 {
-        color: blue;
+        color: #0D3B66;
         font-size: 36px;
         text-transform: uppercase;
     }
@@ -32,6 +32,7 @@
         padding: 0 5%;
         max-width: 1400px;
         margin: 0 auto;
+        margin-bottom:20px;
     }
     .card {
         background: white;
@@ -81,16 +82,16 @@
         margin-top: auto;
         width: 100%;
         padding: 12px;
-        background: #0D3B66;
         color: white;
         border: none;
         border-radius: 8px;
         cursor: pointer;
         font-weight: bold;
         transition: background 0.3s ease;
+        background: #F26A21;
     }
     .card button:hover {
-        background: #F26A21;
+        background: #0D3B66;
     }
     .no-results{
         width: 100%;
@@ -100,6 +101,23 @@
         font-size: 18px;
         margin-left:425px;
         
+    }
+    .s40-btn1{
+         background: #F26A21;
+        height: 40px;
+        width: 50px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor:pointer;
+    }
+    .wish{
+         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+     
     }
 </style>
 </head>
@@ -163,7 +181,12 @@ for (let i = 0; i < books.length; i++) {
                     <p class="type">Type: ${books[i].type}</p>
                 </div>
                 <p class="desc">${books[i].desc}</p>
-                <button onclick="window.location.href='greatgatsby.php?id=${i}'">View Details</button>
+                <div class="wish">
+                <button onclick="window.location.href='greatgatsby.php?id=${i}'">Buy now</button>
+                
+                <button class="s40-btn1">Add to Cart</button>
+                <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
+                </div>
             </div>
         </div>
     `;
