@@ -13,9 +13,9 @@
             box-sizing: border-box;
             font-family:sans-serif;
         }
-        .instr{
+        .reset{
             width:400px;
-            height:100px;
+            height:50px;
             background-color: #0D3B66;
             color: white;
             text-align: start;
@@ -24,28 +24,30 @@
             border-start-end-radius: 10px;
 
         }
-        .instr p{
+        .resetdiv p{
             line-height:20px;
+            font-size:18px;
         }
-        .forgot{
+        .resetform{
             border-end-start-radius: 10px;
             border-end-end-radius:10px ;
             width:400px;
-            height:200px;
+            height:250px;
             background-color: #264f76;
             padding: 20px;
             
         }
-        .tor{
+        .resetdiv{
             padding:100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        .formpass{
+        .formnew{
             display: flex;
             flex-direction: column;
+            gap: 4px;
         }
         
         form input{
@@ -56,62 +58,50 @@
             font-size:14px;
             padding-left:5px;
         }
-        .in1{
-            display: flex;
-            gap: 10px;
-        }
-        .in1 a{
-            text-align:center;
-            justify-content: center;
-            padding-top:10px;
-            
-        }
-        .btt{
-            width: 100px;
+        
+        .newbtt{
+            height: 40px;
+            width: 200px;
             border-radius: 10px;
             border: none;
             background-color: #F26A21;
             color: white;
             font-weight: bolder;
             cursor: pointer;
-            justify-content: center;
         }
-        .btt:hover{
+        .formnew a{
+            text-align:center;
+            justify-content: center;
+            padding-top:10px;
+            
+        }
+        .newbtt:hover{
             background-color: #0D3B66;
             transition: background 0.3s ease;
-
         }
-        .lab{
+        .resetlabel{
             color:white;
         }
     </style>
 </head>
 <body>
     <?php include "nav.php"; ?>
-    <div class="tor">
-        <div class="instr">
-            <p>please Enter your Email Address you will receive an  email message with instructions on how to reset your password.</p>
+    <div class="resetdiv">
+        <div class="reset">
+            <p>Reset your password.</p>
         </div>
-        <div class="forgot">
-            <form action="" class="formpass">
-                <label for="" class="lab">Email*</label>
-                <div class="in1">
-                    <input type="email">
-                    <button class="btt" onclick="getotp()">Get OTP</button>
-                </div><br>
-                <label for="" class="lab">OTP*</label>
-                <div class="in1">
-                    <input type="password">
-                    <a onclick="window.location.href='newpassword.php'" class="btt">submit</a>
-                </div>
+        <div class="resetform">
+            <form action="" class="formnew">
+                <label for="" class="resetlabel">New password</label>
+                <input type="password">
+                <br>
+                <label for="" class="resetlabel">Confirm new password</label>
+                <input type="password"><br>
+                <a onclick="window.location.href='login.php'" class="newbtt">Reset my password</a>
+
             </form>
         </div>
     </div>
-    <script>
-        function getotp(){
-            alert("OTP sent to your Emailid 🎉");
-        }
-    </script>
     <?php include "footer.php"; ?>
 </body>
 </html>
