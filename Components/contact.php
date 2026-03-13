@@ -140,7 +140,7 @@
             .form1,.form2{
                 width: 90%;
                 height: auto;
-                margin-bottom: 20px;
+                margin-bottom: 100px;
                 padding-bottom: 20px;
             }
              input,textarea,.btn-submit{
@@ -151,9 +151,7 @@
                 width: 90%;
                 height:100px;
             }
-            .form2{
-                margin-bottom: 150px;
-            }
+          
          }
          @media (max-width:600px){
             input,textarea,.btn-submit{
