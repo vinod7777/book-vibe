@@ -25,14 +25,7 @@
             background-repeat: no-repeat; 
         }
 
-        .cards-section{
-        margin:60px auto;
-        display:flex;
-        gap:60px;
-        justify-content:center;
-        padding:20px;
-           
-        }
+
 
 
     .card{
@@ -95,35 +88,13 @@
     background:#2563eb;
 }
 
-
-@media(max-width:768px){
-    .cards-section{
-        flex-direction:column;
-    }
-}
-        .text1{
-            font-size: 80px;
-        }
-        
-        .text2{
-            font-size: 20px;
-             
-        }
-        .text3{
-             font-size: 48px;
-             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+       
 
         .abtdiv1{
             width: 100%;
             height: 250px;
-
-            display: flex;
-            flex-direction: column;
             justify-content: center;
-            padding: 0 10%;
-            color: white;
-            position: relative;
+            padding: 0 10%               
         }
         
         .text1 {
@@ -143,11 +114,15 @@
         .cards-section {
             display: flex;
             gap: 40px;
+            flex-flow: wrap;
             justify-content: center;
-        
-        
             position: relative;
             z-index: 2;
+             margin:60px auto;
+        display:flex;
+        gap:60px;
+        justify-content:center;
+        padding:20px;
         }
         .card {
             background: white;
@@ -203,7 +178,7 @@
             color: #0D3B66;
             font-weight: bold;
             line-height: 1.2;
-            width:450px;
+            width:480px;
         }
         .abtdiv2 img {
             width: 100%;
@@ -221,9 +196,54 @@
             top: 50%;
             left: 3%;
             transform: translateY(-50%);
-            color:black;
         }
-        
+      @media(max-width:480px){
+   
+       .text2{
+
+            font-size: 18px ;
+            color: white;
+            width: 300px;
+        }
+        .abtdiv1{
+            width: 100%;
+            height: auto;
+            margin-top:50px;
+    flex-direction: column;
+    text-align: center;
+        }
+        .text3{
+            font-size: 28px;
+            color: #0D3B66;
+            font-weight: bold;
+            line-height: 1.2;
+            width:100%;
+            margin-bottom: 50px;
+        }
+       
+      }
+      @media (min-width: 481px) and (max-width: 740px) {
+      .text3{
+            font-size: 28px;
+            color: #0D3B66;
+            font-weight: bold;
+            line-height: 1.2;
+            width:300px;
+            margin-bottom: 10px;
+        }
+         .abtdiv1{
+            width: 100%;
+            height: auto;
+            margin-top:50px;
+      }
+       .text2{
+
+            font-size: 18px ;
+            color: white;
+            width: 400px;
+        }
+     
+      }
     </style>
 </head>
 <body>
@@ -236,7 +256,6 @@
             <p class="text2">We are an innovative e-commerce platform dedicated to bringing the best of literature and education directly to your fingertips.</p>
         </div>
     </div> 
-
 <section class="cards-section">
 
     

@@ -4,20 +4,26 @@
         padding: 0;
         box-sizing: border-box;
     }
+    
     footer {
+        margin-top: 50px;
         background-color: #0a1620;
         color: #fff;
         width: 100%;
         padding: 60px 5% 20px;
         font-family:  sans-serif;
+        height:auto;
     }
+
 
     .footer-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 40px;
         margin-bottom: 40px;
+        
     }
+    
 
     .contact h2, .webteam h3, .quick-links h3 {
         color: #F26A21;
@@ -32,6 +38,7 @@
         flex-wrap: wrap;
         gap: 20px;
         align-items: center;
+        
     }
 
     .contact-item {
@@ -39,6 +46,7 @@
         align-items: center;
         gap: 10px;
         font-size: 14px;
+      
     }
 
     .contact-item i {
@@ -66,6 +74,11 @@
         color: #F26A21;
         margin-right: 5px;
     }
+    .quick-links{
+        height:auto;
+      
+       
+    }
 
     .quick-links ul {
         list-style: none;
@@ -86,6 +99,35 @@
         color: #F26A21;
         padding-left: 5px;
     }
+     @media screen and (max-width:480px ) {
+        .quick-links ul{
+            display:flex;
+            flex-direction:row;
+           
+        }
+        .quick-links{
+            margin-top:-30px;
+        }
+         .footer-content{
+              margin-bottom: 10px;
+         }
+        .contact h2, .webteam h3, .quick-links h3{
+              margin-bottom: 10px;
+        }
+        .logo img {
+        width: 30px;
+        height: auto;
+    }
+     .contact-item i {
+        color: #F26A21;
+        font-size: 12px;
+    }
+    footer{
+        padding: 10px 5% 0px;
+       
+    }
+     }
+
 </style>
 
 <footer id="footid">

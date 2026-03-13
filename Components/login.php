@@ -27,7 +27,7 @@
             font-family:  sans-serif;
         }
         .main {
-            margin:100px;
+            margin:50px;
             display: flex;
             width: 900px;
             height: 550px;

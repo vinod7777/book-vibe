@@ -21,21 +21,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-
-            
+            justify-content: center;  
             font-family:  sans-serif;
          
         }
         .main{
             display: flex;
-            
             flex-direction: row;
             justify-content: space-around;
             margin: 40px;
-
             width: 100%;
-            height: 80vh;
+            height:100vh;
            margin-top: 100px;
         }
         .form1,.form2{
@@ -126,6 +122,39 @@
          .contact-info p{
             margin-bottom: 10px;
             font-family: 'Segoe UI', sans-serif;
+         }
+         @media (min-width:740px) and (max-width:1080px){
+            body{
+                margin-top: 100px;
+                
+            
+            }
+            .main{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .form1,.form2{
+                width: 90%;
+                height: auto;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+             input,textarea,.btn-submit{
+                padding: 0;
+                width:500px;
+            }
+             iframe{
+                width: 90%;
+                height:100px;
+            }
+          
+         }
+         @media (max-width:600px){
+            input,textarea,.btn-submit{
+                width:290px;
+            }
+           
          }
 
         </style>
