@@ -130,7 +130,7 @@
          @media (max-width:740px){
             body{
                 margin-top: 200px;
-                margin-bottom: 200px;
+            
             }
             .main{
                 flex-direction: column;
@@ -150,6 +150,9 @@
              iframe{
                 width: 90%;
                 height:100px;
+            }
+            .form2{
+                margin-bottom: 150px;
             }
          }
          @media (max-width:600px){
