@@ -35,12 +35,14 @@ body{
 .buymain{
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
+   
     display: flex;
     justify-content: center;
     flex-direction:row;
     gap:20px;
     margin-top:50px;
+     margin-bottom:20px;
+
 }
 
 .sec1{
@@ -55,6 +57,7 @@ box-shadow:0 5px 20px rgba(0,0,0,0.1);
 
 
 .sec5{
+flex-wrap: wrap;
 width: 400px;
 height: 300px;
 background:white;
