@@ -256,7 +256,6 @@
             <p class="text2">We are an innovative e-commerce platform dedicated to bringing the best of literature and education directly to your fingertips.</p>
         </div>
     </div> 
-
 <section class="cards-section">
 
     
