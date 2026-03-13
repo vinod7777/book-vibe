@@ -271,6 +271,7 @@ body{
 
 .order{
     width:100%;
+    font-size: 16px;
 }
 
 .summary-row{
@@ -281,6 +282,7 @@ body{
     flex-direction:column;
     align-items:flex-start;
     gap:15px;
+    font-size:16px;
 }
 
 .product-img{
@@ -295,15 +297,18 @@ body{
 .main-form{
     width:100%;
     padding: 20px 10px;
+    font-size: 14px;
 }
 
 .form2{
     width:100%;
+    font-size: 12px;
 }
 
 .delivery-info{
     flex-direction:column;
     gap:20px;
+    align-items: flex-start;
 }
 
 .pin-code{
@@ -318,8 +323,8 @@ body{
 
 .submitbu button{
     margin-left:0;
-    width:400px;
-    height:90px;
+    width:200px;
+    height:40px;
 }
 
 }
@@ -428,7 +433,7 @@ body{
     <div>
     <div class="delivery-info">
     <div style="color: #0D3B66; padding:10px; border-radius:5px;"><h3>Deliver to</h3></div>
-    <div class="add6"><button>Change</button></div>
+    <div class="add6" onclick="changeAddress()"><button>Change</button></div>
     </div>
     <form action="" onsubmit="submitform()" class="main-form">
         <div>
@@ -482,9 +487,9 @@ body{
         <p>₹899 each</p>
         </div>
 
-    </div>
+       </div>
 
-</div>
+    </div>
 
 
 
@@ -546,6 +551,14 @@ document.getElementById("total").innerText = "₹"+total;
 }
 function submitform(){
     alert("Form submitted successfully!");
+}
+function changeAddress(){
+    alert("Change address clicked!");
+    clearAddressForm();
+}
+
+function clearAddressForm() {
+    document.querySelector(".main-form").reset();
 }
 
 </script>
