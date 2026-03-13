@@ -123,7 +123,7 @@
             margin-bottom: 10px;
             font-family: 'Segoe UI', sans-serif;
          }
-         @media (max-width:740px){
+         @media (min-width:740px) and (max-width:1080px){
             body{
                 margin-top: 100px;
                 
