@@ -127,6 +127,37 @@
             margin-bottom: 10px;
             font-family: 'Segoe UI', sans-serif;
          }
+         @media (max-width:740px){
+            body{
+                margin-top: 200px;
+                margin-bottom: 200px;
+            }
+            .main{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .form1,.form2{
+                width: 90%;
+                height: auto;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+             input,textarea,.btn-submit{
+                padding: 0;
+                width:500px;
+            }
+             iframe{
+                width: 90%;
+                height:100px;
+            }
+         }
+         @media (max-width:600px){
+            input,textarea,.btn-submit{
+                width:290px;
+            }
+           
+         }
 
         </style>
 </head>
