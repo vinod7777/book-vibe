@@ -140,7 +140,7 @@
     <span class="eye" onclick="toggle()"><i class="fa-regular fa-eye"></i></span>
 </div>
                     <input type="number" name="phone" placeholder="Phone Number" required>
-                   <a href="../index.php"> <button type="submit" class="btn">Register</button></a>
+                   <a   onclick="cal()"> <button type="submit" class="btn">Register</button></a>
                 </form>
         </div>
     </div>
@@ -151,6 +151,9 @@ function toggle() {
     let p = document.getElementById("pass");
 
     p.type = (p.type === "password") ? "text" : "password";
+}
+function cal() {
+    alert("Registration successful! Please log in to continue.");
 }
 </script>
 </html>
