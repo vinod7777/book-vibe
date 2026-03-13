@@ -35,7 +35,7 @@
             margin: 40px;
 
             width: 100%;
-            height: 80vh;
+            height:100vh;
            margin-top: 100px;
         }
         .form1,.form2{
@@ -129,7 +129,7 @@
          }
          @media (max-width:740px){
             body{
-                margin-top: 150px;
+                margin-top: 100px;
                 
             
             }
