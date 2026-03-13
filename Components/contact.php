@@ -129,7 +129,8 @@
          }
          @media (max-width:740px){
             body{
-                margin-top: 200px;
+                margin-top: 150px;
+                
             
             }
             .main{
@@ -140,7 +141,7 @@
             .form1,.form2{
                 width: 90%;
                 height: auto;
-                margin-bottom: 100px;
+                margin-bottom: 20px;
                 padding-bottom: 20px;
             }
              input,textarea,.btn-submit{
