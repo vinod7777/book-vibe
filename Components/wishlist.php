@@ -185,7 +185,7 @@ for (let i = 0; i < books.length; i++) {
                 <button onclick="window.location.href='greatgatsby.php?id=${i}'">Buy now</button>
                 
                 <button class="s40-btn1">Add to Cart</button>
-                <div onclick="toggleHeart(this)"><i class="fa-regular fa-heart"></i></div>
+                <div onclick="toggleHeart(this)"></div>
                 </div>
             </div>
         </div>
