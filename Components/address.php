@@ -237,174 +237,141 @@ body{
     margin-left: 120px;
      background:rgb(243, 106, 33);
 }
-
 @media (max-width:600px){
- 
+ body{
+    background: #f4f4f4;
+    font-size: 20px;
+}
 .padding{
     margin-left:0;
     padding:15px;
 }
-
 .title{
     font-size:24px;
 }
-
 .cart{
     flex-direction:column;
     gap:20px;
     margin-top:20px;
 }
-
 .cart1{
     width:100%;
 }
-
 .add1{
     width:100%;
     height:auto;
     flex-direction:column;
     align-items:flex-start;
 }
-
 .order{
     width:100%;
+    font-size: 16px;
 }
-
 .summary-row{
     width:100%;
 }
-
 .add3{
     flex-direction:column;
     align-items:flex-start;
     gap:15px;
+    font-size:16px;
 }
-
 .product-img{
     width:100px;
     height:140px;
 }
-
 .price-section{
     text-align:left;
 }
-
 .main-form{
     width:100%;
     padding: 20px 10px;
+    font-size: 14px;
 }
-
 .form2{
     width:100%;
+    font-size: 12px;
 }
-
 .delivery-info{
     flex-direction:column;
     gap:20px;
+    align-items: flex-start;
 }
-
 .pin-code{
     flex-direction:column;
     gap:10px;
 }
-
 .phone-no{
     flex-direction:column;
     gap:10px;
 }
-
 .submitbu button{
     margin-left:0;
-    width:400px;
-    height:90px;
+    width:200px;
+    height:40px;
 }
-
 }
-
 @media (min-width:601px) and (max-width:1024px){
-
 .padding{
     margin-left:20px;
 }
-
 .cart{
     flex-direction:column;
 }
-
 .cart1{
     width:100%;
 }
-
 .add1{
     width:100%;
     height:auto;
 }
-
 .order{
     width:100%;
 }
-
 .summary-row{
     width:100%;
 }
-
 .main-form{
     width:100%;
 }
-
 .form2{
     width:100%;
 }
-
 .product-img{
     width:110px;
     height:150px;
 }
-
 }
-
 @media (min-width:1025px) and (max-width:1400px){
-
 .cart{
     gap:20px;
 }
-
 .add1{
     width:550px;
 }
-
 .order{
     width:550px;
 }
-
 .summary-row{
     width:100%;
 }
-
 .main-form{
     width:500px;
 }
-
 }
-
 @media (min-width:1400px){
-
 .cart{
     justify-content:center;
 }
-
 .add1{
     width:650px;
 }
-
 .order{
     width:650px;
 }
-
 .main-form{
     width:600px;
 }
-
 }
 </style>
 </head>
@@ -425,7 +392,7 @@ body{
     <div>
     <div class="delivery-info">
     <div style="color: #0D3B66; padding:10px; border-radius:5px;"><h3>Deliver to</h3></div>
-    <div class="add6"><button>Change</button></div>
+    <div class="add6" onclick="changeAddress()"><button>Change</button></div>
     </div>
     <form action="" onsubmit="submitform()" class="main-form">
         <div>
@@ -479,9 +446,9 @@ body{
         <p>₹899 each</p>
         </div>
 
-    </div>
+       </div>
 
-</div>
+    </div>
 
 
 
@@ -543,6 +510,14 @@ document.getElementById("total").innerText = "₹"+total;
 }
 function submitform(){
     alert("Form submitted successfully!");
+}
+function changeAddress(){
+    alert("Change address clicked!");
+    clearAddressForm();
+}
+
+function clearAddressForm() {
+    document.querySelector(".main-form").reset();
 }
 
 </script>

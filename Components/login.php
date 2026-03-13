@@ -27,7 +27,7 @@
             font-family:  sans-serif;
         }
         .main {
-            margin:100px;
+            margin:50px;
             display: flex;
             width: 900px;
             height: 550px;
@@ -223,11 +223,13 @@
             
             <a href="register.php"><button style=" padding: 15px 150px;" class="reg-btn">Sign Up</button></a>
         
-        <a style="display: flex; align-items: center; margin-top: 20px; " href="https://accounts.google.com/v3/signin/accountchooser?access_type=offline&client_id=684525534462-3ddgntluo1jlp36lg39faio2isac53d6.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fauth.mygov.in%2Fhybridauth%2Fendpoint%3Fhauth.done%3DGoogle&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&dsh=S-802726885%3A1773148661528887&o2v=1&service=lso&flowName=GeneralOAuthFlow&opparams=%253F&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMlhg1MQIis54FnLmhymAfUo3RjeKLRwjhfOYf1jB0j4PDN_jSTX_7t6xzNoqyioEacPhOesKCfHa1ogi8i3E1c1_Hoeb21dKelHBaYjDDG4XKl9KO1UtaUqmBkCeW_9KGo-I1DM63V1zZzXDhm_VRZBhVuShbdZpN0iGiXIJ3zRv6tt6chj3BgnMFDFoq98s90yv-GyVoFYburOKVcFTSVP8BEhcn3XoDICECga2_vD_3jZEKLxN0OAY_AN5k1pTSXpLD1we6eb5eLNVgraagWIg56C2jti8-Egoy0YIetiDPmIo5yuMY997yMitGt7SZLpFb-lm_xT2sxJpzB-M-mMXtkuHbVqvevXeLjueJsJEdnDItZJ7n3Z3ZSc8Yc7AprgyjLCHqKAuag9MJSf2qwcMzlsN4JkOmN1uK8mvzD4AGNd7r52SwhClScGIDPjhfOChG_s_G87Q_lwZGRKlHcAuw4gg%26flowName%3DGeneralOAuthFlow%26as%3DS-802726885%253A1773148661528887%26client_id%3D684525534462-3ddgntluo1jlp36lg39faio2isac53d6.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=https%3A%2F%2Fauth.mygov.in">
+ 
+            <a style="display: flex; align-items: center; margin-top: 20px; " href="https://accounts.google.com/v3/signin/accountchooser?access_type=offline&client_id=684525534462-3ddgntluo1jlp36lg39faio2isac53d6.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fauth.mygov.in%2Fhybridauth%2Fendpoint%3Fhauth.done%3DGoogle&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&dsh=S-802726885%3A1773148661528887&o2v=1&service=lso&flowName=GeneralOAuthFlow&opparams=%253F&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMlhg1MQIis54FnLmhymAfUo3RjeKLRwjhfOYf1jB0j4PDN_jSTX_7t6xzNoqyioEacPhOesKCfHa1ogi8i3E1c1_Hoeb21dKelHBaYjDDG4XKl9KO1UtaUqmBkCeW_9KGo-I1DM63V1zZzXDhm_VRZBhVuShbdZpN0iGiXIJ3zRv6tt6chj3BgnMFDFoq98s90yv-GyVoFYburOKVcFTSVP8BEhcn3XoDICECga2_vD_3jZEKLxN0OAY_AN5k1pTSXpLD1we6eb5eLNVgraagWIg56C2jti8-Egoy0YIetiDPmIo5yuMY997yMitGt7SZLpFb-lm_xT2sxJpzB-M-mMXtkuHbVqvevXeLjueJsJEdnDItZJ7n3Z3ZSc8Yc7AprgyjLCHqKAuag9MJSf2qwcMzlsN4JkOmN1uK8mvzD4AGNd7r52SwhClScGIDPjhfOChG_s_G87Q_lwZGRKlHcAuw4gg%26flowName%3DGeneralOAuthFlow%26as%3DS-802726885%253A1773148661528887%26client_id%3D684525534462-3ddgntluo1jlp36lg39faio2isac53d6.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=https%3A%2F%2Fauth.mygov.in">
+                    <img src="https://imgs.search.brave.com/cMeR-TEzSzc3L_T_t4c0ZKSZu5B4BxkMPGrZ48urikE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvZ29vZ2xlLXMt/bG9nby8xNTAvR29v/Z2xlX0ljb25zLTA5/LTUxMi5wbmc" alt="" class="google">
+
             <p style=" text-align: right; color: rgb(247, 246, 246);">
                 Sign in with Google 
             </p>
-        <img src="https://imgs.search.brave.com/cMeR-TEzSzc3L_T_t4c0ZKSZu5B4BxkMPGrZ48urikE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvZ29vZ2xlLXMt/bG9nby8xNTAvR29v/Z2xlX0ljb25zLTA5/LTUxMi5wbmc" alt="" class="google">
     </a>
 
         </div>

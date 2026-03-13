@@ -60,6 +60,12 @@
             font-size: 16px;
             font-weight: 600;
         }
+        .home{
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: space-between;
+        }
 
         .home a {
             text-decoration: none;
@@ -77,6 +83,7 @@
             align-items: center;
             gap: 20px;
         }
+       
 
         .login {
             padding: 10px 25px;
@@ -105,37 +112,52 @@
         .icon-link:hover {
             color: #0D3B66;
         }
+        .mobil-menu i{
+            display: none;
+            font-size: 24px;
+            color: #F26A21;
+            cursor: pointer;
+           
+            
+        }
+      
+        @media screen and (min-width:1300px) {
+             .mobile-menu i {
+                    display: none;
+                    font-size: 24px;
+                    color: #F26A21;
+                    cursor: pointer;
+                }
+     }
+     @media screen  and (max-width: 1300px) {
+        .home {
+            display: none;
+        }
+        .mobile-menu i {
+            display: block;
+           font-size:20px;
+            color:#F26A21;
+            border : none;
+             background-color: white;
 
-        @media (max-width: 768px) {
-            html, body, nav, .ser, ul, .login, .icon-link,
-            h1, h2, h3, h4, p, span, button {
-                font-size: 90% !important;
-            }
-            nav {
-                padding: 0 3% !important;
-            }
-            .ser {
-                font-size: 14px !important;
-            }
-            .login {
-                padding: 8px 20px !important;
-            }
+           
         }
-        @media (max-width: 480px) {
-            html, body, nav, .ser, ul, .login, .icon-link,
-            h1, h2, h3, h4, p, span, button {
-                font-size: 80% !important;
-            }
-            nav {
-                padding: 0 2% !important;
-            }
-            .ser {
-                font-size: 12px !important;
-            }
-            .login {
-                padding: 6px 15px !important;
-            }
+        .mobile-menu{
+            margin-left:10px;
+           border : none;
+            width: 30px;
+            height:20px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+         
+
         }
+      
+        
+     }
+      
+   
   </style>
 
     <nav>
@@ -146,21 +168,27 @@
         <div class="search">
             <input type="search" placeholder="Search books..." class="ser" id="navSearch" onkeypress="navigateToSearch(event)">
         </div>
+      
 
         <div class="home">
-            <ul>
+            <ul Id="ul_li">
                 <li><a href="../Components/index.php">Home</a></li>
                 <li><a href="../Components/about.php">About</a></li>
                 <li><a href="../Components/story.php">Story</a></li>
                 <li><a href="../Components/academic.php">Academic</a></li>
                 <li><a href="../Components/contact.php">Contact</a></li>
             </ul>
-        </div>
+        
 
-        <div class="nav-actions">
-            <a href="login.php"><button class="login" >Login</button></a>
+        <div class="nav-actions" id="icons">
+            <a href="login.php"><button class="login" id="log">Login</button></a>
             <a href="cart.php" class="icon-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
             <a href="wishlist.php" class="icon-link"><i class="fa-solid fa-clipboard-list"></i></a>
+      
+        </div>
+        </div>
+        <div class="mobile-menu">
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
     <script>
@@ -170,6 +198,44 @@
                 if (query) {
                     window.location.href = "searchbook.php?q=" + encodeURIComponent(query);
                 }
+            }
+        }
+        function toggleMobileMenu() {
+            const homeMenu = document.querySelector(".home");
+            const a= document.getElementById("ul_li");
+            const i= document.getElementById("icons");
+            const l= document.getElementById("log");
+           
+            if (homeMenu.style.display === "flex"  ) {
+                homeMenu.style.display = "none";
+          
+
+            } else {
+                homeMenu.style.display = "block";
+                homeMenu.style.display = "flex";
+                a.style.display = "flex";
+                a.style.flexDirection = "column";
+                a.style.justifyContent = "space-around";
+                i.style.marginTop="10px";
+                i.style.display = "flex";
+                i.style.flexDirection = "column";
+                l.style.marginRight="50px";
+                i.style.justifyContent = "center";
+                
+                homeMenu.style.flexDirection = "column";
+                homeMenu.style.position = "absolute";
+                homeMenu.style.top = "80px";
+                homeMenu.style.right = "0";
+                homeMenu.style.backgroundColor = "#fff";
+                homeMenu.style.width = "200px";
+                homeMenu.style.height = "auto";
+                homeMenu.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.1)";
+                homeMenu.style.padding = "20px";
+                homeMenu.style.justifyContent = "space-around";
+
+                
+
+
             }
         }
     </script>

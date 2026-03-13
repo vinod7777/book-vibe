@@ -6,6 +6,7 @@
     }
     
     footer {
+        margin-top: 50px;
         background-color: #0a1620;
         color: #fff;
         width: 100%;
