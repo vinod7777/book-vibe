@@ -5,7 +5,7 @@
         box-sizing: border-box;
     }
     footer {
-        margin-top: 20px;
+        margin-top: 40px;
         background-color: #0a1620;
         color: #fff;
         width: 100%;
