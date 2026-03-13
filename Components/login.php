@@ -172,7 +172,6 @@
         .loginpp{
             cursor:pointer;
         }
-        /* mobile font scaling */
         @media (max-width: 768px) {
             body { padding-top: 60px; }
             .main { width: 90%; margin: 50px auto; flex-direction: column; height: auto; }

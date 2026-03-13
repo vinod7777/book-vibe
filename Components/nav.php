@@ -107,7 +107,7 @@
         }
 
         @media (max-width: 768px) {
-            html, body, nav, .ser, ul, .login, .icon-link,
+            html, body, .ser, ul, .login, .icon-link,
             h1, h2, h3, h4, p, span, button {
                 font-size: 90% !important;
             }
@@ -122,7 +122,7 @@
             }
         }
         @media (max-width: 480px) {
-            html, body, nav, .ser, ul, .login, .icon-link,
+            html, body, .ser, ul, .login, .icon-link,
             h1, h2, h3, h4, p, span, button {
                 font-size: 80% !important;
             }
