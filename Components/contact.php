@@ -21,19 +21,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-
-            
+            justify-content: center;  
             font-family:  sans-serif;
          
         }
         .main{
             display: flex;
-            
             flex-direction: row;
             justify-content: space-around;
             margin: 40px;
-
             width: 100%;
             height:100vh;
            margin-top: 100px;
