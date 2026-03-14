@@ -168,20 +168,20 @@ padding:100px 0;
 }
 
 .empty i{
-font-size:120px;
-color:#ccc;
-margin-bottom:20px;
+    font-size:120px;
+    color:#ccc;
+    margin-bottom:20px;
 }
 
 .shop-btn{
-padding:15px 30px;
-background:#F26A21;
-color:white;
-border:none;
-border-radius:8px;
-font-size:18px;
-cursor:pointer;
-margin-top:20px;
+    padding:15px 30px;
+    background:#F26A21;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
 
 }
 
@@ -189,9 +189,9 @@ margin-top:20px;
     background:#0D3B66;
 }
 .yajnesh{
-display:flex;
-justify-content:space-between;
-font-size:20px;
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
 
 }
 .divider{
@@ -206,7 +206,7 @@ font-size:20px;
 }
 .free{
     font-weight:700;
-color:green;
+    color:green;
 }
 @media (min-width: 481px)  and (max-width: 1080px) {
     body {
