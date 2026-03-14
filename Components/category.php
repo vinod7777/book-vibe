@@ -136,6 +136,20 @@
         transition: color 0.3s ease;
       
     }
+     @media (max-width: 768px) {
+            .h2 { font-size: 36px; }
+            .h3 { font-size: 20px; margin-bottom: 20px; }
+            .button { font-size: 18px; padding: 12px 30px; }
+            .hero { padding-left: 5%; }
+        }
+        @media (max-width:480px) {
+            .Categoryh1 {font-size: 18px;}
+            .h3 { font-size: 14px; }
+            .tab-btn { font-size: 18px; padding: 10px 25px; }
+            .hero { padding-left: 30px; }
+            .purna { max-width: 100%;  width: 100%; height:400px;justify-content: center; display: flex; flex-direction: column; }
+            .hero { justify-content: left; } 
+        } 
 </style>
 
 <section class="secbody">
