@@ -23,7 +23,6 @@
             align-items: center;
             justify-content: center;  
             font-family:  sans-serif;
-         
         }
         .main{
             display: flex;
