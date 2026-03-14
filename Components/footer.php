@@ -4,7 +4,6 @@
         padding: 0;
         box-sizing: border-box;
     }
-    
     footer {
         margin-top: 50px;
         background-color: #0a1620;
@@ -14,8 +13,6 @@
         font-family:  sans-serif;
         height:auto;
     }
-
-
     .footer-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -23,8 +20,6 @@
         margin-bottom: 40px;
         
     }
-    
-
     .contact h2, .webteam h3, .quick-links h3 {
         color: #F26A21;
         font-size: 24px;
@@ -32,7 +27,6 @@
         text-transform: uppercase;
         letter-spacing: 1px;
     }
-
     .contact-con {
         display: flex;
         flex-wrap: wrap;
@@ -40,7 +34,6 @@
         align-items: center;
         
     }
-
     .contact-item {
         display: flex;
         align-items: center;
@@ -48,17 +41,14 @@
         font-size: 14px;
       
     }
-
     .contact-item i {
         color: #F26A21;
         font-size: 18px;
     }
-
     .logo img {
         width: 80px;
         height: auto;
     }
-
     .bottom {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 20px;
@@ -69,7 +59,6 @@
         flex-direction: column;
         gap: 10px;
     }
-
     .bottom i {
         color: #F26A21;
         margin-right: 5px;
@@ -79,7 +68,6 @@
       
        
     }
-
     .quick-links ul {
         list-style: none;
         padding: 0;
@@ -99,24 +87,24 @@
         color: #F26A21;
         padding-left: 5px;
     }
-     @media screen and (max-width:480px ) {
-        .quick-links ul{
-            display:flex;
-            flex-direction:row;
-           
+@media screen and (max-width:480px ) {
+    .quick-links ul{
+        display:flex;
+        flex-direction:row;
+        
+    }
+    .quick-links{
+        margin-top:-30px;
+    }
+        .footer-content{
+        margin-bottom: 10px;
         }
-        .quick-links{
-            margin-top:-30px;
-        }
-         .footer-content{
-              margin-bottom: 10px;
-         }
-        .contact h2, .webteam h3, .quick-links h3{
-              margin-bottom: 10px;
-        }
-        .logo img {
-        width: 30px;
-        height: auto;
+    .contact h2, .webteam h3, .quick-links h3{
+        margin-bottom: 10px;
+    }
+    .logo img {
+    width: 30px;
+    height: auto;
     }
      .contact-item i {
         color: #F26A21;
@@ -129,7 +117,6 @@
      }
 
 </style>
-
 <footer id="footid">
     <div class="footer-content">
         <div class="contact">
@@ -149,7 +136,6 @@
                 </div>
             </div>
         </div>
-
         <div class="quick-links">
             <h3>Quick Links</h3>
             <ul>
@@ -160,9 +146,7 @@
                 <li><a href="../Components/contact.php">Contact</a></li>
             </ul>
         </div>
-
     </div>
-
     <div class="bottom">
         <p>Designed & Developed By: Vinod Kumar, Yagneswararao P., Purnachandrarao P., Lokesh Konna, Laxminarayana M., Ajaykumar K.</p>
         <p>
