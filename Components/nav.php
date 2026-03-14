@@ -118,6 +118,7 @@
             color: #F26A21;
             cursor: pointer;
            
+           
             
         }
       
@@ -140,37 +141,6 @@
             border : none;
              background-color: white;
 
-<<<<<<< HEAD
-        @media (max-width: 768px) {
-            html, body, .ser, ul, .login, .icon-link,
-            h1, h2, h3, h4, p, span, button {
-                font-size: 90% !important;
-            }
-            nav {
-                padding: 0 3% !important;
-            }
-            .ser {
-                font-size: 14px !important;
-            }
-            .login {
-                padding: 8px 20px !important;
-            }
-        }
-        @media (max-width: 480px) {
-            html, body, .ser, ul, .login, .icon-link,
-            h1, h2, h3, h4, p, span, button {
-                font-size: 80% !important;
-            }
-            nav {
-                padding: 0 2% !important;
-            }
-            .ser {
-                font-size: 12px !important;
-            }
-            .login {
-                padding: 6px 15px !important;
-            }
-=======
            
         }
         .mobile-menu{
@@ -181,9 +151,13 @@
             display:flex;
             justify-content:center;
             align-items:center;
-         
-
->>>>>>> d5348bb9a0e7925769ed4a011c71156db40cf37d
+            
+        }
+        #mobileMenuBtn{
+            background-color: transparent; 
+            border: none;
+            cursor: pointer; 
+            
         }
       
         
@@ -220,7 +194,7 @@
         </div>
         </div>
         <div class="mobile-menu">
-          <button id="mobileMenuBtn" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+          <button style="border:none;" id="mobileMenuBtn " onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
     <script>

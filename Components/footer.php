@@ -49,6 +49,7 @@
         width: 80px;
         height: auto;
     }
+
     .bottom {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 20px;
@@ -87,24 +88,24 @@
         color: #F26A21;
         padding-left: 5px;
     }
-@media screen and (max-width:480px ) {
-    .quick-links ul{
-        display:flex;
-        flex-direction:row;
-        
-    }
-    .quick-links{
-        margin-top:-30px;
-    }
-        .footer-content{
-        margin-bottom: 10px;
+     @media screen and (max-width:480px ) {
+        .quick-links ul{
+            display:flex;
+            flex-direction:row;
+           
         }
-    .contact h2, .webteam h3, .quick-links h3{
-        margin-bottom: 10px;
-    }
-    .logo img {
-    width: 30px;
-    height: auto;
+        .quick-links{
+            margin-top:-30px;
+        }
+         .footer-content{
+              margin-bottom: 10px;
+         }
+        .contact h2, .webteam h3, .quick-links h3{
+              margin-bottom: 10px;
+        }
+        .logo img {
+        width: 30px;
+        height: auto;
     }
      .contact-item i {
         color: #F26A21;
@@ -113,6 +114,15 @@
     footer{
         padding: 10px 5% 0px;
        
+    }
+    .contact h2{
+        font-size: 13px;
+    }
+    .quick-links h3{
+         font-size: 13px;
+    }
+    .bottoms{
+         font-size: 8px;
     }
      }
 
@@ -147,6 +157,7 @@
             </ul>
         </div>
     </div>
+
     <div class="bottom">
         <p>Designed & Developed By: Vinod Kumar, Yagneswararao P., Purnachandrarao P., Lokesh Konna, Laxminarayana M., Ajaykumar K.</p>
         <p>
