@@ -13,7 +13,7 @@
         }
         body {
             
-             background-color: #f4f4f4;
+            background-color: #f4f4f4;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -29,10 +29,9 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            margin: 40px;
             width: 100%;
             height:100vh;
-           margin-top: 100px;
+            margin-top: 100px;
         }
         .form1,.form2{
             display: flex;
@@ -43,7 +42,6 @@
             height: 100%;
             background-color: #0D3B66;
             border-radius: 10px;
-
         }
       
         input{
@@ -53,7 +51,7 @@
             padding: 10px;
             border-radius: 5px;
             border:none;
-               font-size: 16px;
+            font-size: 16px;
         }
         textarea{
             width: 650px;
@@ -61,7 +59,7 @@
             padding: 10px;
             border-radius: 5px;
             border:none;
-               font-size: 16px;
+            font-size: 16px;
         }
         input::placeholder{
             color: #4c4b4b;
@@ -82,9 +80,9 @@
             background-color: #F26A21;
             color: white;
             border: none;
-             margin: 10px;
+            margin: 10px;
             padding: 10px;
-               font-size: 20px;
+            font-size: 20px;
             border-radius: 5px;
             cursor: pointer;
         }
@@ -105,13 +103,12 @@
         }
          .address p{
             margin-bottom: 10px;
-              font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', sans-serif;
          }
          iframe{
             border-radius: 10px;
          }
          .contact-info{
-            padding: 20px;
             color:#f4f4f4;
             padding:20px;
 }   
@@ -123,11 +120,9 @@
             margin-bottom: 10px;
             font-family: 'Segoe UI', sans-serif;
          }
-         @media (min-width:740px) and (max-width:1080px){
+         @media (max-width:740px){
             body{
                 margin-top: 100px;
-                
-            
             }
             .main{
                 flex-direction: column;
@@ -135,6 +130,8 @@
                 justify-content: center;
             }
             .form1,.form2{
+                flex-direction: column;
+                align-items: center;
                 width: 90%;
                 height: auto;
                 margin-bottom: 20px;
@@ -148,7 +145,7 @@
                 width: 90%;
                 height:100px;
             }
-          
+           
          }
          @media (max-width:600px){
             input,textarea,.btn-submit{
@@ -160,7 +157,7 @@
         </style>
 </head>
 <body>
-<div class="main">
+<div style="margin-bottom: 100px;" class="main">
        <div class="form1">
         <div class="contact-info">
             <h2>Get in Touch</h2>
@@ -175,7 +172,7 @@
             <button type="submit" class="btn-submit" onclick="return confirm('Submit Your Message Successfully!');"    >Submit</button>
         </form>
        </div>
-       <div class="form2">
+       <div  class="form2">
         <div class="address">
             <h2>Contact Us</h2>
             <p>Address: Aditya Institute of Technology and Management, Tekkali, Srikakulam, Andhra Pradesh, India</p>
