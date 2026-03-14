@@ -59,7 +59,7 @@
         height: auto;
     }
 
-    .bottom {
+    .bottoms{
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 20px;
         text-align: center;
@@ -103,6 +103,7 @@
         .quick-links ul{
             display:flex;
             flex-direction:row;
+              font-size: 10px;
            
         }
         .quick-links{
@@ -125,6 +126,15 @@
     footer{
         padding: 10px 5% 0px;
        
+    }
+    .contact h2{
+        font-size: 13px;
+    }
+    .quick-links h3{
+         font-size: 13px;
+    }
+    .bottoms{
+         font-size: 8px;
     }
      }
 
@@ -163,7 +173,7 @@
 
     </div>
 
-    <div class="bottom">
+    <div class="bottoms">
         <p>Designed & Developed By: Vinod Kumar, Yagneswararao P., Purnachandrarao P., Lokesh Konna, Laxminarayana M., Ajaykumar K.</p>
         <p>
             <i class="fa-regular fa-copyright"></i> 2026 BookVibe. All rights reserved.
